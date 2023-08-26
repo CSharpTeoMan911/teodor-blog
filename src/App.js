@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-    
+import "./main_style.css"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Render_Main_Page} from "./Main_Page";
+
+
 function App() {
+  var body = document.getElementById("main_body");
+  body.classList.add("main_body_style");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path = "/" Component={Render_Main_Page}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
