@@ -1,9 +1,27 @@
 body.main_body_style
 {
-    background-color: black;
+    background-image: linear-gradient(to right, rgb(46, 19, 0) ,black);
 }
 
 div.main_page_div_style
 {
     width: 100%;
 }
+
+div.main_menu_div_style
+{
+    background-color: red;
+    position: fixed;
+}
+
+h1.page_title_style
+{
+    position: relative;
+    align-self: center;
+    font-size: 6vmin;
+    color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+}
+
+
