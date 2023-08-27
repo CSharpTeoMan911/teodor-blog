@@ -1,8 +1,10 @@
 import "./home_page_style.css";
-import "./main_style.css"
+import "./main_style.css";
 import matrix from "./matrix.gif";
 import crt_terminal from "./Terminal_Background.gif";
 import teodor from "./teodor.png";
+import right from "./right.png";
+import down from "./down.png";
 
 var terminal_startup = undefined;
 var width = 0;
@@ -25,6 +27,22 @@ var name_elements = [
 ];
 var name_elements_index = 0;
 var name_value = "";
+
+// MAIN MENU ANIMATION VARIABLES
+//
+// [ BEGIN ]
+
+var label_width = 0;
+
+var menu_height = 0;
+
+var expand_main_menu_label = undefined;
+
+var expand_main_menu = undefined;
+
+var expanded_or_contracted = 0;
+
+// [ END ]
 
 function Name_Animation() {
   var name = document.getElementById("name");
@@ -50,31 +68,144 @@ function Terminal_Startup() {
       width++;
       var set_width = width + "%";
       main_bio_div.style.width = set_width;
-      console.log(width);
     } else {
       clearInterval(terminal_startup);
     }
   } catch {}
 }
 
+// MAIN MENU ANIMATION FUNCTIONS
+//
+// [ BEGIN ]
+
+function Expand_Main_Menu_Label() {
+  if (expanded_or_contracted === 0 || expanded_or_contracted === 2) {
+    try {
+      if (label_width < 25) {
+        var menu_label = document.getElementById("menu_label");
+        label_width++;
+
+        menu_label.style.width = label_width + "vmin";
+        menu_label.style.visibility = "visible";
+      } else {
+        clearInterval(expand_main_menu_label);
+      }
+    } catch {
+      clearInterval(expand_main_menu_label);
+    }
+  } else {
+    clearInterval(expand_main_menu_label);
+  }
+}
+
+function Contract_Main_Menu_Label() {
+  if (expanded_or_contracted === 0 || expanded_or_contracted === 2) {
+    var menu_label = document.getElementById("menu_label");
+    label_width = 0;
+    menu_label.style.width = label_width + "vmin";
+    menu_label.style.visibility = "hidden";
+  }
+  clearInterval(expand_main_menu_label);
+}
+
+function Expand_Or_Contract_Main_Menu() {
+  expanded_or_contracted++;
+
+  if (expanded_or_contracted === 1) {
+    Expand_Main_Menu();
+  } else if (expanded_or_contracted === 2) {
+    Contract_Main_Menu();
+    expanded_or_contracted = 0;
+  }
+}
+
+function Expand_Main_Menu_Animation() {
+  if (menu_height < 35) {
+    menu_height++;
+    var menu = document.getElementById("main_menu");
+    menu.style.height = menu_height + "vmin";
+    menu.style.visibility = "visible";
+  } else {
+    clearInterval(expand_main_menu);
+  }
+}
+
+function Expand_Main_Menu() {
+  var menu_label = document.getElementById("menu_label");
+  label_width = 25;
+  menu_label.style.width = label_width + "vmin";
+  menu_label.style.visibility = "visible";
+
+  if (expanded_or_contracted === 1) {
+    expand_main_menu = setInterval(() => {
+      Expand_Main_Menu_Animation();
+    }, 10);
+  } else {
+    clearInterval(expand_main_menu);
+  }
+}
+
+function Contract_Main_Menu() {
+  var menu_label = document.getElementById("menu_label");
+  label_width = 0;
+  menu_label.style.width = label_width + "vmin";
+  menu_label.style.visibility = "hidden";
+
+  menu_height = 0;
+  var menu = document.getElementById("main_menu");
+  menu.style.height = menu_height + "vmin";
+  menu.style.visibility = "hidden";
+
+  clearInterval(expand_main_menu);
+}
+
+//
+// [ END ]
+
 export function Render_Main_Page() {
   return (
     <div className="main_page_div_style">
-
+      {/*// MAIN MENU STRUCTURE
+           //
+           // [ BEGIN ] */}
       <div className="main_menu_div_style">
-        <button className="main_menu_div_style">
-           
-        </button>
+        <div className="main_menu_controls_div_style">
+          <button className="main_menu_button_style">
+            <img
+              className="main_menu_button_img_style"
+              src={right}
+              onMouseEnter={() => {
+                expand_main_menu_label = setInterval(() => {
+                  Expand_Main_Menu_Label();
+                }, 10);
+              }}
+              onMouseLeave={() => {
+                Contract_Main_Menu_Label();
+              }}
+              onClick={() => {
+                Expand_Or_Contract_Main_Menu();
+              }}
+            />
+          </button>
+          <p id="menu_label" className="menu_label_style">
+            &nbsp;Menu
+          </p>
+        </div>
 
-        <div>
-
+        <div id="main_menu" className="main_menu_div_items_style">
+          <div className="items_container_style">
+            <button className="menu_item_style">Personal bios</button>
+            <button className="menu_item_style">Projects</button>
+            <button className="menu_item_style">Contacts</button>
+          </div>
         </div>
       </div>
+
+      {/* // END */}
 
       <img className="matrix_img_style" src={matrix} />
 
       <div className="profile_div_style">
-
         <div className="profile_picture_frame_style">
           <div className="profile_picture_div_style">
             <img className="profile_image_style" src={teodor} />
@@ -95,14 +226,21 @@ export function Render_Main_Page() {
                   </font>
                   My name is Teodor Mihail. I'm a software engineer that has
                   experice with multiple languages, frameworks, and development
-                  environments. I am originally from Romania, Bucharest, currently
-                  living in United Kingdom, London, and studying software 
-                  engineering at the University of Bolton. I've done multiple 
-                  personal projects in which I used different technologies 
-                  and techniques through which I achieved my goals. The level 
-                  of proficiency in multiple languages, technologies and 
-                  frameworks from 0% to 100% is displayed below. The source code
-                  of this website is available at <a className="link_style" href="https://github.com/CSharpTeoMan911/teodor-blog">here</a>.
+                  environments. I am originally from Romania, Bucharest,
+                  currently living in United Kingdom, London, and studying
+                  software engineering at the University of Bolton. I've done
+                  multiple personal projects in which I used different
+                  technologies and techniques through which I achieved my goals.
+                  The level of proficiency in multiple languages, technologies
+                  and frameworks from 0% to 100% is displayed below. The source
+                  code of this website is available at{" "}
+                  <a
+                    className="link_style"
+                    href="https://github.com/CSharpTeoMan911/teodor-blog"
+                  >
+                    here
+                  </a>
+                  .
                 </article>
 
                 <div className="technologies_div_style">
@@ -303,7 +441,7 @@ export function Render_Main_Page() {
                   <div className="value_unit_style">
                     <p className="technology_classifier_value_style">JForms</p>
                     <div className="technology_classifier_div_value_style_container">
-                    <div
+                      <div
                         className="technology_classifier_div_value_style"
                         style={{ width: "60%" }}
                       >
@@ -412,7 +550,6 @@ export function Render_Main_Page() {
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
               </div>
@@ -424,7 +561,6 @@ export function Render_Main_Page() {
   );
 }
 
-//window.setTimeout(Terminal_Startup, 100);
 terminal_startup = setInterval(() => {
   Terminal_Startup();
 }, 10);
@@ -437,6 +573,8 @@ window.addEventListener("beforeunload", (event) => {
   try {
     clearInterval(terminal_startup);
     clearInterval(name_animation);
+    clearInterval(expand_main_menu);
+    clearInterval(expand_main_menu_label);
   } catch {}
 });
 
@@ -444,5 +582,7 @@ window.addEventListener("beforeload", (event) => {
   try {
     clearInterval(terminal_startup);
     clearInterval(name_animation);
+    clearInterval(expand_main_menu);
+    clearInterval(expand_main_menu_label);
   } catch {}
 });

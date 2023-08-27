@@ -10,18 +10,112 @@ div.main_page_div_style
 
 div.main_menu_div_style
 {
-    background-color: red;
+    margin: 0px;
+    padding: 0px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
     position: fixed;
+}
+
+div.main_menu_controls_div_style
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+}
+
+div.main_menu_div_items_style
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: rgb(221, 103, 0);
+    width: calc(20px + 8vmin + 25vmin);
+    /*height: 35vmin;*/
+}
+
+div.items_container_style
+{
+    width: 100%;
+    margin-top: 3vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button.main_menu_button_style
+{
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    width: calc(20px + 8vmin);
+    height: calc(20px + 8vmin);
+    background-color: rgb(221, 103, 0);
+    border-width: 0px;
+    border-color: transparent;
+}
+
+button.menu_item_style
+{
+    align-self: center;
+    margin-top: 3vmin;
+    margin-bottom: 2vmin;
+    background-color: black;
+    border-radius: 1vmin;
+    border-width: 0px;
+    color: rgb(221, 103, 0);;
+    width: calc(20px + 8vmin + 23vmin);
+    height: 5vmin;
+    font-size: 3vmin;
+}
+
+button.menu_item_style:hover
+{
+    color: rgb(196, 196, 196);
+}
+
+img.main_menu_button_img_style
+{
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+    width: calc(14px + 8vmin);
+    height: calc(14px + 8vmin);
 }
 
 h1.page_title_style
 {
+    text-align: center;
     position: relative;
     align-self: center;
     font-size: 6vmin;
     color: transparent;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+}
+
+p.menu_label_style
+{
+    /* width: 25vmin; */
+    width: 0vmin;
+    visibility: hidden;
+    background-color: black;
+    color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+    margin: 0px;
+    padding: 0px;
+    height: calc(20px + 8vmin);
+    font-size: 7.5vmin;
 }
 
 
