@@ -40,6 +40,8 @@ div.main_menu_div_items_style
     align-content: flex-start;
     background-color: rgb(221, 103, 0);
     width: calc(20px + 8vmin + 25vmin);
+    height: 0vmin;
+    visibility: hidden;
     /*height: 35vmin;*/
 }
 
