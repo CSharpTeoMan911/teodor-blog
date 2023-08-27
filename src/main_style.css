@@ -38,8 +38,8 @@ div.main_menu_div_items_style
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    background-color: rgb(221, 103, 0);
-    width: calc(20px + 8vmin + 25vmin);
+    background-image: linear-gradient(to right, rgb(221, 103, 0), black);
+    width: calc(1px + 10vmin + 25vmin);
     height: 0vmin;
     visibility: hidden;
     /*height: 35vmin;*/
@@ -54,14 +54,25 @@ div.items_container_style
     justify-content: center;
 }
 
+div.menu_label_container_style
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    height: calc(1px + 10vmin);
+}
+
 button.main_menu_button_style
 {
     display: flex;
     align-self: flex-start;
     justify-content: center;
-    width: calc(20px + 8vmin);
-    height: calc(20px + 8vmin);
-    background-color: rgb(221, 103, 0);
+    width: calc(1px + 10vmin);
+    height: calc(1px + 10vmin);
+    background-image: linear-gradient(to right, rgb(239, 113, 4), black);
     border-width: 0px;
     border-color: transparent;
 }
@@ -73,16 +84,20 @@ button.menu_item_style
     margin-bottom: 2vmin;
     background-color: black;
     border-radius: 1vmin;
-    border-width: 0px;
+    border-width: 0.5px;
+    border-color: rgb(108, 108, 108);
     color: rgb(221, 103, 0);;
-    width: calc(20px + 8vmin + 23vmin);
-    height: 5vmin;
-    font-size: 3vmin;
+    width: calc(1px + 10vmin + 20vmin);
+    /* height: 5vmin; */
+    height: 0vmin;
+    visibility: hidden;
+    font-size: 4vmin;
 }
 
 button.menu_item_style:hover
 {
     color: rgb(196, 196, 196);
+    border-color: rgb(196, 196, 196);
 }
 
 img.main_menu_button_img_style
@@ -90,8 +105,12 @@ img.main_menu_button_img_style
     margin: 0px;
     padding: 0px;
     align-self: center;
-    width: calc(14px + 8vmin);
-    height: calc(14px + 8vmin);
+    border-width: 1px;
+    border-color: black;
+    border-radius: calc(1px + 7vmin);
+    width: calc(1px + 7vmin);
+    height: calc(1px + 7vmin);
+    background-color: rgb(207, 135, 1);
 }
 
 h1.page_title_style
@@ -108,16 +127,16 @@ h1.page_title_style
 p.menu_label_style
 {
     /* width: 25vmin; */
+    align-self: center;
+    justify-self: center;
     width: 0vmin;
     visibility: hidden;
-    background-color: black;
     color: transparent;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
     margin: 0px;
     padding: 0px;
-    height: calc(20px + 8vmin);
-    font-size: 7.5vmin;
+    font-size: 6vmin;
 }
 
 
