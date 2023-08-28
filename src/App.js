@@ -138,24 +138,18 @@ function Navigate_To_Page(page) {
 }
 
 function App() {
-
   const [current_title_value, set_title_value] = useState("");
   var body = document.getElementById("main_body");
   body.classList.add("main_body_style");
 
   //set_title_value("Personal details");
 
-  useEffect(()=>{
-    if(window.location.pathname === "/")
-    {
+  useEffect(() => {
+    if (window.location.pathname === "/") {
       set_title_value("Personal Details");
-    }
-    else if(window.location.pathname === "/contacts")
-    {
+    } else if (window.location.pathname === "/contacts") {
       set_title_value("Contacts");
-    }
-    else if(window.location.pathname === "/projects")
-    {
+    } else if (window.location.pathname === "/projects") {
       set_title_value("Projects");
     }
   });
@@ -166,7 +160,6 @@ function App() {
            // [ BEGIN ] */}
 
       <div className="navigation_bar_style">
-      <h1 className="page_title_style">{current_title_value}</h1>
         <div className="main_menu_div_style">
           <div className="main_menu_controls_div_style">
             <button className="main_menu_button_style">
@@ -198,38 +191,40 @@ function App() {
             </div>
           </div>
 
-          <div id="main_menu" className="main_menu_div_items_style">
-            <div id="items_container" className="items_container_style">
-              <button
-                className="menu_item_style"
-                onClick={() => {
-                  Navigate_To_Page("");
-                }}
-              >
-                Personal bios
-              </button>
-              <button
-                className="menu_item_style"
-                onClick={() => {
-                  Navigate_To_Page("projects");
-                }}
-              >
-                Projects
-              </button>
-              <button
-                className="menu_item_style"
-                onClick={() => {
-                  Navigate_To_Page("contacts");
-                }}
-              >
-                Contacts
-              </button>
-            </div>
-          </div>
+          <h1 className="page_title_style">{current_title_value}</h1>
         </div>
       </div>
 
+      <div id="main_menu" className="main_menu_div_items_style">
+        <div id="items_container" className="items_container_style">
+          <button
+            className="menu_item_style"
+            onClick={() => {
+              Navigate_To_Page("");
+            }}
+          >
+            Personal bios
+          </button>
+          <button
+            className="menu_item_style"
+            onClick={() => {
+              Navigate_To_Page("projects");
+            }}
+          >
+            Projects
+          </button>
+          <button
+            className="menu_item_style"
+            onClick={() => {
+              Navigate_To_Page("contacts");
+            }}
+          >
+            Contacts
+          </button>
+        </div>
+      </div>
       {/* // END */}
+
       <BrowserRouter>
         <Routes>
           <Route exact path="/" Component={Render_Main_Page} />

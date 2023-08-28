@@ -1,0 +1,106 @@
+div.project_div_style
+{
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    transform: translate(-50%);
+    position: relative;
+    width: 100%;
+}
+
+div.small_non_adjustable_image_container_style
+{
+    margin-top: 5vmin;
+    position: relative;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 50vmin;
+    width: 40%;
+    border-radius: 3vmin;
+    background-image: linear-gradient(to right, rgb(149, 77, 6), rgb(82, 41, 3));
+}
+
+div.project_name_container_style
+{
+    align-self: center;
+    text-align: center;
+}
+
+div.project_article_div_style
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: start;
+    align-self: center;
+    margin-top: 10vmin;
+    margin-bottom: 5vmin;
+    border-radius: 3vmin;
+    width: 95%;
+}
+
+div.personal_project_div_style
+{
+    margin-top: 10vmin;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    width: 80%;
+    height: 95vh;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+}
+
+img.description_image
+{
+    border-radius: 2vmin;
+    max-height: 95%;
+    width: 95%;
+    align-self: center;
+    justify-self: center;
+}
+
+h1.project_name_style
+{
+    margin-top: 10vmin;
+    align-self: center;
+    justify-self: center;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    color: transparent;
+    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+}
+
+h2.project_sub_title_style
+{
+    margin-top: 10vmin;
+    align-self: center;
+    justify-self: center;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    color: transparent;
+    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+}
+
+article.project_article_style
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
+    opacity: 100%;
+    max-width:90%;
+    align-self: center;
+    justify-self:flex-start;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: transparent;
+    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1); 
+}
