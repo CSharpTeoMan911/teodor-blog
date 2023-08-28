@@ -31,8 +31,6 @@ export default function Render_Contacts_Page() {
   return (
     <div className="main_page_div_style">
       <div className="contacts_div_style">
-        <h1 className="page_title_style">Contacts</h1>
-
         <div id="personal_contacts_div" className="personal_contacts_div_style">
           <div id="crt_div_screen" className="crt_div_screen_style">
             <div id="crt_div" className="crt_div_style">

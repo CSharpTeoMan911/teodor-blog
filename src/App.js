@@ -1,11 +1,12 @@
 import "./main_style.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Render_Main_Page  from "./Main_Page";
+import Render_Main_Page from "./Main_Page";
 import Render_Projects_Page from "./Projects";
-import Render_Contacts_Page from "./Contacts"; 
+import Render_Contacts_Page from "./Contacts";
 import right from "./right.png";
 import down from "./down.png";
 import Render_EVA_AI_Page from "./Eva_AI";
+import { useState, useEffect } from "react";
 
 // MAIN MENU ANIMATION VARIABLES
 //
@@ -78,7 +79,7 @@ function Expand_Main_Menu_Animation() {
     var items = document.getElementById("items_container").children;
     for (var i = 0; i < items.length; i++) {
       items[i].style.visibility = "visible";
-      items[i].style.minHeight = "5vmin";
+      items[i].style.minHeight = "6vmin";
       items[i].style.height = "auto";
     }
     menu.style.height = "auto";
@@ -133,71 +134,97 @@ function Contract_Main_Menu() {
 // [ END ]
 
 function Navigate_To_Page(page) {
-  window.location.pathname = "\\" + page;
+  window.location.pathname = "/" + page;
 }
 
 function App() {
+
+  const [current_title_value, set_title_value] = useState("");
   var body = document.getElementById("main_body");
   body.classList.add("main_body_style");
+
+  //set_title_value("Personal details");
+
+  useEffect(()=>{
+    if(window.location.pathname === "/")
+    {
+      set_title_value("Personal Details");
+    }
+    else if(window.location.pathname === "/contacts")
+    {
+      set_title_value("Contacts");
+    }
+    else if(window.location.pathname === "/projects")
+    {
+      set_title_value("Projects");
+    }
+  });
   return (
     <div>
       {/*// MAIN MENU STRUCTURE
            //
            // [ BEGIN ] */}
-      <div className="main_menu_div_style">
-        <div className="main_menu_controls_div_style">
-          <button className="main_menu_button_style">
-            <img
-              id="main_menu_button_img"
-              alt="menu button"
-              className="main_menu_button_img_style"
-              src={right}
-              onMouseEnter={() => {
-                expand_main_menu_label = setInterval(() => {
-                  Expand_Main_Menu_Label();
-                }, 10);
-              }}
-              onMouseLeave={() => {
-                Contract_Main_Menu_Label();
-              }}
-              onClick={() => {
-                Expand_Or_Contract_Main_Menu();
-              }}
-            />
-          </button>
-          <div id="menu_label_container" className="menu_label_container_style">
-            <p id="menu_label" className="menu_label_style">
-              Menu
-            </p>
-          </div>
-        </div>
 
-        <div id="main_menu" className="main_menu_div_items_style">
-          <div id="items_container" className="items_container_style">
-            <button
-              className="menu_item_style"
-              onClick={() => {
-                Navigate_To_Page("");
-              }}
-            >
-              Personal bios
+      <div className="navigation_bar_style">
+      <h1 className="page_title_style">{current_title_value}</h1>
+        <div className="main_menu_div_style">
+          <div className="main_menu_controls_div_style">
+            <button className="main_menu_button_style">
+              <img
+                id="main_menu_button_img"
+                alt="menu button"
+                className="main_menu_button_img_style"
+                src={right}
+                onMouseEnter={() => {
+                  expand_main_menu_label = setInterval(() => {
+                    Expand_Main_Menu_Label();
+                  }, 10);
+                }}
+                onMouseLeave={() => {
+                  Contract_Main_Menu_Label();
+                }}
+                onClick={() => {
+                  Expand_Or_Contract_Main_Menu();
+                }}
+              />
             </button>
-            <button
-              className="menu_item_style"
-              onClick={() => {
-                Navigate_To_Page("projects");
-              }}
+            <div
+              id="menu_label_container"
+              className="menu_label_container_style"
             >
-              Projects
-            </button>
-            <button
-              className="menu_item_style"
-              onClick={() => {
-                Navigate_To_Page("contacts");
-              }}
-            >
-              Contacts
-            </button>
+              <p id="menu_label" className="menu_label_style">
+                Menu
+              </p>
+            </div>
+          </div>
+
+          <div id="main_menu" className="main_menu_div_items_style">
+            <div id="items_container" className="items_container_style">
+              <button
+                className="menu_item_style"
+                onClick={() => {
+                  Navigate_To_Page("");
+                }}
+              >
+                Personal bios
+              </button>
+              <button
+                className="menu_item_style"
+                onClick={() => {
+                  Navigate_To_Page("projects");
+                }}
+              >
+                Projects
+              </button>
+              <button
+                className="menu_item_style"
+                onClick={() => {
+                  Navigate_To_Page("contacts");
+                }}
+              >
+                Contacts
+              </button>
+            </div>
           </div>
         </div>
       </div>

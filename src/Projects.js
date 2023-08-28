@@ -23,15 +23,13 @@ function Terminal_Startup() {
 }
 
 function Project_Path_Selection(path) {
-  window.location.pathname = "\\" + path;
+  window.location.pathname = "/" + path;
 }
 
 export default function Render_Projects_Page() {
   return (
     <div className="main_page_div_style">
       <div className="contacts_div_style">
-        <h1 className="page_title_style">Projects</h1>
-
         <div id="personal_projects_div" className="personal_projects_div_style">
           <div id="crt_div_screen" className="crt_div_screen_style">
             <div id="crt_div" className="crt_div_style">
