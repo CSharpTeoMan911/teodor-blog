@@ -1,8 +1,11 @@
 import "./main_style.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Render_Main_Page } from "./Main_Page";
+import Render_Main_Page  from "./Main_Page";
+import Render_Projects_Page from "./Projects";
+import Render_Contacts_Page from "./Contacts"; 
 import right from "./right.png";
 import down from "./down.png";
+import Render_EVA_AI_Page from "./Eva_AI";
 
 // MAIN MENU ANIMATION VARIABLES
 //
@@ -146,6 +149,7 @@ function App() {
           <button className="main_menu_button_style">
             <img
               id="main_menu_button_img"
+              alt="menu button"
               className="main_menu_button_img_style"
               src={right}
               onMouseEnter={() => {
@@ -202,8 +206,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" Component={Render_Main_Page} />
-          <Route exact path="/projects" Component={Render_Main_Page} />
-          <Route exact path="/contacts" Component={Render_Main_Page} />
+          <Route exact path="/projects" Component={Render_Projects_Page} />
+          <Route exact path="/contacts" Component={Render_Contacts_Page} />
+          <Route exact path="/EVA_AI" Component={Render_EVA_AI_Page} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,95 @@
+div.personal_contacts_div_style
+{
+    margin-top: 10vmin;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    width: 90%;
+    height: 90vmin;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+}
+
+div.contacts_div_style
+{
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    transform: translate(-50%);
+    position: relative;
+    width: 100%;
+}
+
+div.contact_unit_style
+{
+    display: flex;
+    text-align: start;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 5vmin;
+    width: 100%;
+}
+
+div.contact_classifier_div_style_container
+{
+    width: 20%;
+    height: 10vmin;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+div.contact_classifier_div_style
+{
+    width: 10vmin;
+    height: 10vmin;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 4vmin;
+    color: transparent;
+    text-shadow: 0 0 1.5px rgb(0, 0, 0);
+    border-radius: 2vmin;
+    align-self: flex-end;
+    justify-self: flex-end;
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, orange, orange);
+    box-shadow: 0px 5px 10px 0px rgba(207, 16, 16, 0.5)
+}
+
+img.contacts_img_style
+{
+    width: 7.5vmin;
+    height: 7.5vmin;
+    align-self: center;
+}
+
+p.contact_classifier_value_style
+{
+    margin-left: 5vmin;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    font-size: 4vmin;
+    font-family: 'Courier New', Courier, monospace;
+    color: transparent;
+    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+}
+
+a.contact_link_style
+{
+    color: transparent;
+    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+    text-decoration: underline;
+}

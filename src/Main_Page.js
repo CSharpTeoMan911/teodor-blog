@@ -26,46 +26,54 @@ var name_elements_index = 0;
 var name_value = "";
 
 function Name_Animation() {
-  var name = document.getElementById("name");
+  try {
+    var name = document.getElementById("name");
 
-  if (name_elements_index < name_elements.length) {
-    if (name_elements_index === 0 && name.innerHTML.length > 0) {
-      name_value = "";
+    if (name !== null || name !== undefined) {
+      if (name_elements_index < name_elements.length) {
+        if (name_elements_index === 0 && name.innerHTML.length > 0) {
+          name_value = "";
+        }
+        name_value += name_elements[name_elements_index];
+        name_elements_index++;
+      } else {
+        clearInterval(name_animation);
+      }
+
+      name.innerHTML = name_value;
     }
-    name_value += name_elements[name_elements_index];
-    name_elements_index++;
-  } else {
+  } catch {
     clearInterval(name_animation);
   }
-
-  name.innerHTML = name_value;
 }
 
 function Terminal_Startup() {
   var main_bio_div = document.getElementById("personal_bio_div");
 
   try {
-    if (width < 90) {
-      width++;
-      var set_width = width + "%";
-      main_bio_div.style.width = set_width;
-    } else {
-      clearInterval(terminal_startup);
+    if (main_bio_div !== null || main_bio_div !== undefined) {
+      if (width < 90) {
+        width++;
+        var set_width = width + "%";
+        main_bio_div.style.width = set_width;
+      } else {
+        clearInterval(terminal_startup);
+      }
     }
-  } catch {}
+  } catch {
+    clearInterval(terminal_startup);
+  }
 }
 
-
-export function Render_Main_Page() {
+export default function Render_Main_Page() {
   return (
     <div className="main_page_div_style">
-
-      <img className="matrix_img_style" src={matrix} />
+      <img className="matrix_img_style" alt="matrix animation background" src={matrix} />
 
       <div className="profile_div_style">
         <div className="profile_picture_frame_style">
           <div className="profile_picture_div_style">
-            <img className="profile_image_style" src={teodor} />
+            <img className="profile_image_style" alt="Teodor Mihail" src={teodor} />
           </div>
         </div>
 
@@ -90,7 +98,7 @@ export function Render_Main_Page() {
                   technologies and techniques through which I achieved my goals.
                   The level of proficiency in multiple languages, technologies
                   and frameworks from 0% to 100% is displayed below. The source
-                  code of this website is available at{" "}
+                  code of this website is available {" "}
                   <a
                     className="link_style"
                     href="https://github.com/CSharpTeoMan911/teodor-blog"
@@ -309,7 +317,7 @@ export function Render_Main_Page() {
 
                   <div className="technologies_div_style">
                     <p className="technology_subtitle_style">
-                      Development environments
+                      Development environments and technologies
                     </p>
 
                     <div className="value_unit_style">
@@ -404,6 +412,20 @@ export function Render_Main_Page() {
                           style={{ width: "50%" }}
                         >
                           50%
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="value_unit_style">
+                      <p className="technology_classifier_value_style">
+                        Cisco Networking
+                      </p>
+                      <div className="technology_classifier_div_value_style_container">
+                        <div
+                          className="technology_classifier_div_value_style"
+                          style={{ width: "70%" }}
+                        >
+                          70%
                         </div>
                       </div>
                     </div>
