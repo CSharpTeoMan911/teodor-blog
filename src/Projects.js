@@ -9,7 +9,7 @@ function Terminal_Startup() {
 
   try {
     if (main_bio_div !== null || main_bio_div !== undefined) {
-      if (width < 80) {
+      if (width < 100) {
         width++;
         var set_width = width + "%";
         main_bio_div.style.width = set_width;

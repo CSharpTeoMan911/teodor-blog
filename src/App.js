@@ -71,7 +71,7 @@ function Expand_Or_Contract_Main_Menu() {
 
 function Expand_Main_Menu_Animation() {
   var menu = document.getElementById("main_menu");
-  if (menu_height < 35) {
+  if (menu_height < 32) {
     menu_height++;
     menu.style.height = menu_height + "vmin";
     menu.style.visibility = "visible";
@@ -79,10 +79,10 @@ function Expand_Main_Menu_Animation() {
     var items = document.getElementById("items_container").children;
     for (var i = 0; i < items.length; i++) {
       items[i].style.visibility = "visible";
-      items[i].style.minHeight = "6vmin";
+      items[i].style.minHeight = "6.5vmin";
       items[i].style.height = "auto";
     }
-    menu.style.height = "auto";
+    menu.style.height = "32vmin";
 
     clearInterval(expand_main_menu);
   }
@@ -149,7 +149,7 @@ function App() {
       set_title_value("Personal Details");
     } else if (window.location.pathname === "/contacts") {
       set_title_value("Contacts");
-    } else if (window.location.pathname === "/projects") {
+    } else{
       set_title_value("Projects");
     }
   });
@@ -203,7 +203,7 @@ function App() {
               Navigate_To_Page("");
             }}
           >
-            Personal bios
+            Details
           </button>
           <button
             className="menu_item_style"

@@ -44,8 +44,9 @@ div.contact_classifier_div_style_container
     display: flex;
     align-self: center;
     flex-direction: column;
-    justify-content: flex-end;
-    justify-items: flex-end;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 10vmin;
 }
 
 div.contact_classifier_div_style

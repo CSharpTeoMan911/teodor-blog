@@ -14,7 +14,7 @@ div.main_page_div_style
 div.navigation_bar_style
 {
     width: 100%;
-    background-image: linear-gradient(to right, rgb(39, 16, 0), rgb(31, 13, 0));
+    background-image: linear-gradient(to right, rgb(87, 31, 1), rgb(57, 22, 1));
     z-index: 3;
     display: flex;
     flex-direction: row;
@@ -46,14 +46,15 @@ div.main_menu_div_items_style
 {
     z-index: 2;
     border-radius: 2vmin;
-    margin-top: calc(1px + 8vmin);
+    margin-top: calc(1px + 10vmin);
+    margin-left: 1vmin;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    background-image: linear-gradient(to right, rgb(221, 103, 0), black);
-    width: calc(1px + 10vmin + 25vmin);
+    background-image: linear-gradient(to right, rgb(95, 34, 1), rgb(0, 0, 0));
+    width: calc(1px + 8vmin + 22vmin);
     height: 0vmin;
     visibility: hidden;
     position: fixed;
@@ -71,50 +72,54 @@ div.items_container_style
 
 div.menu_label_container_style
 {
+    transform: translate(-3vmin);
     z-index: 4;
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     text-align: center;
-    background-color: black;
-    height: calc(1px + 10vmin);
+    background-color:rgb(0, 0, 0);
+    border-radius: 1.5vmin;
+    height:calc(1px + 11vmin);
 }
 
 button.main_menu_button_style
 {
+    z-index: 5;
     display: flex;
     align-self: flex-start;
     justify-content: center;
-    width: calc(1px + 10vmin);
-    height: calc(1px + 10vmin);
-    background-image: linear-gradient(to right, rgb(118, 55, 0), black);
+    width: calc(1px + 11vmin);
+    height: calc(1px + 11vmin);
+    background-image: linear-gradient(to right, rgb(95, 34, 1), rgb(0, 0, 0));
     border-width: 0px;
+    border-radius: 1.5vmin;
     border-color: transparent;
 }
 
 button.menu_item_style
 {
     align-self: center;
-    margin-top: 2vmin;
+    margin-top: 1.2vmin;
     margin-bottom: 2vmin;
-    background-color: black;
-    border-radius: 2vmin;
-    border-width: 1px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(66, 24, 1));
+    border-radius: 1.5vmin;
+    border-width: 0px;
     border-color: rgb(108, 108, 108);
-    color: rgb(221, 103, 0);;
-    width: calc(1px + 10vmin + 20vmin);
-    font-weight: bold;
+    color: rgb(167, 78, 0);;
+    width: calc(1px + 6vmin + 20vmin);
     /* height: 5vmin; */
     height: 0vmin;
     visibility: hidden;
-    font-size: 3.5vmin;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4.5vmin;
 }
 
 button.menu_item_style:hover
 {
-    color: rgb(196, 196, 196);
-    border-color: rgb(196, 196, 196);
+    color: rgb(209, 207, 207);
+    border-color: rgb(209, 207, 207);
 }
 
 img.main_menu_button_img_style
@@ -125,8 +130,8 @@ img.main_menu_button_img_style
     border-width: 1px;
     border-color: black;
     border-radius: calc(1px + 7vmin);
-    width: calc(1px + 7vmin);
-    height: calc(1px + 7vmin);
+    width: calc(1px + 6vmin);
+    height: calc(1px + 6vmin);
     background-color: rgb(207, 135, 1);
 }
 
@@ -221,7 +226,6 @@ p.menu_label_style
     visibility: hidden;
     color: transparent;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
     margin: 0px;
     padding: 0px;
