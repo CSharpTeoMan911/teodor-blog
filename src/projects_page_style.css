@@ -53,7 +53,7 @@ h1.project_classifier_title_value_style
     font-size: 5vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
-    text-shadow: 0 0 1.5px rgb(0, 0, 0);
+    text-shadow: 0 0 1px rgb(0, 0, 0);
 }
 
 p.project_classifier_value_style
@@ -66,5 +66,5 @@ p.project_classifier_value_style
     font-size: 4vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
-    text-shadow: 0 0 1.5px rgb(0, 0, 0);
+    text-shadow: 0 0 1px rgb(0, 0, 0);
 }

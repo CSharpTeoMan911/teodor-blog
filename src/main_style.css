@@ -71,6 +71,7 @@ div.items_container_style
 
 div.menu_label_container_style
 {
+    z-index: 4;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -148,7 +149,7 @@ div.crt_div_style
     justify-self: center;
     width: 98%;
     height:98%;
-    background-image: url(Terminal_Background.gif);
+    background-image: url("https://i.gifer.com/7LOt.gif");
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -179,19 +180,19 @@ article.article_style
     font-size: 4vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
-    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1); 
+    text-shadow: 0 0 1px rgba(255, 136, 0, 1); 
 }
 
 font.font_init
 {
     color: transparent;
-    text-shadow: 0 0 1.5px rgb(192, 192, 192); 
+    text-shadow: 0 0 1px rgb(192, 192, 192); 
 }
 
 a.link_style
 {
     color: transparent;
-    text-shadow: 0 0 1.5px rgb(251, 209, 59); 
+    text-shadow: 0 0 1px rgb(251, 209, 59); 
     text-decoration: underline;
 }
 
@@ -206,8 +207,9 @@ h1.page_title_style
     align-self: center;
     font-size: 5vmin;
     color: transparent;
+    font-weight: 200;
     font-family: 'Courier New', Courier, monospace;
-    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+    text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }
 
 p.menu_label_style
@@ -220,7 +222,7 @@ p.menu_label_style
     color: transparent;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+    text-shadow: 0 0 1px rgba(255, 136, 0, 1);
     margin: 0px;
     padding: 0px;
     font-size: 6vmin;

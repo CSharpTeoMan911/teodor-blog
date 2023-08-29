@@ -1,6 +1,5 @@
 import "./home_page_style.css";
 import "./main_style.css";
-import matrix from "./matrix.gif";
 import teodor from "./teodor.png";
 
 var terminal_startup = undefined;
@@ -66,9 +65,10 @@ function Terminal_Startup() {
 }
 
 export default function Render_Main_Page() {
+  console.log(process.env.MATRIX_GIF)
   return (
     <div className="main_page_div_style">
-      <img className="matrix_img_style" alt="matrix animation background" src={matrix} />
+      <img className="matrix_img_style" alt="matrix animation background"/>
 
       <div className="profile_div_style">
         <div className="profile_picture_frame_style">

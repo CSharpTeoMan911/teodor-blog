@@ -3,7 +3,8 @@ img.matrix_img_style
     position: fixed;
     max-width: 100%;
     height: 100vmax;
-    opacity: 10%;
+    content: url("https://miro.medium.com/v2/resize:fit:1400/1*Mcd984kSkoPRy-b9s6gA2g.gif");
+    opacity: 5%;
 }
 
 
@@ -108,7 +109,7 @@ div.technology_classifier_div_value_style
     text-align: center;
     font-size: 4vmin;
     color: transparent;
-    text-shadow: 0 0 1.5px rgb(0, 0, 0);
+    text-shadow: 0 0 1px rgb(0, 0, 0);
     height: 4vmin;
     border-radius: 5vmin;
     align-self: flex-start;
@@ -135,7 +136,7 @@ p.name_style
     font-size: 5vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
-    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+    text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }
 
 p.technology_classifier_value_style
@@ -146,7 +147,7 @@ p.technology_classifier_value_style
     font-size: 4vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
-    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+    text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }
 
 p.technology_subtitle_style
@@ -157,5 +158,5 @@ p.technology_subtitle_style
     font-size: 5vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
-    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+    text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }

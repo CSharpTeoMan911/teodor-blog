@@ -58,7 +58,7 @@ div.contact_classifier_div_style
     text-align: center;
     font-size: 4vmin;
     color: transparent;
-    text-shadow: 0 0 1.5px rgb(0, 0, 0);
+    text-shadow: 0 0 1px rgb(0, 0, 0);
     border-radius: 2vmin;
     align-self: flex-end;
     justify-self: flex-end;
@@ -84,12 +84,12 @@ p.contact_classifier_value_style
     font-size: 4vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
-    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+    text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }
 
 a.contact_link_style
 {
     color: transparent;
-    text-shadow: 0 0 1.5px rgba(255, 136, 0, 1);
+    text-shadow: 0 0 1px rgba(255, 136, 0, 1);
     text-decoration: underline;
 }
