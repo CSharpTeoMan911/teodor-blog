@@ -6,6 +6,7 @@ import "./main_style.css";
 import vosk_model from "./Vosk_Model.png";
 import python_vosk_file from "./python_vosk_file.txt";
 import python_vosk_file_snippet_1 from "./python_vosk_file_snippet_1.txt";
+import python_vosk_file_snippet_2 from "./python_vosk_file_snippet_2.txt";
 
 var terminal_startup = undefined;
 var width = 0;
@@ -361,7 +362,11 @@ export default function Render_EVA_AI_Page() {
                       'wake_word_operation_stdout_stream{"()"}'
                     </font>{" "}
                     is called in order to send the activation message to the
-                    main application through the{" "}
+                    main{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    application through the{" "}
                     <font className="bold_project_article_section_style">
                       STDOUT
                     </font>{" "}
@@ -374,8 +379,86 @@ export default function Render_EVA_AI_Page() {
                   />
 
                   <article className="project_article_style">
-                    
+                    Whitin the{" "}
+                    <font className="bold_project_article_section_style">
+                      'wake_word_operation_stdout_stream{"()"}'
+                    </font>{" "}
+                    method, a switch statement detects if the message sent to
+                    the main{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    application should be one that stops the speech recognition
+                    opertion, or one that starts the speech recognition
+                    operation. After the decision is made, the message is sent
+                    through{" "}
+                    <font className="bold_project_article_section_style">
+                      STDIN
+                    </font>{" "}
+                    stream by using a print statement containing the message.
+                    The possibility of sending a message through the{" "}
+                    <font className="bold_project_article_section_style">
+                      STDIN
+                    </font>{" "}
+                    stream using a print statement is possible due to the fact
+                    that the{" "}
+                    <font className="bold_project_article_section_style">
+                      Python
+                    </font>{" "}
+                    script was started by the main{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    application and when the{" "}
+                    <font className="bold_project_article_section_style">
+                      Python
+                    </font>{" "}
+                    script was started by the main{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    application, the
+                    <font className="bold_project_article_section_style">
+                      {" "}
+                      Python
+                    </font>{" "}
+                    script's{" "}
+                    <font className="bold_project_article_section_style">
+                      STDIN
+                    </font>{" "}
+                    and{" "}
+                    <font className="bold_project_article_section_style">
+                      STDOUT
+                    </font>{" "}
+                    streams were bypassed through the main{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    application, meaning that all input/output operations of the{" "}
+                    <font className="bold_project_article_section_style">
+                      Python
+                    </font>{" "}
+                    application are marshalled through the main{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    application.
                   </article>
+
+                  <CodeSnippet
+                    file={python_vosk_file_snippet_2}
+                    language={"python"}
+                  />
+
+                  <h2 className="project_sub_title_style">
+                    Windows Media Speech Recognition
+                  </h2>
+
+                  {/* <article className="project_article_style">
+                    <font className="bold_project_article_section_style">
+                      Windows Media Speech Recognition
+                    </font>{" "}
+                  </article> */}
 
                   {/* // END */}
 

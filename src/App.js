@@ -1,12 +1,26 @@
 import "./main_style.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import right from "./right.png";
+import down from "./down.png";
+import { useState, useEffect } from "react";
+
 import Render_Main_Page from "./Main_Page";
 import Render_Projects_Page from "./Projects";
 import Render_Contacts_Page from "./Contacts";
-import right from "./right.png";
-import down from "./down.png";
+
+import Render_Python_Student_Records_System_Page from "./Python_Student_Records_System";
+import Render_C_Sharp_Student_Records_System from "./C_Sharp_Student_Records_System";
+import Render_C_Sharp_Secure_Student_Records_System from "./C_Sharp_Secure_Student_Records_System";
+import Render_Cisco_Large_Network_DHCP_VOIP_TELNET from "./Cisco_Large_Network_DHCP_VOIP_TELNET";
+import Render_Cisco_Netwrok_DHCP_Voip from "./Cisco_Netwrok_DHCP_Voip";
+import Render_E_ChatGPT from "./E-ChatGPT";
+import Render_Smart_Event_Organiser from "./Smart_Event_Organiser";
+import Render_TeodorMihailBlog from "./TeodorMihailBlog";
+import Render_Transcryptor from "./Transcryptor";
+import Render_Y2F from "./Y2F";
+import Render_YouTube_2_File from "./YouTube_2_File";
 import Render_EVA_AI_Page from "./Eva_AI";
-import { useState, useEffect } from "react";
 
 // MAIN MENU ANIMATION VARIABLES
 //
@@ -149,7 +163,7 @@ function App() {
       set_title_value("Personal Details");
     } else if (window.location.pathname === "/contacts") {
       set_title_value("Contacts");
-    } else{
+    } else {
       set_title_value("Projects");
     }
   });
@@ -231,6 +245,45 @@ function App() {
           <Route exact path="/projects" Component={Render_Projects_Page} />
           <Route exact path="/contacts" Component={Render_Contacts_Page} />
           <Route exact path="/EVA_AI" Component={Render_EVA_AI_Page} />
+          <Route
+            exact
+            path="/Python_Student_Records_System"
+            Component={Render_Python_Student_Records_System_Page}
+          />
+          <Route
+            exact
+            path="/CSharp_Student_Records_System"
+            Component={Render_C_Sharp_Student_Records_System}
+          />
+          <Route
+            exact
+            path="/CSharp_Secure_Student_Records_System"
+            Component={Render_C_Sharp_Secure_Student_Records_System}
+          />
+          <Route exact path="/YouTube2File" Component={Render_YouTube_2_File} />
+          <Route
+            exact
+            path="/SmartEventOrganiser"
+            Component={Render_Smart_Event_Organiser}
+          />
+          <Route exact path="/Y2F" Component={Render_Y2F} />
+          <Route exact path="/TransCryptor" Component={Render_Transcryptor} />
+          <Route
+            exact
+            path="/Cisco_Network_VOIP_DHCP"
+            Component={Render_Cisco_Netwrok_DHCP_Voip}
+          />
+          <Route
+            exact
+            path="/Large_Cisco_Network_VOIP_DHCP_TELNET"
+            Component={Render_Cisco_Large_Network_DHCP_VOIP_TELNET}
+          />
+          <Route exact path="/E_ChatGPT" Component={Render_E_ChatGPT} />
+          <Route
+            exact
+            path="/TeodorMihailBlog"
+            Component={Render_TeodorMihailBlog}
+          />
         </Routes>
       </BrowserRouter>
     </div>

@@ -61,7 +61,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("Python_Student_Records_System");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">
@@ -77,7 +77,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("CSharp_Student_Records_System");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">
@@ -93,7 +93,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("CSharp_Secure_Student_Records_System");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">
@@ -110,7 +110,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("YouTube2File");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">
@@ -126,7 +126,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("SmartEventOrganiser");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">
@@ -144,7 +144,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("Y2F");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">Y2F</h1>
@@ -158,7 +158,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("TransCryptor");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">
@@ -174,7 +174,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("Cisco_Network_VOIP_DHCP");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">
@@ -189,7 +189,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("Large_Cisco_Network_VOIP_DHCP_TELNET");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">
@@ -205,7 +205,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("E_ChatGPT");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">
@@ -222,7 +222,7 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
-                    Project_Path_Selection("Eva_AI");
+                    Project_Path_Selection("TeodorMihailBlog");
                   }}
                 >
                   <h1 className="project_classifier_title_value_style">

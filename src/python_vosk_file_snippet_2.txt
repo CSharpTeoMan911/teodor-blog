@@ -1,0 +1,15 @@
+def wake_word_operation_stdout_stream(listen):
+    ################################################
+    #   INTERPROCESS COMMUNICATION USING STDOUT    #
+    ################################################
+    # WAKE WORD IS SENT THROUGH THE STDOUT STREAM  #
+    ################################################
+    try:
+        match listen:
+            case True:
+                print("listen")
+            case False:
+                print("stop listening")
+        sys.stdout.flush()
+    except KeyboardInterrupt:
+        sys.exit(0)
