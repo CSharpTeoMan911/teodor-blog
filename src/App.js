@@ -241,6 +241,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
+          <Route exact path="/static/sitemap.xml" Component={Render_Main_Page} />
           <Route exact path="/" Component={Render_Main_Page} />
           <Route exact path="/projects" Component={Render_Projects_Page} />
           <Route exact path="/contacts" Component={Render_Contacts_Page} />

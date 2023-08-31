@@ -1,0 +1,36 @@
+        protected static Task<bool> Start_The_Wake_Word_Engine()
+        {
+            // INITIATE THE WAKE WORD ENGINE USING THE VIRTUAL ENVIRONMENT WITHIN THE DIRECTORY
+            // WHERE WHERE "Eva 5.0.exe" EXECUTABLE IS LOCATED. THE PROCESS WILL NOT CREATE ANY
+            // WINDOW AND IT WILL BE STARTED AS A CHILD PROCESS OF THE "Eva 5.0.exe" PROCESS.
+            //
+            // [ BEGIN ]
+
+            try
+            {
+
+                System.Diagnostics.Process wake_word_process = new System.Diagnostics.Process();
+                wake_word_process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                wake_word_process.StartInfo.FileName = Environment.CurrentDirectory + "\\python.exe";
+                wake_word_process.StartInfo.RedirectStandardOutput = true;
+                wake_word_process.StartInfo.RedirectStandardError = true;
+                wake_word_process.StartInfo.CreateNoWindow = true;
+                wake_word_process.StartInfo.UseShellExecute = false;
+                wake_word_process.StartInfo.Arguments = "main.py";
+                wake_word_process.Start();
+
+                if (Wake_Word_Detection_Initiated == false)
+                {
+                    Wake_Word_Detection_Initiated = true;
+                    Wake_Word_Detector(wake_word_process);
+                }
+
+                return Task.FromResult(true);
+            }
+            catch
+            {
+                return Task.FromResult(false);
+            }
+
+            // [ END ]
+        }

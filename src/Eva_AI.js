@@ -1,12 +1,30 @@
 import CodeSnippet from "./CodeSnippet";
+// import Animation_Thread from "./Animation_Thread";
+
+//
+// !!! ADD PARALLEL PROCESSING !!!
+//
+//
 
 import "./personal_projects_style.css";
 import "./main_style.css";
+
+import { useEffect } from "react";
+
+import Eva_Mic_Highlight from "./Eva_Mic_Highlight.png";
 
 import vosk_model from "./Vosk_Model.png";
 import python_vosk_file from "./python_vosk_file.txt";
 import python_vosk_file_snippet_1 from "./python_vosk_file_snippet_1.txt";
 import python_vosk_file_snippet_2 from "./python_vosk_file_snippet_2.txt";
+import online_speech_recognition_file from "./online_speech_recognition_file.txt";
+import online_speech_recogniser_method from "./online_speech_recogniser_method.txt";
+import online_speech_recognition_object from "./online_speech_recognition_object.txt";
+import online_speech_recogniser_topic_constraints from "./online_speech_recogniser_topic_constraints.txt";
+import online_speech_recogniser_timeout_proprieties from "./online_speech_recogniser_timeout_proprieties.txt";
+import online_speech_recogniser_speech_recognition_operation from "./online_speech_recogniser_speech_recognition_operation.txt";
+import wake_word_engine_startup from "./wake_word_engine_startup.txt";
+import wake_word_engine_shutdown from "./wake_word_engine_shutdown.txt";
 
 var terminal_startup = undefined;
 var width = 0;
@@ -30,6 +48,12 @@ function Terminal_Startup() {
 }
 
 export default function Render_EVA_AI_Page() {
+
+  // useEffect(()=>{
+  //   var worker = new Worker(Animation_Thread);
+  //   worker.postMessage('personal projects window terminal startup');
+  // });
+
   return (
     <div className="main_page_div_style">
       <div className="project_div_style">
@@ -45,27 +69,21 @@ export default function Render_EVA_AI_Page() {
                   {/* <div className="small_non_adjustable_image_container_style">
                     <img className="description_image" src={eva_logo} />
                   </div> */}
-
                   {/* Introduction section
                   //
                   // [ BEGIN ] */}
                   <h2 className="project_sub_title_style">Introduction</h2>
-
                   <article className="project_article_style">
                     Eva is an AI assistant built with the purpose of helping
                     users multi-task. Eva is built using a set of different
                     technologies and techniques that are explained in detail in
                     this article.
                   </article>
-
                   {/* // END */}
-
                   {/* Tech stack section
                   //
                   // [ BEGIN ] */}
-
                   <h2 className="project_sub_title_style">Tech stack</h2>
-
                   <article className="project_article_style">
                     <font className="bold_project_article_section_style">
                       Eva
@@ -128,17 +146,13 @@ export default function Render_EVA_AI_Page() {
                     </font>{" "}
                     is part of the extra functionalities category.
                   </article>
-
                   {/* // END */}
-
                   {/* Speech recognition section
                   //
                   // [ BEGIN ] */}
-
                   <h2 className="project_sub_title_style">
                     Speech recognition infrastructure
                   </h2>
-
                   <article className="project_article_style">
                     The speech recognition infrastructure is implemented by
                     using two technologies:{" "}
@@ -160,13 +174,11 @@ export default function Render_EVA_AI_Page() {
                     has the role of the application's main speech recognition
                     engine.
                   </article>
-
                   <img
                     className="large_adjustable_image"
                     alt="speech recognition mechanism"
                     src="https://user-images.githubusercontent.com/87245086/234708319-0ad38208-afe3-460c-9066-224704151b20.png"
                   />
-
                   <article className="project_article_style">
                     The{" "}
                     <font className="bold_project_article_section_style">
@@ -196,14 +208,12 @@ export default function Render_EVA_AI_Page() {
                     in order to process voice commands.
                   </article>
                   {/* // END */}
-
-                  {/* Speech recognition section
+                  {/* Vosk recognition section
                   //
                   // [ BEGIN ] */}
                   <h2 className="project_sub_title_style">
                     Vosk speech recognition
                   </h2>
-
                   <article className="project_article_style">
                     <font className="bold_project_article_section_style">
                       Vosk
@@ -225,7 +235,6 @@ export default function Render_EVA_AI_Page() {
                     </font>{" "}
                     is the best choise for an offline wake word engine.
                   </article>
-
                   <img
                     className="large_adjustable_image"
                     alt="vosk speech recognition model"
@@ -244,9 +253,7 @@ export default function Render_EVA_AI_Page() {
                     </font>{" "}
                     Python package.
                   </article>
-
                   <CodeSnippet file={python_vosk_file} language={"python"} />
-
                   <article className="project_article_style">
                     As it is visible in the code snippet shown above, the Python
                     script is composed out of two main methods, the{" "}
@@ -372,12 +379,10 @@ export default function Render_EVA_AI_Page() {
                     </font>{" "}
                     stream.
                   </article>
-
                   <CodeSnippet
                     file={python_vosk_file_snippet_1}
                     language={"python"}
                   />
-
                   <article className="project_article_style">
                     Whitin the{" "}
                     <font className="bold_project_article_section_style">
@@ -444,30 +449,408 @@ export default function Render_EVA_AI_Page() {
                     </font>{" "}
                     application.
                   </article>
-
                   <CodeSnippet
                     file={python_vosk_file_snippet_2}
                     language={"python"}
                   />
-
+                  {/* // END */}
+                  {/* // Windows media speech recognition
+                  //
+                  // */}
                   <h2 className="project_sub_title_style">
                     Windows Media Speech Recognition
                   </h2>
-
-                  {/* <article className="project_article_style">
+                  <article className="project_article_style">
                     <font className="bold_project_article_section_style">
                       Windows Media Speech Recognition
                     </font>{" "}
-                  </article> */}
-
+                    is a closed source online speech recongition engine
+                    developed by{" "}
+                    <font className="bold_project_article_section_style">
+                      Mircosoft
+                    </font>
+                    {". "}This online speech recognition engine was chosen as
+                    the main speech recognition engine due to multiple factors.
+                    The first factor is the fact that is free. The{" "}
+                    <font className="bold_project_article_section_style">
+                      Windows Media Speech Recognition
+                    </font>{" "}
+                    engine is the only online speech recognition engine
+                    available to use free of charge and that has a high degree
+                    of accuracy. The second factor why the{" "}
+                    <font className="bold_project_article_section_style">
+                      Windows Media Speech Recognition
+                    </font>{" "}
+                    was chosen as the main speech recognition engine is due to
+                    its availability.{" "}
+                    <font className="bold_project_article_section_style">
+                      Windows Media Speech Recognition
+                    </font>{" "}
+                    comes shipped with the Windows 10/11 OS, and this means that
+                    anyone that has a Windows 10/11 OS can access it. The third
+                    and final reason is that{" "}
+                    <font className="bold_project_article_section_style">
+                      Windows Media Speech Recognition
+                    </font>{" "}
+                    is lightweight. Due to the fact that this speech recognition
+                    engine is online, it has little to no impact on the users'
+                    machine performance, and this translates further into the
+                    fact that users can use{" "}
+                    <font className="bold_project_article_section_style">
+                      Eva
+                    </font>{" "}
+                    even on lower powered devices. The aforementioned final
+                    factor made me choose{" "}
+                    <font className="bold_project_article_section_style">
+                      Windows Media Speech Recognition
+                    </font>{" "}
+                    over free and open source on device speech recognition
+                    engines to serve the role of the main speech recognition
+                    engine. <br />
+                    <br />
+                    <br />
+                    The implementation of{" "}
+                    <font className="bold_project_article_section_style">
+                      Windows Media Speech Recognition
+                    </font>{" "}
+                    is done in{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    through the use of the{" "}
+                    <font className="bold_project_article_section_style">
+                      UWP
+                    </font>{" "}
+                    library named{" "}
+                    <font className="bold_project_article_section_style">
+                      Windows Media Speech Recognition
+                    </font>
+                    {". "}
+                    The aforementioned{" "}
+                    <font className="bold_project_article_section_style">
+                      UWP
+                    </font>{" "}
+                    library allows{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    applications to interact with the Windows 10/11 speech
+                    recognition engine in order to be able to perform speech
+                    recognition within{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    applications. Due to the fact that{" "}
+                    <font className="bold_project_article_section_style">
+                      UWP
+                    </font>{" "}
+                    applications sandbox the application's operation, a
+                    workarround had to be implemented.{" "}
+                    <font className="bold_project_article_section_style">
+                      UWP
+                    </font>{" "}
+                    applications are sandboxed, and this means that{" "}
+                    <font className="bold_project_article_section_style">
+                      UWP
+                    </font>{" "}
+                    applications cannot interact with the rest of the OS. This
+                    security fature is detremental would be detremental to Eva
+                    because it has to execute commands, many of which will imply
+                    the interaction with the operating system. The workarround
+                    to this sollution is to import{" "}
+                    <font className="bold_project_article_section_style">
+                      UWP
+                    </font>{" "}
+                    librabries and functionalities inside of another type of
+                    application, which in this case is{" "}
+                    <font className="bold_project_article_section_style">
+                      WPF
+                    </font>
+                    {". "}This is done by downloading an{" "}
+                    <font className="bold_project_article_section_style">
+                      SDK
+                    </font>
+                    {". "} that contains the aforementioned librabries within
+                    the{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    application, named{" "}
+                    <font className="bold_project_article_section_style">
+                      Microsoft.Windows.SDK.Contracts
+                    </font>
+                    {". "}
+                    <br />
+                    <br />
+                    <br />
+                  </article>
+                  <CodeSnippet
+                    file={online_speech_recognition_file}
+                    language="csharp"
+                  />
+                  <article className="project_article_style">
+                    In the code snippet shown above is shown the implementation
+                    of the online speech recognition engine in the{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    main application.
+                    <font className="bold_project_article_section_style"></font>{" "}
+                  </article>
+                  <article className="project_article_style">
+                    The online speech recogniser's operation is fulfilled by a{" "}
+                    <font className="bold_project_article_section_style">
+                      Task{"<bool>"}
+                    </font>{" "}
+                    method named{" "}
+                    <font className="bold_project_article_section_style">
+                      Initiate_The_Online_Speech_Recognition_Engine()
+                    </font>
+                    . This is done in order to run the speech recognition
+                    operation on a different thread within the application's
+                    default thread pool in an asynchronous manner.
+                  </article>
+                  <CodeSnippet
+                    file={online_speech_recogniser_method}
+                    language="csharp"
+                  />
+                  <article className="project_article_style">
+                    The online speech recogniser object is put inside a{" "}
+                    <font className="bold_project_article_section_style">
+                      using
+                    </font>{" "}
+                    statement in order ensure its deallocation from the{" "}
+                    <font className="bold_project_article_section_style">
+                      RAM
+                    </font>{" "}
+                    memory after the speech recognition operation finished. Its
+                    active memory deallocation is performed by{" "}
+                    <font className="bold_project_article_section_style">
+                      Dispose()
+                    </font>{" "}
+                    method calls performed inside the method on the online
+                    speech recogniser object.
+                  </article>
+                  <CodeSnippet
+                    file={online_speech_recognition_object}
+                    language="csharp"
+                  />
+                  <article className="project_article_style">
+                    After the speech recogniser object is initiated, multiple
+                    parameters are set regarding the way it is proceeding with
+                    the speech recognition operation. The first set of
+                    parameters set are the degree of accuracy with which the
+                    operation is performed and the speech recogntion mode. The
+                    degree of accuracy is set by using an enum inside the speech
+                    recogniser library and assigning it to the{" "}
+                    <font className="bold_project_article_section_style">
+                      'Probability'
+                    </font>{" "}
+                    attribute of the speech recogniser object. Then the speech
+                    recognition mode of operation is set by adding a{" "}
+                    <font className="bold_project_article_section_style">
+                      'SpeechRecognitionTopicConstraint'
+                    </font>{" "}
+                    object in the contraint list attribute field of the speech
+                    recogniser object. The{" "}
+                    <font className="bold_project_article_section_style">
+                      'SpeechRecognitionTopicConstraint'
+                    </font>{" "}
+                    object has set as the mode of operation the speech
+                    recognition mode{" "}
+                    <font className="bold_project_article_section_style">
+                      'web-search'
+                    </font>{" "}
+                    . This mode allows for words to be recognised in a manner
+                    that is optimal for web search related tasks. After the
+                    aformetioned parameters are set, a compilation of the
+                    constraints is done in oreder to set the speech recogniser
+                    in the previously mentioned speech recognition mode, by
+                    calling the{" "}
+                    <font className="bold_project_article_section_style">
+                      CompileConstraintsAsync()
+                    </font>{" "}
+                    method.
+                  </article>
+                  <CodeSnippet
+                    file={online_speech_recogniser_topic_constraints}
+                    language="csharp"
+                  />
+                  <article className="project_article_style">
+                    The final set of parameters set are the timeout proprieties
+                    of the speech recognition engine. The timeots regarding the
+                    interval of silence before the user is giving input and
+                    background noise are set to 9 seconds.
+                  </article>
+                  <CodeSnippet
+                    file={online_speech_recogniser_timeout_proprieties}
+                    language="csharp"
+                  />
+                  <article className="project_article_style">
+                    If the parameters mentioned above are successfully set, the
+                    speech recogniser speech recognition operation by calling
+                    the{" "}
+                    <font className="bold_project_article_section_style">
+                      RecognizeAsync()
+                    </font>{" "}
+                    and storing the result of the operation in a{" "}
+                    <font className="bold_project_article_section_style">
+                      SpeechRecognitionResult
+                    </font>{" "}
+                    object.
+                  </article>
+                  <CodeSnippet
+                    file={online_speech_recogniser_speech_recognition_operation}
+                    language="csharp"
+                  />
+                  <article className="project_article_style">
+                    If the operation is successful, the result string is
+                    extracted from the aforementioned object and passed to a ,
+                    non-machine learning approach, natural language
+                    understanding engine within the application.
+                  </article>
                   {/* // END */}
+                  <h2 className="project_sub_title_style">
+                    Wake word engine control mechanism
+                  </h2>
+                  <article className="project_article_style">
+                    The wake word engine is implemented in{" "}
+                    <font className="bold_project_article_section_style">
+                      Python
+                    </font>{" "}
+                    and the main application is implemented in{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>
+                    , and as a result, the wake word engine must be run as a
+                    child process of the main application. To do this a control
+                    mechanism had to be implemented to control when the wake
+                    word engine starts, stops, and how the information is
+                    transmitted between the main application and the{" "}
+                    <font className="bold_project_article_section_style">
+                      Python
+                    </font>{" "}
+                    child process. When the wake word engine starts and stops
+                    are controlled externally by the user by pressing the
+                    microphone button in the application graphical user
+                    interface.
+                  </article>
+                  <img className="description_image" src={Eva_Mic_Highlight} />
+                  <br />
+                  <br />
+                  <br />
+                  <CodeSnippet
+                    file={wake_word_engine_startup}
+                    language="csharp"
+                  />
+                  <article className="project_article_style">
+                    Internally, the main application is starting or stopping the
+                    child process according to the user selected state. When the
+                    user starts the application, the{" "}
+                    <font className="bold_project_article_section_style">
+                      Task{"<bool>"}
+                    </font>{" "}
+                    method{" "}
+                    <font className="bold_project_article_section_style">
+                      Start_The_Wake_Word_Engine()
+                    </font>{" "}
+                    is called in order to start the wake word engine process. A{" "}
+                    <font className="bold_project_article_section_style">
+                      Process
+                    </font>{" "}
+                    object is created in order to facilitate the initiation and
+                    controll of the wake word engine to be started as a child
+                    process. A multitude of parameters of the aforementioned
+                    object are set in order to dictate the behaviour of the wake
+                    word engine. A part of these parameters dictate that the
+                    window of the child process must be hidden{" "}
+                    <font className="bold_project_article_section_style">
+                      ( inivisible )
+                    </font>
+                    , and the child process{" "}
+                    <font className="bold_project_article_section_style">
+                      STDIN
+                    </font>
+                    ,{" "}
+                    <font className="bold_project_article_section_style">
+                      STDOUT
+                    </font>
+                    ,{" "}
+                    <font className="bold_project_article_section_style">
+                      STDER
+                    </font>{" "}
+                    input/output streams should be redirected from the child
+                    process and OS, to the child process to the main
+                    application. The aforemantioned fact translates further in
+                    the fact that the input, output, and error messages of the
+                    child process must be send or received to and from the main
+                    application, not the OS itself. The rest of the parameters
+                    dictate where is the location and file name of the process
+                    to be started and the arguments used to initiate the
+                    process. The file to be initiated as a process is the python
+                    interpreter and the argument passed to it, which in this
+                    situation is{" "}
+                    <font className="bold_project_article_section_style">
+                      main.py
+                    </font>{" "}
+                    is the name of the{" "}
+                    <font className="bold_project_article_section_style">
+                      Python
+                    </font>{" "}
+                    script that is used to run the wake word engine. In order to
+                    run{" "}
+                    <font className="bold_project_article_section_style">
+                      Python
+                    </font>{" "}
+                    scripts inside the main application's environment a{" "}
+                    <font className="bold_project_article_section_style">
+                      Python
+                    </font>{" "}
+                    virual environment had to be created and multiple
+                    dependencies such as the speech recognition library had to
+                    be installed within this environment. The virtual
+                    environment was created using the{" "}
+                    <font className="bold_project_article_section_style">
+                      python -m venv PATH_TO_APPLICATION
+                    </font>{" "}
+                    command inside the main application's directory.
+                    <br />
+                    <br />
+                    <br />
+                    In order to stop the wake word engine the{" "}
+                    <font className="bold_project_article_section_style">
+                      Task{"<bool>"}
+                    </font>{" "}
+                    method{" "}
+                    <font className="bold_project_article_section_style">
+                      python -m venv PATH_TO_APPLICATION
+                    </font>{" "}
+                    is called.
+                  </article>
 
-                  {/* <article className="project_article_style">
-                    Eva is an AI assistant built with the purpose of helping
-                    users multi-task. Eva is built using a set of different
-                    technologies and techniques that are explained in detail in
-                    this article.
-                  </article> */}
+
+
+                  <CodeSnippet file={wake_word_engine_shutdown} language="csharp"/>
+
+                  {/* 
+                  <article className="project_article_style">
+
+                  </article> 
+
+
+                  <div className="small_non_adjustable_image_container_style">
+                    
+                  </div>
+
+                  <font className="bold_project_article_section_style">
+
+                  </font>{" "}
+                  
+
+                  <h2 className="project_sub_title_style">
+
+                  </h2>
+                  */}
                 </div>
               </div>
             </div>
@@ -493,3 +876,5 @@ window.addEventListener("beforeload", (event) => {
     clearInterval(terminal_startup);
   } catch {}
 });
+
+

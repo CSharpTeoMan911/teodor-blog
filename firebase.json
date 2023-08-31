@@ -7,6 +7,10 @@
         "destination": "/sitemap.xml"
       },
       {
+        "source": "/website_sitemap.xml",
+        "destination": "/website_sitemap.xml"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
