@@ -1,37 +1,17 @@
 import "./contacts_page_style.css";
 import "./main_style.css";
+import { Terminal_Startup } from "./GUI_Animations";
+
 import youtube from "./youtube.png";
 import linkedin from "./linkedin.png";
 import facebook from "./facebook.png";
 import gmail from "./gmail.png";
 
-
-var terminal_startup = undefined;
-var width = 0;
-
-function Terminal_Startup() {
-  var main_bio_div = document.getElementById("personal_contacts_div");
-
-  try {
-    if (main_bio_div !== null || main_bio_div !== undefined) {
-      if (width < 100) {
-        width++;
-        var set_width = width + "%";
-        main_bio_div.style.width = set_width;
-      } else {
-        clearInterval(terminal_startup);
-      }
-    }
-  } catch {
-    clearInterval(terminal_startup);
-  }
-}
-
 export default function Render_Contacts_Page() {
   return (
     <div className="main_page_div_style">
       <div className="contacts_div_style">
-        <div id="personal_contacts_div" className="personal_contacts_div_style">
+        <div id="personal_details_div" className="personal_details_div_style">
           <div id="crt_div_screen" className="crt_div_screen_style">
             <div id="crt_div" className="crt_div_style">
               <div className="crt_content_div_style">
@@ -40,14 +20,18 @@ export default function Render_Contacts_Page() {
                     teodor@teodor-IdeaPad-3-14ITL05:/bin$&nbsp;
                   </font>
                   init -contacts
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
                 </article>
 
                 <div className="contact_unit_style">
                   <div className="contact_classifier_div_style_container">
                     <div className="contact_classifier_div_style">
-                        <img className="contacts_img_style" alt="youtube logo" src={youtube}/>
+                      <img
+                        className="contacts_img_style"
+                        alt="youtube logo"
+                        src={youtube}
+                      />
                     </div>
                   </div>
                   <p className="contact_classifier_value_style">
@@ -64,7 +48,11 @@ export default function Render_Contacts_Page() {
                 <div className="contact_unit_style">
                   <div className="contact_classifier_div_style_container">
                     <div className="contact_classifier_div_style">
-                        <img className="contacts_img_style" alt="linkedin logo" src={linkedin}/>
+                      <img
+                        className="contacts_img_style"
+                        alt="linkedin logo"
+                        src={linkedin}
+                      />
                     </div>
                   </div>
                   <p className="contact_classifier_value_style">
@@ -81,7 +69,11 @@ export default function Render_Contacts_Page() {
                 <div className="contact_unit_style">
                   <div className="contact_classifier_div_style_container">
                     <div className="contact_classifier_div_style">
-                        <img className="contacts_img_style" alt="facebook logo" src={facebook}/>
+                      <img
+                        className="contacts_img_style"
+                        alt="facebook logo"
+                        src={facebook}
+                      />
                     </div>
                   </div>
                   <p className="contact_classifier_value_style">
@@ -98,11 +90,15 @@ export default function Render_Contacts_Page() {
                 <div className="contact_unit_style">
                   <div className="contact_classifier_div_style_container">
                     <div className="contact_classifier_div_style">
-                        <img className="contacts_img_style" alt="gmail logo" src={gmail}/>
+                      <img
+                        className="contacts_img_style"
+                        alt="gmail logo"
+                        src={gmail}
+                      />
                     </div>
                   </div>
                   <p className="contact_classifier_value_style">
-                  teodormihail07@gmail.com
+                    teodormihail07@gmail.com
                   </p>
                 </div>
               </div>
@@ -114,18 +110,4 @@ export default function Render_Contacts_Page() {
   );
 }
 
-terminal_startup = setInterval(() => {
-  Terminal_Startup();
-}, 10);
-
-window.addEventListener("beforeunload", (event) => {
-  try {
-    clearInterval(terminal_startup);
-  } catch {}
-});
-
-window.addEventListener("beforeload", (event) => {
-  try {
-    clearInterval(terminal_startup);
-  } catch {}
-});
+Terminal_Startup("contacts window");

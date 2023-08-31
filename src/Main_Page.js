@@ -1,71 +1,10 @@
 import "./home_page_style.css";
 import "./main_style.css";
 import teodor from "./teodor.png";
+import { Terminal_Startup, Name_Animation } from "./GUI_Animations";
 
-var terminal_startup = undefined;
-var width = 0;
-
-var name_animation = undefined;
-var name_elements = [
-  "T",
-  "e",
-  "o",
-  "d",
-  "o",
-  "r",
-  "&#160;",
-  "M",
-  "i",
-  "h",
-  "a",
-  "i",
-  "l",
-];
-var name_elements_index = 0;
-var name_value = "";
-
-function Name_Animation() {
-  try {
-    var name = document.getElementById("name");
-
-    if (name !== null || name !== undefined) {
-      if (name_elements_index < name_elements.length) {
-        if (name_elements_index === 0 && name.innerHTML.length > 0) {
-          name_value = "";
-        }
-        name_value += name_elements[name_elements_index];
-        name_elements_index++;
-      } else {
-        clearInterval(name_animation);
-      }
-
-      name.innerHTML = name_value;
-    }
-  } catch {
-    clearInterval(name_animation);
-  }
-}
-
-function Terminal_Startup() {
-  var main_bio_div = document.getElementById("personal_bio_div");
-
-  try {
-    if (main_bio_div !== null || main_bio_div !== undefined) {
-      if (width < 100) {
-        width++;
-        var set_width = width + "%";
-        main_bio_div.style.width = set_width;
-      } else {
-        clearInterval(terminal_startup);
-      }
-    }
-  } catch {
-    clearInterval(terminal_startup);
-  }
-}
 
 export default function Render_Main_Page() {
-  console.log(process.env.MATRIX_GIF)
   return (
     <div className="main_page_div_style">
       <img className="matrix_img_style" alt="matrix animation background"/>
@@ -81,7 +20,7 @@ export default function Render_Main_Page() {
           <p id="name" className="name_style"></p>
         </div>
 
-        <div id="personal_bio_div" className="personal_bio_div_style">
+        <div id="personal_details_div" className="personal_details_div_style">
           <div id="crt_div_screen" className="crt_div_screen_style">
             <div id="crt_div" className="crt_div_style">
               <div className="crt_content_div_style">
@@ -440,24 +379,5 @@ export default function Render_Main_Page() {
   );
 }
 
-terminal_startup = setInterval(() => {
-  Terminal_Startup();
-}, 10);
-
-name_animation = setInterval(() => {
-  Name_Animation();
-}, 200);
-
-window.addEventListener("beforeunload", (event) => {
-  try {
-    clearInterval(terminal_startup);
-    clearInterval(name_animation);
-  } catch {}
-});
-
-window.addEventListener("beforeload", (event) => {
-  try {
-    clearInterval(terminal_startup);
-    clearInterval(name_animation);
-  } catch {}
-});
+Terminal_Startup("main window");
+Name_Animation();

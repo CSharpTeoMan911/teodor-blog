@@ -1,26 +1,6 @@
 import "./projects_page_style.css";
 import "./main_style.css";
-
-var terminal_startup = undefined;
-var width = 0;
-
-function Terminal_Startup() {
-  var main_bio_div = document.getElementById("personal_projects_div");
-
-  try {
-    if (main_bio_div !== null || main_bio_div !== undefined) {
-      if (width < 100) {
-        width++;
-        var set_width = width + "%";
-        main_bio_div.style.width = set_width;
-      } else {
-        clearInterval(terminal_startup);
-      }
-    }
-  } catch {
-    clearInterval(terminal_startup);
-  }
-}
+import { Terminal_Startup } from "./GUI_Animations";
 
 function Project_Path_Selection(path) {
   window.location.pathname = "/" + path;
@@ -30,7 +10,7 @@ export default function Render_Projects_Page() {
   return (
     <div className="main_page_div_style">
       <div className="contacts_div_style">
-        <div id="personal_projects_div" className="personal_projects_div_style">
+        <div id="personal_details_div" className="personal_details_div_style">
           <div id="crt_div_screen" className="crt_div_screen_style">
             <div id="crt_div" className="crt_div_style">
               <div className="crt_content_div_style">
@@ -242,18 +222,4 @@ export default function Render_Projects_Page() {
   );
 }
 
-terminal_startup = setInterval(() => {
-  Terminal_Startup();
-}, 10);
-
-window.addEventListener("beforeunload", (event) => {
-  try {
-    clearInterval(terminal_startup);
-  } catch {}
-});
-
-window.addEventListener("beforeload", (event) => {
-  try {
-    clearInterval(terminal_startup);
-  } catch {}
-});
+Terminal_Startup("projects window")

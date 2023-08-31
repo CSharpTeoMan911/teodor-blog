@@ -21,6 +21,21 @@ div.navigation_bar_style
     position: fixed;
 }
 
+div.personal_details_div_style
+{
+    margin-top: 10vmin;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    width: 95%;
+    height: 90vh;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+}
+
 
 div.main_menu_div_style
 {
