@@ -47,7 +47,21 @@ export default function Render_EVA_AI_Page() {
                     Eva is an AI assistant built with the purpose of helping
                     users multi-task. Eva is built using a set of different
                     technologies and techniques that are explained in detail in
-                    this article.
+                    this article. You can find the code for {"Eva "}
+                    <a
+                      className="link_style"
+                      href="https://github.com/CSharpTeoMan911/Eva"
+                    >
+                      here
+                    </a>
+                    . If you want to download Eva as a standalone application,
+                    you can find the installer{" "}
+                    <a
+                      className="link_style"
+                      href="https://sourceforge.net/projects/eva-ai/"
+                    >
+                      here
+                    </a>.
                   </article>
                   {/* // END */}
                   {/* Tech stack section
@@ -663,10 +677,9 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       Python
                     </font>{" "}
-                    child process. When the wake word engine starts and stops
-                    is controlled externally by the user by pressing the
-                    microphone button in the application graphical user
-                    interface.
+                    child process. When the wake word engine starts and stops is
+                    controlled externally by the user by pressing the microphone
+                    button in the application graphical user interface.
                   </article>
                   <img
                     className="description_image"

@@ -21,6 +21,7 @@ export default function CodeSnippet(param) {
       customStyle={{
         boxShadow: "0px 5px 10px 0px rgba(207, 16, 16, 0.5)",
         borderRadius: "2vmin",
+        minHeight: "20vmin"
       }}
       showLineNumbers="true"
     >
