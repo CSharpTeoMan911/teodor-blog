@@ -12,6 +12,7 @@ import vosk_model from "./Vosk_Model.png";
 import python_vosk_file from "./python_vosk_file.txt";
 import python_vosk_file_snippet_1 from "./python_vosk_file_snippet_1.txt";
 import python_vosk_file_snippet_2 from "./python_vosk_file_snippet_2.txt";
+import vosk_audio_processing_snippet from "./vosk_audio_processing_snippet.txt";
 import online_speech_recognition_file from "./online_speech_recognition_file.txt";
 import online_speech_recogniser_method from "./online_speech_recogniser_method.txt";
 import online_speech_recognition_object from "./online_speech_recognition_object.txt";
@@ -20,7 +21,7 @@ import online_speech_recogniser_timeout_proprieties from "./online_speech_recogn
 import online_speech_recogniser_speech_recognition_operation from "./online_speech_recogniser_speech_recognition_operation.txt";
 import wake_word_engine_startup from "./wake_word_engine_startup.txt";
 import wake_word_engine_shutdown from "./wake_word_engine_shutdown.txt";
-
+import natural_language_understanding_engine from "./natural_language_understanding_engine.txt";
 
 export default function Render_EVA_AI_Page() {
   return (
@@ -193,12 +194,12 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       Vosk
                     </font>{" "}
-                    to fulfil the role of an offline in-proc speech recognition
-                    engine {"( wake word engine )"}is due to multiple factors.
-                    After I took into consideration the fact that application's
-                    wake word engine must be lightweight, fast, and accurate,
-                    and after countless implementations of various speech
-                    recognition engines, the results concluded that{" "}
+                    to fulfil the role of an offline wake word engine is due to
+                    multiple factors. After I took into consideration the fact
+                    that application's wake word engine must be lightweight,
+                    fast, and accurate, and after countless implementations of
+                    various speech recognition engines, the results concluded
+                    that{" "}
                     <font className="bold_project_article_section_style">
                       Vosk
                     </font>{" "}
@@ -211,12 +212,12 @@ export default function Render_EVA_AI_Page() {
                   />
                   <article className="project_article_style">
                     The model used by the Vosk model in the wake word
-                    configuration 40MB model, because it is the smallest, thus
-                    having the least amount of impact on the user's machine CPU,
-                    RAM,and GPU usage, and also having the fastest processing
-                    and response time, characteristics deemed necessary for a
-                    wake word engine. The wake word engine is implemented in
-                    Python using the{" "}
+                    configuration, is the 40MB model, because it is the
+                    smallest, thus having the least amount of impact on the
+                    user's machine CPU, RAM,and GPU usage, and also having the
+                    fastest processing and response time, characteristics deemed
+                    necessary for a wake word engine. The wake word engine is
+                    implemented in Python using the{" "}
                     <font className="bold_project_article_section_style">
                       'vosk api'
                     </font>{" "}
@@ -229,24 +230,24 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       'Wake_Word_Engine_Thread_Management'
                     </font>{" "}
-                    method and the{" "}
+                    function and the{" "}
                     <font className="bold_project_article_section_style">
                       'wake_word_operation_stdout_stream'
                     </font>{" "}
-                    method. The{" "}
+                    function. The{" "}
                     <font className="bold_project_article_section_style">
                       'Wake_Word_Engine_Thread_Management'
                     </font>{" "}
-                    method is responsible for the initiation of the wake word
+                    function is responsible for the initiation of the wake word
                     engine, the speech recognition model load, and the wake word
                     detection opertions. In order for the speech recognition
                     model to be loaded in the speech recognition engine, the
-                    path of the speech recognition model is extracted passed to
+                    path of the speech recognition model is extracted, passed to
                     the constructor of a{" "}
                     <font className="bold_project_article_section_style">
                       Vosk
                     </font>{" "}
-                    library specific class called{" "}
+                    library specific class, called{" "}
                     <font className="bold_project_article_section_style">
                       Model
                     </font>
@@ -291,7 +292,7 @@ export default function Render_EVA_AI_Page() {
                     method and passing in as parameters of the method the number
                     of audio channels, the audio format encoding{" "}
                     <font className="bold_project_article_section_style">
-                      {"("} which in this scenario is a 16 bits audio format{" "}
+                      {"("} which in this scenario is a 16000 bits audio format{" "}
                       {")"}
                     </font>
                     , the sample rate{" "}
@@ -312,7 +313,16 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       {"("} the device's microphone {")"}
                     </font>
-                    . After the audio stream is initialised and started, a while
+                    .
+                  </article>
+
+                  <CodeSnippet
+                    file={vosk_audio_processing_snippet}
+                    language={"python"}
+                  />
+
+                  <article className="project_article_style">
+                    After the audio stream is initialised and started, a while
                     loop starts in order to process all the audio data read by
                     the{" "}
                     <font className="bold_project_article_section_style">
@@ -348,6 +358,7 @@ export default function Render_EVA_AI_Page() {
                     </font>{" "}
                     stream.
                   </article>
+
                   <CodeSnippet
                     file={python_vosk_file_snippet_1}
                     language={"python"}
@@ -370,53 +381,6 @@ export default function Render_EVA_AI_Page() {
                       STDIN
                     </font>{" "}
                     stream by using a print statement containing the message.
-                    The possibility of sending a message through the{" "}
-                    <font className="bold_project_article_section_style">
-                      STDIN
-                    </font>{" "}
-                    stream using a print statement is possible due to the fact
-                    that the{" "}
-                    <font className="bold_project_article_section_style">
-                      Python
-                    </font>{" "}
-                    script was started by the main{" "}
-                    <font className="bold_project_article_section_style">
-                      C#
-                    </font>{" "}
-                    application and when the{" "}
-                    <font className="bold_project_article_section_style">
-                      Python
-                    </font>{" "}
-                    script was started by the main{" "}
-                    <font className="bold_project_article_section_style">
-                      C#
-                    </font>{" "}
-                    application, the
-                    <font className="bold_project_article_section_style">
-                      {" "}
-                      Python
-                    </font>{" "}
-                    script's{" "}
-                    <font className="bold_project_article_section_style">
-                      STDIN
-                    </font>{" "}
-                    and{" "}
-                    <font className="bold_project_article_section_style">
-                      STDOUT
-                    </font>{" "}
-                    streams were bypassed through the main{" "}
-                    <font className="bold_project_article_section_style">
-                      C#
-                    </font>{" "}
-                    application, meaning that all input/output operations of the{" "}
-                    <font className="bold_project_article_section_style">
-                      Python
-                    </font>{" "}
-                    application are marshalled through the main{" "}
-                    <font className="bold_project_article_section_style">
-                      C#
-                    </font>{" "}
-                    application.
                   </article>
                   <CodeSnippet
                     file={python_vosk_file_snippet_2}
@@ -523,10 +487,10 @@ export default function Render_EVA_AI_Page() {
                       UWP
                     </font>{" "}
                     applications cannot interact with the rest of the OS. This
-                    security fature is detremental would be detremental to Eva
-                    because it has to execute commands, many of which will imply
-                    the interaction with the operating system. The workarround
-                    to this sollution is to import{" "}
+                    security feature would be detremental to Eva because it has
+                    to execute commands, many of which will imply the
+                    interaction with the operating system. The workarround to
+                    this sollution is to import{" "}
                     <font className="bold_project_article_section_style">
                       UWP
                     </font>{" "}
@@ -633,9 +597,9 @@ export default function Render_EVA_AI_Page() {
                     . This mode allows for words to be recognised in a manner
                     that is optimal for web search related tasks. After the
                     aformetioned parameters are set, a compilation of the
-                    constraints is done in oreder to set the speech recogniser
-                    in the previously mentioned speech recognition mode, by
-                    calling the{" "}
+                    constraints is done in order to set the speech recogniser in
+                    the previously mentioned speech recognition mode, by calling
+                    the{" "}
                     <font className="bold_project_article_section_style">
                       CompileConstraintsAsync()
                     </font>{" "}
@@ -657,12 +621,12 @@ export default function Render_EVA_AI_Page() {
                   />
                   <article className="project_article_style">
                     If the parameters mentioned above are successfully set, the
-                    speech recogniser speech recognition operation by calling
-                    the{" "}
+                    speech recogniser speech recognition operation is started by
+                    calling the{" "}
                     <font className="bold_project_article_section_style">
                       RecognizeAsync()
                     </font>{" "}
-                    and storing the result of the operation in a{" "}
+                    method and storing the result of the operation in a{" "}
                     <font className="bold_project_article_section_style">
                       SpeechRecognitionResult
                     </font>{" "}
@@ -674,7 +638,7 @@ export default function Render_EVA_AI_Page() {
                   />
                   <article className="project_article_style">
                     If the operation is successful, the result string is
-                    extracted from the aforementioned object and passed to a ,
+                    extracted from the aforementioned object and passed to a,
                     non-machine learning approach, natural language
                     understanding engine within the application.
                   </article>
@@ -700,11 +664,15 @@ export default function Render_EVA_AI_Page() {
                       Python
                     </font>{" "}
                     child process. When the wake word engine starts and stops
-                    are controlled externally by the user by pressing the
+                    is controlled externally by the user by pressing the
                     microphone button in the application graphical user
                     interface.
                   </article>
-                  <img className="description_image" src={Eva_Mic_Highlight} />
+                  <img
+                    className="description_image"
+                    alt="microphone usage highlight"
+                    src={Eva_Mic_Highlight}
+                  />
                   <br />
                   <br />
                   <br />
@@ -749,7 +717,7 @@ export default function Render_EVA_AI_Page() {
                       STDER
                     </font>{" "}
                     input/output streams should be redirected from the child
-                    process and OS, to the child process to the main
+                    process to the OS, to the child process to the main
                     application. The aforemantioned fact translates further in
                     the fact that the input, output, and error messages of the
                     child process must be send or received to and from the main
@@ -796,12 +764,125 @@ export default function Render_EVA_AI_Page() {
                     </font>{" "}
                     is called.
                   </article>
-
+                  <article className="project_article_style">
+                    To stop the{" "}
+                    <font className="bold_project_article_section_style">
+                      Python
+                    </font>{" "}
+                    sub-process the main{" "}
+                    <font className="bold_project_article_section_style">
+                      C#
+                    </font>{" "}
+                    application must interact with {"the "}
+                    <font className="bold_project_article_section_style">
+                      WMI (Windows Management Interface)
+                    </font>
+                    {". "}
+                    {" The "}
+                    <font className="bold_project_article_section_style">
+                      WMI
+                    </font>{" "}
+                    is a management interface of the Windows operating system
+                    through which processes and different aspects of the
+                    operating system can be controlled through{" "}
+                    <font className="bold_project_article_section_style">
+                      SQL
+                    </font>{" "}
+                    queries given to this management interface. The{" "}
+                    <font className="bold_project_article_section_style">
+                      Task{"<bool>"}
+                    </font>{" "}
+                    method{" "}
+                    <font className="bold_project_article_section_style">
+                      Stop_The_Wake_Word_Engine
+                    </font>{" "}
+                    must be called in order to kill all child processes related
+                    to the wake word engine's operation.
+                  </article>
                   <CodeSnippet
                     file={wake_word_engine_shutdown}
                     language="csharp"
                   />
+                  <h2 className="project_sub_title_style">
+                    Natural language understanding engine
+                  </h2>
+                  <article className="project_article_style">
+                    Eva uses a natural language understanding engine built using
+                    a non-machine learning approach. It was built like this due
+                    to the fact that it needs to understand a linited number of
+                    commands, so using a machine learning approach will be
+                    expensive from a computing point of view in relation with
+                    the benefits provided.
+                  </article>
+                  <CodeSnippet
+                    file={natural_language_understanding_engine}
+                    language="csharp"
+                  />
+                  <article className="project_article_style">
+                    The natural languge understanding engine has 3 stages, and
+                    these are explained below. The pre-processing stage, is the
+                    stage where the input data is verified for key tokens in
+                    specific locations. For example let's take the command{" "}
+                    <font className="bold_project_article_section_style">
+                      'open chrome'
+                    </font>{" "}
+                    , becuase it is containg the token{" "}
+                    <font className="bold_project_article_section_style">
+                      'open'
+                    </font>{" "}
+                    and this token is the first token in the sentence, the
+                    classifier establishes that the command parameter is{" "}
+                    <font className="bold_project_article_section_style">
+                      'open [ APPLICATION ]'
+                    </font>{" "}
+                    , which signals that the command to be executed will open an
+                    application. The processing stage, is the stage where the
+                    values required by the variables of the commands are
+                    extracted. For example let's take the command parameter{" "}
+                    <font className="bold_project_article_section_style">
+                      'search [ CONTENT ] on [ WEB APPLICATION ]'
+                    </font>
+                    {". "} The variables in this case are{" "}
+                    <font className="bold_project_article_section_style">
+                      '[ CONTENT ]'
+                    </font>{" "}
+                    and{" "}
+                    <font className="bold_project_article_section_style">
+                      '[ WEB APPLICATION ]'
+                    </font>
+                    {". "} The engine must search for the values of this
+                    variables at specified indexes and use them to execute the
+                    command. The third and final stage is the post-processing
+                    stage. In this stage the extracted values of the variables
+                    are validated and processed in order for the command
+                    associated with them to be executed.
+                  </article>
 
+                  <img
+                    className="description_image"
+                    alt="speech recognition mechanism"
+                    src="https://user-images.githubusercontent.com/87245086/234992408-7ec94b0f-4b13-483a-8182-2a00b332d6af.png"
+                  />
+
+                  <article className="project_article_style">
+                    The average and worst time compxity is{" "}
+                    <font className="bold_project_article_section_style">
+                      'O(N)'
+                    </font>{" "}
+                    becuase every character within the sentence must be
+                    processed, in order for the command to be executed. The best
+                    time complexity is{" "}
+                    <font className="bold_project_article_section_style">
+                      'O N - (N - (ci + 1))'
+                    </font>
+                    {", "}where{" "}
+                    <font className="bold_project_article_section_style">
+                      'ci'
+                    </font>{" "}
+                    is the current index where the input did not match any
+                    command pattern or where the value of the variables did not
+                    match any valid value.
+                  </article>
                   {/* 
                   <article className="project_article_style">
 

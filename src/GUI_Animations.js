@@ -200,7 +200,7 @@ async function Terminal_Startup_Animation() {
 export async function Terminal_Startup() {
   terminal_startup = await setInterval(async () => {
     await Terminal_Startup_Animation();
-  }, 100);
+  }, 70);
 }
 
 // [ END ]
