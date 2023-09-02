@@ -1,6 +1,6 @@
-import "./home_page_style.css";
-import "./main_style.css";
-import teodor from "./teodor.png";
+import "./Styles/home_page_style.css";
+import "./Styles/main_style.css";
+import teodor from "./Images/teodor.png";
 import { Terminal_Startup, Name_Animation } from "./GUI_Animations";
 
 

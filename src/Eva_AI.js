@@ -1,14 +1,14 @@
 import CodeSnippet from "./CodeSnippet";
 import { Terminal_Startup } from "./GUI_Animations";
 
-import "./personal_projects_style.css";
-import "./main_style.css";
+import "./Styles/personal_projects_style.css";
+import "./Styles/main_style.css";
 
 import { useEffect } from "react";
 
-import Eva_Mic_Highlight from "./Eva_Mic_Highlight.png";
+import Eva_Mic_Highlight from "./Images/Eva_Mic_Highlight.png";
 
-import vosk_model from "./Vosk_Model.png";
+import vosk_model from "./Images/Vosk_Model.png";
 import python_vosk_file from "./Eva_Code_Snippets/python_vosk_file.txt";
 import python_vosk_file_snippet_1 from "./Eva_Code_Snippets/python_vosk_file_snippet_1.txt";
 import python_vosk_file_snippet_2 from "./Eva_Code_Snippets/python_vosk_file_snippet_2.txt";

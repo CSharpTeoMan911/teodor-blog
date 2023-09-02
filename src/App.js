@@ -1,7 +1,7 @@
-import "./main_style.css";
+import "./Styles/main_style.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import right from "./right.png";
+import right from "./Images/right.png";
 import { useState, useEffect } from "react";
 
 import Render_Main_Page from "./Main_Page";

@@ -186,7 +186,7 @@ div.crt_content_div_style
     overflow-x: auto;
     width: 100%;
     height:100%;
-    background-image: url(screen_filter.png);
+    background-image: url(../Images/screen_filter.png);
     background-repeat: no-repeat;
     background-size:cover;
 }

@@ -1,11 +1,11 @@
-import "./contacts_page_style.css";
-import "./main_style.css";
+import "./Styles/contacts_page_style.css";
+import "./Styles/main_style.css";
 import { Terminal_Startup } from "./GUI_Animations";
 
-import youtube from "./youtube.png";
-import linkedin from "./linkedin.png";
-import facebook from "./facebook.png";
-import gmail from "./gmail.png";
+import youtube from "./Images/youtube.png";
+import linkedin from "./Images/linkedin.png";
+import facebook from "./Images/facebook.png";
+import gmail from "./Images/gmail.png";
 
 export default function Render_Contacts_Page() {
   return (

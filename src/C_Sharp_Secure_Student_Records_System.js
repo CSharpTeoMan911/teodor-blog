@@ -3,8 +3,8 @@ import { Terminal_Startup } from "./GUI_Animations";
 
 import PageUnderDevelopment from "./PageUnderDevelopment";
 
-import "./personal_projects_style.css";
-import "./main_style.css";
+import "./Styles/personal_projects_style.css";
+import "./Styles/main_style.css";
 
 export default function Render_C_Sharp_Secure_Student_Records_System() {
   return (

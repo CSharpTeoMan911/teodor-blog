@@ -2,8 +2,8 @@ import CodeSnippet from "./CodeSnippet";
 import { Terminal_Startup } from "./GUI_Animations";
 import PageUnderDevelopment from "./PageUnderDevelopment";
 
-import "./personal_projects_style.css";
-import "./main_style.css";
+import "./Styles/personal_projects_style.css";
+import "./Styles/main_style.css";
 
 import Y2F_main_application_interface from "./Y2F_Code_Snippets/Y2F_main_application_interface.txt";
 import Y2F_YouTube_video_download from "./Y2F_Code_Snippets/Y2F_YouTube_video_download.txt";

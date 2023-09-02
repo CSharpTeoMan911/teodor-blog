@@ -1,5 +1,5 @@
-import "./projects_page_style.css";
-import "./main_style.css";
+import "./Styles/projects_page_style.css";
+import "./Styles/main_style.css";
 import { Terminal_Startup } from "./GUI_Animations";
 
 function Project_Path_Selection(path) {

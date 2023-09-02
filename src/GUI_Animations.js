@@ -9,8 +9,8 @@
 //   }
 // });
 
-import right from "./right.png";
-import down from "./down.png";
+import right from "./Images/right.png";
+import down from "./Images/down.png";
 
 // MAIN MENU ANIMATION VARIABLES
 //

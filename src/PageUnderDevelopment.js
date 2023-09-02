@@ -1,4 +1,4 @@
-import "./personal_projects_style.css";
+import "./Styles/personal_projects_style.css";
 
 export default function PageUnderDevelopment() {
   return (
