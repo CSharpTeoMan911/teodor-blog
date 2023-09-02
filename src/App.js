@@ -9,18 +9,18 @@ import Render_Projects_Page from "./Projects";
 import Render_Contacts_Page from "./Contacts";
 
 import { Expand_Or_Contract_Main_Menu, Expand_Main_Menu_Label, Contract_Main_Menu_Label } from "./GUI_Animations";
-import Render_Python_Student_Records_System_Page from "./Python_Student_Records_System";
-import Render_C_Sharp_Student_Records_System from "./C_Sharp_Student_Records_System";
-import Render_C_Sharp_Secure_Student_Records_System from "./C_Sharp_Secure_Student_Records_System";
-import Render_Cisco_Large_Network_DHCP_VOIP_TELNET from "./Cisco_Large_Network_DHCP_VOIP_TELNET";
-import Render_Cisco_Netwrok_DHCP_Voip from "./Cisco_Netwrok_DHCP_Voip";
-import Render_E_ChatGPT from "./E-ChatGPT";
-import Render_Smart_Event_Organiser from "./Smart_Event_Organiser";
-import Render_TeodorMihailBlog from "./TeodorMihailBlog";
-import Render_Transcryptor from "./Transcryptor";
-import Render_Y2F from "./Y2F";
-import Render_YouTube_2_File from "./YouTube_2_File";
-import Render_EVA_AI_Page from "./Eva_AI";
+import Render_Python_Student_Records_System_Page from "./Personal_Projects_Modules/Python_Student_Records_System";
+import Render_C_Sharp_Student_Records_System from "./Personal_Projects_Modules/C_Sharp_Student_Records_System";
+import Render_C_Sharp_Secure_Student_Records_System from "./Personal_Projects_Modules/C_Sharp_Secure_Student_Records_System";
+import Render_Cisco_Large_Network_DHCP_VOIP_TELNET from "./Personal_Projects_Modules/Cisco_Large_Network_DHCP_VOIP_TELNET";
+import Render_Cisco_Netwrok_DHCP_Voip from "./Personal_Projects_Modules/Cisco_Netwrok_DHCP_Voip";
+import Render_E_ChatGPT from "./Personal_Projects_Modules/E-ChatGPT";
+import Render_Smart_Event_Organiser from "./Personal_Projects_Modules/Smart_Event_Organiser";
+import Render_TeodorMihailBlog from "./Personal_Projects_Modules/TeodorMihailBlog";
+import Render_Transcryptor from "./Personal_Projects_Modules/Transcryptor";
+import Render_Y2F from "./Personal_Projects_Modules/Y2F";
+import Render_YouTube_2_File from "./Personal_Projects_Modules/YouTube_2_File";
+import Render_EVA_AI_Page from "./Personal_Projects_Modules/Eva_AI";
 
 
 function Navigate_To_Page(page) {

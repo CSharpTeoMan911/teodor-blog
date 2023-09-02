@@ -1,12 +1,11 @@
-import CodeSnippet from "./CodeSnippet";
-import { Terminal_Startup } from "./GUI_Animations";
+import CodeSnippet from "../CodeSnippet";
+import { Terminal_Startup } from "../GUI_Animations";
+import PageUnderDevelopment from "../PageUnderDevelopment";
 
-import PageUnderDevelopment from "./PageUnderDevelopment";
+import "../Styles/personal_projects_style.css";
+import "../Styles/main_style.css";
 
-import "./Styles/personal_projects_style.css";
-import "./Styles/main_style.css";
-
-export default function Render_C_Sharp_Secure_Student_Records_System() {
+export default function Render_Transcryptor() {
   return (
     <div className="main_page_div_style">
       <div className="project_div_style">

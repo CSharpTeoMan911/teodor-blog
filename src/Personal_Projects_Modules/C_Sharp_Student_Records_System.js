@@ -1,11 +1,12 @@
-import CodeSnippet from "./CodeSnippet";
-import { Terminal_Startup } from "./GUI_Animations";
-import PageUnderDevelopment from "./PageUnderDevelopment";
+import CodeSnippet from "../CodeSnippet";
+import { Terminal_Startup } from "../GUI_Animations";
 
-import "./Styles/personal_projects_style.css";
-import "./Styles/main_style.css";
+import PageUnderDevelopment from "../PageUnderDevelopment";
 
-export default function Render_Python_Student_Records_System_Page() {
+import "../Styles/personal_projects_style.css";
+import "../Styles/main_style.css";
+
+export default function Render_C_Sharp_Student_Records_System() {
   return (
     <div className="main_page_div_style">
       <div className="project_div_style">

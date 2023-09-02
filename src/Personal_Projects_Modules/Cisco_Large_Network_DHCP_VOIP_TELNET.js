@@ -1,11 +1,12 @@
-import CodeSnippet from "./CodeSnippet";
-import { Terminal_Startup } from "./GUI_Animations";
-import PageUnderDevelopment from "./PageUnderDevelopment";
+import CodeSnippet from "../CodeSnippet";
+import { Terminal_Startup } from "../GUI_Animations";
 
-import "./Styles/personal_projects_style.css";
-import "./Styles/main_style.css";
+import PageUnderDevelopment from "../PageUnderDevelopment";
 
-export default function Render_Smart_Event_Organiser() {
+import "../Styles/personal_projects_style.css";
+import "../Styles/main_style.css";
+
+export default function Render_Cisco_Large_Network_DHCP_VOIP_TELNET() {
   return (
     <div className="main_page_div_style">
       <div className="project_div_style">
