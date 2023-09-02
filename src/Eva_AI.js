@@ -9,19 +9,19 @@ import { useEffect } from "react";
 import Eva_Mic_Highlight from "./Eva_Mic_Highlight.png";
 
 import vosk_model from "./Vosk_Model.png";
-import python_vosk_file from "./python_vosk_file.txt";
-import python_vosk_file_snippet_1 from "./python_vosk_file_snippet_1.txt";
-import python_vosk_file_snippet_2 from "./python_vosk_file_snippet_2.txt";
-import vosk_audio_processing_snippet from "./vosk_audio_processing_snippet.txt";
-import online_speech_recognition_file from "./online_speech_recognition_file.txt";
-import online_speech_recogniser_method from "./online_speech_recogniser_method.txt";
-import online_speech_recognition_object from "./online_speech_recognition_object.txt";
-import online_speech_recogniser_topic_constraints from "./online_speech_recogniser_topic_constraints.txt";
-import online_speech_recogniser_timeout_proprieties from "./online_speech_recogniser_timeout_proprieties.txt";
-import online_speech_recogniser_speech_recognition_operation from "./online_speech_recogniser_speech_recognition_operation.txt";
-import wake_word_engine_startup from "./wake_word_engine_startup.txt";
-import wake_word_engine_shutdown from "./wake_word_engine_shutdown.txt";
-import natural_language_understanding_engine from "./natural_language_understanding_engine.txt";
+import python_vosk_file from "./Eva_Code_Snippets/python_vosk_file.txt";
+import python_vosk_file_snippet_1 from "./Eva_Code_Snippets/python_vosk_file_snippet_1.txt";
+import python_vosk_file_snippet_2 from "./Eva_Code_Snippets/python_vosk_file_snippet_2.txt";
+import vosk_audio_processing_snippet from "./Eva_Code_Snippets/vosk_audio_processing_snippet.txt";
+import online_speech_recognition_file from "./Eva_Code_Snippets/online_speech_recognition_file.txt";
+import online_speech_recogniser_method from "./Eva_Code_Snippets/online_speech_recogniser_method.txt";
+import online_speech_recognition_object from "./Eva_Code_Snippets/online_speech_recognition_object.txt";
+import online_speech_recogniser_topic_constraints from "./Eva_Code_Snippets/online_speech_recogniser_topic_constraints.txt";
+import online_speech_recogniser_timeout_proprieties from "./Eva_Code_Snippets/online_speech_recogniser_timeout_proprieties.txt";
+import online_speech_recogniser_speech_recognition_operation from "./Eva_Code_Snippets/online_speech_recogniser_speech_recognition_operation.txt";
+import wake_word_engine_startup from "./Eva_Code_Snippets/wake_word_engine_startup.txt";
+import wake_word_engine_shutdown from "./Eva_Code_Snippets/wake_word_engine_shutdown.txt";
+import natural_language_understanding_engine from "./Eva_Code_Snippets/natural_language_understanding_engine.txt";
 
 export default function Render_EVA_AI_Page() {
   return (
