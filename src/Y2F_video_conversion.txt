@@ -1,0 +1,24 @@
+##########################################
+# YOUTUBE MP3 VIDEO CONVERSION INTERFACE #
+##########################################
+async def Youtube_Conversion():
+    gui = Graphical_User_Interface.Graphical_User_Interfaces_For_Menus_And_Messages("link request menu")
+    youtube_link = await gui.Graphical_User_Interface_Selector()
+
+    if youtube_link == "_BACK":
+        await main_entry_point()
+
+    gui = Graphical_User_Interface.Graphical_User_Interfaces_For_Menus_And_Messages("path selection menu")
+    selected_path = await gui.Graphical_User_Interface_Selector()
+
+    if selected_path == "_BACK":
+        await main_entry_point()
+
+    gui = Graphical_User_Interface.Graphical_User_Interfaces_For_Menus_And_Messages("video downloading warning")
+    await gui.Graphical_User_Interface_Selector()
+
+    file_download = Youtube_Content_Operations.Operations("youtube video conversion", youtube_link, selected_path, None)
+    file_download_result = await file_download.Operation_Selection()
+
+    message = file_download_result
+    await Message_Displayer(message)

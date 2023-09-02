@@ -731,7 +731,7 @@ export default function Render_EVA_AI_Page() {
                     </font>{" "}
                     input/output streams should be redirected from the child
                     process to the OS, to the child process to the main
-                    application. The aforemantioned fact translates further in
+                    application. The aforementioned fact translates further in
                     the fact that the input, output, and error messages of the
                     child process must be send or received to and from the main
                     application, not the OS itself. The rest of the parameters

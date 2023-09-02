@@ -1,5 +1,5 @@
 import CodeSnippet from "./CodeSnippet";
-import {Terminal_Startup} from "./GUI_Animations";
+import { Terminal_Startup } from "./GUI_Animations";
 import PageUnderDevelopment from "./PageUnderDevelopment";
 
 import "./personal_projects_style.css";
@@ -16,6 +16,33 @@ export default function Render_Smart_Event_Organiser() {
                 <div className="project_name_container_style">
                   <PageUnderDevelopment />
                   {/* <h1 className="project_name_style"> * PROJECT TITLE * </h1> */}
+                </div>
+
+                <div className="project_article_div_style">
+                  {/* 
+                <div className="small_non_adjustable_image_container_style">
+                  <img className="description_image" src={eva_logo} />
+                </div> */}
+
+                  {/* 
+                <article className="project_article_style">
+
+                </article> 
+
+
+                <div className="small_non_adjustable_image_container_style">
+                  
+                </div>
+
+                <font className="bold_project_article_section_style">
+
+                </font>{" "}
+                
+
+                <h2 className="project_sub_title_style">
+
+                </h2>
+                */}
                 </div>
               </div>
             </div>

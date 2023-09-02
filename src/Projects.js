@@ -41,6 +41,20 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
+                    Project_Path_Selection("Y2F");
+                  }}
+                >
+                  <h1 className="project_classifier_title_value_style">Y2F</h1>
+                  <p className="project_classifier_value_style">
+                    A cross-platform console application made with Python that
+                    allows users to download or convert videos to MP3 format
+                    from YouTube.
+                  </p>
+                </button>
+
+                <button
+                  className="projects_unit_style"
+                  onClick={() => {
                     Project_Path_Selection("Python_Student_Records_System");
                   }}
                 >
@@ -118,20 +132,6 @@ export default function Render_Projects_Page() {
                     location, and when the event occurs, the user is notified
                     and the route to the event's set location is displayed in
                     Google maps.
-                  </p>
-                </button>
-
-                <button
-                  className="projects_unit_style"
-                  onClick={() => {
-                    Project_Path_Selection("Y2F");
-                  }}
-                >
-                  <h1 className="project_classifier_title_value_style">Y2F</h1>
-                  <p className="project_classifier_value_style">
-                    A cross-platform console application made with Python that
-                    allows users to download or convert videos to MP3 format
-                    from YouTube.
                   </p>
                 </button>
 

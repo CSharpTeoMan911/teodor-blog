@@ -1,0 +1,17 @@
+##############################
+# MAIN ENTRY POINT INTERFACE #
+##############################
+async def main_entry_point():
+    gui = Graphical_User_Interface.Graphical_User_Interfaces_For_Menus_And_Messages("main menu")
+    selected_input = await gui.Graphical_User_Interface_Selector()
+
+    if selected_input == "D":
+        await Youtube_Download()
+    elif selected_input == "C":
+        await Youtube_Conversion()
+    elif selected_input == "E":
+        gui = Graphical_User_Interface.Graphical_User_Interfaces_For_Menus_And_Messages("clear screen")
+        await gui.Graphical_User_Interface_Selector()
+        sys.exit(0)
+    else:
+        await main_entry_point()
