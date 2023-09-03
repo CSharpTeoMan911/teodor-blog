@@ -34,7 +34,7 @@ export default function Render_Projects_Page() {
                   </h1>
                   <p className="project_classifier_value_style">
                     Eva AI: An AI assitant made with C#, .NET Frameowrk and WPF,
-                    that has the purpose of herling users multi-task.
+                    that has the purpose of helping users multi-task.
                   </p>
                 </button>
 
