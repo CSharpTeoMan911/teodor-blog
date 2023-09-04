@@ -45,23 +45,24 @@ export default function Render_EVA_AI_Page() {
                   <h2 className="project_sub_title_style">Introduction</h2>
                   <article className="project_article_style">
                     Eva is an AI assistant built with the purpose of helping
-                    users multi-task. Eva is built using a set of different
-                    technologies and techniques that are explained in detail in
-                    this article. You can find the code for {"Eva "}
+                    users multitask. Eva is constructed using a set of different
+                    technologies and techniques explained in detail in this
+                    article. You can find the code for {"Eva "}
                     <a
                       className="link_style"
                       href="https://github.com/CSharpTeoMan911/Eva"
                     >
                       here
                     </a>
-                    . If you want to download Eva as a standalone application,
+                    . If you wish to download Eva as a standalone application,
                     you can find the installer{" "}
                     <a
                       className="link_style"
                       href="https://sourceforge.net/projects/eva-ai/"
                     >
                       here
-                    </a>.
+                    </a>
+                    .
                   </article>
                   {/* // END */}
                   {/* Tech stack section
@@ -72,7 +73,7 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       Eva
                     </font>{" "}
-                    is built using a concatenation of{" "}
+                    is built using a combination of{" "}
                     <font className="bold_project_article_section_style">
                       .NET Framework
                     </font>
@@ -84,8 +85,8 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       Python
                     </font>
-                    . This assemble of technologies is very powerfull due to the
-                    fact that{" "}
+                    . This combination of technologies is very powerful due to
+                    the fact that the{" "}
                     <font className="bold_project_article_section_style">
                       .NET Framework
                     </font>{" "}
@@ -120,7 +121,7 @@ export default function Render_EVA_AI_Page() {
                       {" "}
                       WPF
                     </font>{" "}
-                    are part of the Windows functionality category,{" "}
+                    belong to the Windows functionality category,{" "}
                     <font className="bold_project_article_section_style">
                       C#
                     </font>{" "}
@@ -128,7 +129,8 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       Python
                     </font>{" "}
-                    is part of the extra functionalities category.
+                    is categorized as part of the additional functionalities
+                    category.
                   </article>
                   {/* // END */}
                   {/* Speech recognition section
@@ -138,8 +140,8 @@ export default function Render_EVA_AI_Page() {
                     Speech recognition infrastructure
                   </h2>
                   <article className="project_article_style">
-                    The speech recognition infrastructure is implemented by
-                    using two technologies:{" "}
+                    The speech recognition infrastructure is implemented using
+                    two technologies:{" "}
                     <font className="bold_project_article_section_style">
                       Windows Media Speech Recognition
                     </font>{" "}
@@ -151,12 +153,12 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       Vosk
                     </font>{" "}
-                    has the role of a wake word engine and{" "}
+                    serves as the wake word engine, while{" "}
                     <font className="bold_project_article_section_style">
                       Windows Media Speech Recognition
                     </font>{" "}
-                    has the role of the application's main speech recognition
-                    engine.
+                    functions as the main speech recognition engine for the
+                    application.
                   </article>
                   <img
                     className="large_adjustable_image"
@@ -164,11 +166,11 @@ export default function Render_EVA_AI_Page() {
                     src="https://user-images.githubusercontent.com/87245086/234708319-0ad38208-afe3-460c-9066-224704151b20.png"
                   />
                   <article className="project_article_style">
-                    The{" "}
                     <font className="bold_project_article_section_style">
                       Vosk
                     </font>{" "}
-                    is used as the wake word engine of the application. When{" "}
+                    is utilized as the wake word engine for the application.
+                    When{" "}
                     <font className="bold_project_article_section_style">
                       Vosk
                     </font>{" "}
@@ -181,7 +183,7 @@ export default function Render_EVA_AI_Page() {
                       'hey listen'
                     </font>{" "}
                     the wake word engine will send a message to the main
-                    application through the OS kernel{" "}
+                    application via the OS kernel{" "}
                     <font className="bold_project_article_section_style">
                       'STDOUT'
                     </font>{" "}
@@ -189,7 +191,7 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       Windows Media Speech Recognition
                     </font>{" "}
-                    in order to process voice commands.
+                    for processing voice commands.
                   </article>
                   {/* // END */}
                   {/* Vosk recognition section
@@ -202,22 +204,22 @@ export default function Render_EVA_AI_Page() {
                     <font className="bold_project_article_section_style">
                       Vosk
                     </font>{" "}
-                    is an open-source speech recognition engine that can be used
-                    within applications to perform speech recognition related
-                    tasks. The reason why I chose{" "}
+                    is an open-source speech recognition engine that can be
+                    integrated into applications to handle speech recognition
+                    tasks. The decision to use{" "}
                     <font className="bold_project_article_section_style">
                       Vosk
                     </font>{" "}
-                    to fulfil the role of an offline wake word engine is due to
-                    multiple factors. After I took into consideration the fact
-                    that application's wake word engine must be lightweight,
-                    fast, and accurate, and after countless implementations of
-                    various speech recognition engines, the results concluded
-                    that{" "}
+                    as the offline wake word engine was based on several key
+                    factors. After carefully considering the need for the
+                    application's wake word engine to be lightweight, fast, and
+                    accurate, and after numerous implementations of various
+                    speech recognition engines, the results consistently pointed
+                    to{" "}
                     <font className="bold_project_article_section_style">
                       Vosk
                     </font>{" "}
-                    is the best choise for an offline wake word engine.
+                    as the optimal choice for an offline wake word engine.
                   </article>
                   <img
                     className="large_adjustable_image"
@@ -225,13 +227,16 @@ export default function Render_EVA_AI_Page() {
                     src={vosk_model}
                   />
                   <article className="project_article_style">
-                    The model used by the Vosk model in the wake word
-                    configuration, is the 40MB model, because it is the
-                    smallest, thus having the least amount of impact on the
-                    user's machine CPU, RAM,and GPU usage, and also having the
-                    fastest processing and response time, characteristics deemed
-                    necessary for a wake word engine. The wake word engine is
-                    implemented in Python using the{" "}
+                    The model used by the{" "}
+                    <font className="bold_project_article_section_style">
+                      Vosk
+                    </font>{" "}
+                    wake word configuration is the 40MB model, as it is the
+                    smallest. This choice minimizes the impact on the user's
+                    machine in terms of CPU, RAM, and GPU usage while also
+                    ensuring the fastest processing and response times—essential
+                    characteristics for a wake word engine. The wake word engine
+                    is implemented in Python using the{" "}
                     <font className="bold_project_article_section_style">
                       'vosk api'
                     </font>{" "}
@@ -306,7 +311,7 @@ export default function Render_EVA_AI_Page() {
                     method and passing in as parameters of the method the number
                     of audio channels, the audio format encoding{" "}
                     <font className="bold_project_article_section_style">
-                      {"("} which in this scenario is a 16000 bits audio format{" "}
+                      {"("} which in this scenario is a 16 bits audio format{" "}
                       {")"}
                     </font>
                     , the sample rate{" "}
