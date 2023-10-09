@@ -15,11 +15,23 @@ export default function Render_Cisco_Large_Network_DHCP_VOIP_TELNET() {
             <div id="crt_div" className="crt_div_style">
               <div className="crt_content_div_style">
                 <div className="project_name_container_style">
-                  <PageUnderDevelopment />
+                  {/* <PageUnderDevelopment /> */}
                   {/* <h1 className="project_name_style"> * PROJECT TITLE * </h1> */}
+                  <h1 className="project_name_style">
+                    {" "}
+                    2 Large Cisco networks using the DHCP, VOIP, and TELNET
+                    protocols{" "}
+                  </h1>
                 </div>
 
                 <div className="project_article_div_style">
+                  <h2 className="project_sub_title_style">
+                  Introduction  
+                  </h2>
+
+                  <article className="project_article_style">
+                    Pp
+                  </article>
                   {/* 
                 <div className="small_non_adjustable_image_container_style">
                   <img className="description_image" src={eva_logo} />

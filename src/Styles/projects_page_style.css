@@ -50,7 +50,7 @@ h1.project_classifier_title_value_style
     word-wrap: break-word;
     align-self: center;
     margin: 0px;
-    font-size: 5vmin;
+    font-size: 3.5vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
     text-shadow: 0 0 1px rgb(0, 0, 0);
@@ -63,7 +63,7 @@ p.project_classifier_value_style
     width: 90%;
     align-self: flex-start;
     justify-self: flex-start;
-    font-size: 4vmin;
+    font-size: 3vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
     text-shadow: 0 0 1px rgb(0, 0, 0);

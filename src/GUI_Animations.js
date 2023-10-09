@@ -182,6 +182,8 @@ async function Contract_Main_Menu() {
 async function Terminal_Startup_Animation() {
   var div = document.getElementById("personal_details_div");
 
+
+
   try {
     if (div !== null || div !== undefined) {
       if (width < 100) {

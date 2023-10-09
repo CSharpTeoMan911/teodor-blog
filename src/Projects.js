@@ -55,6 +55,22 @@ export default function Render_Projects_Page() {
                 <button
                   className="projects_unit_style"
                   onClick={() => {
+                    Project_Path_Selection("Large_Cisco_Network_VOIP_DHCP_TELNET");
+                  }}
+                >
+                  <h1 className="project_classifier_title_value_style">
+                    Two large Cisco Networks with DHCP, VOIP, Telnet, and Port
+                    and Device level security
+                  </h1>
+                  <p className="project_classifier_value_style">
+                    A simple network built with Cisco devices that uses DHCP and
+                    VOIP, made with Cisco Packet Tracer.
+                  </p>
+                </button>
+
+                <button
+                  className="projects_unit_style"
+                  onClick={() => {
                     Project_Path_Selection("Python_Student_Records_System");
                   }}
                 >
@@ -159,22 +175,6 @@ export default function Render_Projects_Page() {
                 >
                   <h1 className="project_classifier_title_value_style">
                     Cisco Network with DHCP and VOIP
-                  </h1>
-                  <p className="project_classifier_value_style">
-                    A simple network built with Cisco devices that uses DHCP and
-                    VOIP, made with Cisco Packet Tracer.
-                  </p>
-                </button>
-
-                <button
-                  className="projects_unit_style"
-                  onClick={() => {
-                    Project_Path_Selection("Large_Cisco_Network_VOIP_DHCP_TELNET");
-                  }}
-                >
-                  <h1 className="project_classifier_title_value_style">
-                    Two large Cisco Networks with DHCP, VOIP, Telnet, and Port
-                    and Device level security
                   </h1>
                   <p className="project_classifier_value_style">
                     A simple network built with Cisco devices that uses DHCP and

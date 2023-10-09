@@ -2,6 +2,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useState } from "react";
 
+
 export default function CodeSnippet(param) {
   const [code, set_file] = useState("");
 

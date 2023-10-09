@@ -12,8 +12,8 @@ img.profile_image_style
 {
     align-self: center;
     border-radius: 30vmin;
-    height: 30vmin;
-    width: 30vmin;
+    height: 23vmin;
+    width: 23vmin;
 }
 
 
@@ -36,13 +36,13 @@ div.profile_picture_div_style
     align-content: center;
     background-image: linear-gradient(to right, rgb(21, 8, 0), rgb(39, 20, 1));
     border-radius: 30vmin;
-    height: 30vmin;
-    width: 30vmin;
+    height: 23vmin;
+    width: 23vmin;
 }
 
 div.profile_picture_frame_style
 {
-    margin-top: 20vmin;
+    margin-top: 13vmin;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -50,8 +50,8 @@ div.profile_picture_frame_style
     flex-direction: column;
     background-image: linear-gradient(to right, rgba(135, 65, 0, 0.387), rgb(74, 31, 0));
     border-radius: 32vmin;
-    height: 32vmin;
-    width: 32vmin;
+    height: 25vmin;
+    width: 25vmin;
 }
 
 div.name_div_style
@@ -107,10 +107,10 @@ div.technology_classifier_div_value_style
 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    font-size: 4vmin;
+    font-size: 3vmin;
     color: transparent;
     text-shadow: 0 0 1px rgb(0, 0, 0);
-    height: 4vmin;
+    height: 3vmin;
     border-radius: 5vmin;
     align-self: flex-start;
     justify-self: flex-start;
@@ -133,7 +133,7 @@ p.name_style
 {
     align-self: center;
     justify-self: center;
-    font-size: 5vmin;
+    font-size: 4vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
@@ -144,7 +144,7 @@ p.technology_classifier_value_style
     width: 40%;
     align-self: center;
     justify-self: center;
-    font-size: 4vmin;
+    font-size: 3vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
@@ -155,7 +155,7 @@ p.technology_subtitle_style
     margin-top: 10vmin;
     align-self: center;
     justify-self: center;
-    font-size: 5vmin;
+    font-size: 4vmin;
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);

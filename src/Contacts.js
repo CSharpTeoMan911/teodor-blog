@@ -22,6 +22,9 @@ export default function Render_Contacts_Page() {
                   init -contacts
                   <br />
                   <br />
+                  <br />
+                  <br />
+                  <br />
                 </article>
 
                 <div className="contact_unit_style">
