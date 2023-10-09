@@ -100,7 +100,7 @@ h1.project_name_style
     margin-top: 5vmin;
     align-self: center;
     justify-self: center;
-    font-size: calc(5px + 5vmin);
+    font-size: calc(5px + 4.2vmin);
     font-family: 'Courier New', Courier, monospace;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
