@@ -6,6 +6,7 @@ import youtube from "./Images/youtube.png";
 import linkedin from "./Images/linkedin.png";
 import facebook from "./Images/facebook.png";
 import gmail from "./Images/gmail.png";
+import stackoverflow from "./Images/stackoverflow.png";
 
 export default function Render_Contacts_Page() {
   return (
@@ -22,10 +23,28 @@ export default function Render_Contacts_Page() {
                   init -contacts
                   <br />
                   <br />
-                  <br />
-                  <br />
-                  <br />
                 </article>
+
+                <div className="contact_unit_style">
+                  <div className="contact_classifier_div_style_container">
+                    <div className="contact_classifier_div_style">
+                      <img
+                        className="contacts_img_style"
+                        alt="gmail logo"
+                        src={stackoverflow}
+                      />
+                    </div>
+                  </div>
+                  <p className="contact_classifier_value_style">
+                    {" "}
+                    <a
+                      className="contact_link_style"
+                        href="https://stackoverflow.com/users/16587692/teodor-mihail"
+                    >
+                        https://stackoverflow.com/users/16587692/teodor-mihail
+                    </a>
+                  </p>
+                </div>
 
                 <div className="contact_unit_style">
                   <div className="contact_classifier_div_style_container">
@@ -104,6 +123,7 @@ export default function Render_Contacts_Page() {
                     teodormihail07@gmail.com
                   </p>
                 </div>
+
               </div>
             </div>
           </div>
