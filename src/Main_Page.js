@@ -37,7 +37,7 @@ export default function Render_Main_Page() {
                   technologies and techniques through which I achieved my goals.
                   The level of proficiency in multiple languages, technologies
                   and frameworks from 0% to 100% is displayed below. The source
-                  code of this website is available {" "}
+                  code of this web-application is available {" "}
                   <a
                     className="link_style"
                     href="https://github.com/CSharpTeoMan911/teodor-blog"

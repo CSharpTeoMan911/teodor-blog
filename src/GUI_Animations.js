@@ -187,7 +187,7 @@ async function Terminal_Startup_Animation() {
   try {
     if (div !== null || div !== undefined) {
       if (width < 100) {
-        width++;
+        width+=1.5;
         var set_width = width + "%";
         div.style.width = set_width;
       } else {

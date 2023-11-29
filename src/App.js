@@ -32,8 +32,6 @@ function App() {
   var body = document.getElementById("main_body");
   body.classList.add("main_body_style");
 
-  //set_title_value("Personal details");
-
   useEffect(() => {
     if (window.location.pathname === "/") {
       set_title_value("Personal Details");

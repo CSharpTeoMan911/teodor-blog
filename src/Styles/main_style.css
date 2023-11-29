@@ -1,8 +1,7 @@
-body.main_body_style
-{
-    margin:  0px;
+body.main_body_style {
+    margin: 0px;
     padding: 0px;
-    background-image: linear-gradient(to right, rgb(46, 19, 0) ,black);
+    background-image: linear-gradient(to right, #1F0B00,black);
 }
 
 div.main_page_div_style
@@ -11,10 +10,9 @@ div.main_page_div_style
     height: 99vh;
 }
 
-div.navigation_bar_style
-{
+div.navigation_bar_style {
     width: 100%;
-    background-image: linear-gradient(to right, rgb(87, 31, 1), rgb(57, 22, 1));
+    background-image: linear-gradient(to right, #301400, rgb(57, 22, 1));
     z-index: 3;
     display: flex;
     flex-direction: row;
@@ -58,7 +56,6 @@ div.main_menu_div_items_style
     height: 0vmin;
     visibility: hidden;
     position: fixed;
-    /*height: 35vmin;*/
 }
 
 div.items_container_style
@@ -122,9 +119,8 @@ button.menu_item_style
     border-radius: 1.5vmin;
     border-width: 0px;
     border-color: rgb(108, 108, 108);
-    color: rgb(167, 78, 0);;
+    color: rgb(167, 78, 0);
     width: calc(1px + 3vmin + 20vmin);
-    /* height: 5vmin; */
     height: 0vmin;
     visibility: hidden;
     font-family: 'Courier New', Courier, monospace;
@@ -161,7 +157,7 @@ div.crt_div_screen_style
     align-content: center;
     width: 98%;
     height: 91vh;
-    background-color: linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
 }
 
 
@@ -236,7 +232,6 @@ h1.page_title_style
 
 p.menu_label_style
 {
-    /* width: 25vmin; */
     align-self: center;
     justify-self: center;
     width: 0vmin;
