@@ -1,6 +1,6 @@
 import "./Styles/home_page_style.css";
 import "./Styles/main_style.css";
-import teodor from "./Images/teodor.png";
+import teodor from "./Images/teodor.webp";
 import { Terminal_Startup, Name_Animation } from "./GUI_Animations";
 import Terminal from "./Terminal";
 
@@ -17,17 +17,25 @@ export default function Render_Main_Page() {
         <Terminal>
           <article className="article_style">
             <font className="font_init">
-              teodor@teodor-IdeaPad-3-14ITL05:/bin$&nbsp;
+              teodor@teodor-IdeaPad-3-14ITL05:/bin$&nbsp;&nbsp;&nbsp;
             </font>
-            <div className="profile_picture_frame_style">
-              <div className="profile_picture_div_style">
-                <img className="profile_image_style" alt="Teodor Mihail" src={teodor} />
+            ./init-profile
+
+            <div className="profile">
+              <div className="profile_picture_frame_style">
+                <div className="profile_picture_div_style">
+                  <img className="profile_image_style" alt="Teodor Mihail" src={teodor} />
+                </div>
+              </div>
+
+              <div className="name_div_style">
+                <p id="name" className="name_style"></p>
               </div>
             </div>
+            <font className="font_init">
+              teodor@teodor-IdeaPad-3-14ITL05:/bin$&nbsp;&nbsp;&nbsp;
+            </font>
 
-            <div className="name_div_style">
-              <p id="name" className="name_style"></p>
-            </div>
             My name is Teodor Mihail. I'm a software engineer that has
             experice with multiple languages, frameworks, and development
             environments. I am originally from Romania, Bucharest,
@@ -51,7 +59,9 @@ export default function Render_Main_Page() {
             <p className="technology_subtitle_style">Languages</p>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">C#</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">C#</p>
+              </div>
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -63,7 +73,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">Java</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">Java</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -75,7 +88,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">JS</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">JS</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -87,7 +103,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">MySql</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">MySQL</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -99,7 +118,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">Python</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">Python</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -111,7 +133,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">HTML</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">HTML</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -123,7 +148,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">CSS</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">CSS</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -139,9 +167,10 @@ export default function Render_Main_Page() {
             <p className="technology_subtitle_style">Frameworks</p>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">
-                .NET Framework
-              </p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">.NET Framework</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -153,9 +182,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">
-                .NET Core
-              </p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">.NET Core</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -167,7 +197,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">WPF</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">WPF</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -179,7 +212,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">UWP</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">UWP</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -191,9 +227,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">
-                WinForms
-              </p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">WinForms</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -205,9 +242,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">
-                Avalonia
-              </p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">Avalonia</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -219,7 +257,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">React</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">React</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -231,7 +272,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">NodeJS</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">NodeJS</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -243,7 +287,10 @@ export default function Render_Main_Page() {
             </div>
 
             <div className="value_unit_style">
-              <p className="technology_classifier_value_style">JForms</p>
+              <div className="technology_classifier_value_style_tech_div">
+                <p className="technology_classifier_value_style">JForms</p>
+              </div>
+
               <div className="technology_classifier_div_value_style_container">
                 <div
                   className="technology_classifier_div_value_style"
@@ -260,9 +307,10 @@ export default function Render_Main_Page() {
               </p>
 
               <div className="value_unit_style">
-                <p className="technology_classifier_value_style">
-                  Visual Studio
-                </p>
+                <div className="technology_classifier_value_style_tech_div">
+                  <p className="technology_classifier_value_style">Visual Studio</p>
+                </div>
+
                 <div className="technology_classifier_div_value_style_container">
                   <div
                     className="technology_classifier_div_value_style"
@@ -274,11 +322,12 @@ export default function Render_Main_Page() {
               </div>
 
               <div className="value_unit_style">
-                <p className="technology_classifier_value_style">
-                  Visual Studio
-                  <br />
-                  Code
-                </p>
+                <div className="technology_classifier_value_style_tech_div">
+                  <p className="technology_classifier_value_style">                  Visual Studio
+                    <br />
+                    Code</p>
+                </div>
+
                 <div className="technology_classifier_div_value_style_container">
                   <div
                     className="technology_classifier_div_value_style"
@@ -290,7 +339,10 @@ export default function Render_Main_Page() {
               </div>
 
               <div className="value_unit_style">
-                <p className="technology_classifier_value_style">Vim</p>
+                <div className="technology_classifier_value_style_tech_div">
+                  <p className="technology_classifier_value_style">Vim</p>
+                </div>
+
                 <div className="technology_classifier_div_value_style_container">
                   <div
                     className="technology_classifier_div_value_style"
@@ -302,7 +354,10 @@ export default function Render_Main_Page() {
               </div>
 
               <div className="value_unit_style">
-                <p className="technology_classifier_value_style">Nano</p>
+                <div className="technology_classifier_value_style_tech_div">
+                  <p className="technology_classifier_value_style">Nano</p>
+                </div>
+
                 <div className="technology_classifier_div_value_style_container">
                   <div
                     className="technology_classifier_div_value_style"
@@ -314,9 +369,10 @@ export default function Render_Main_Page() {
               </div>
 
               <div className="value_unit_style">
-                <p className="technology_classifier_value_style">
-                  Pycharm
-                </p>
+                <div className="technology_classifier_value_style_tech_div">
+                  <p className="technology_classifier_value_style">Pycharm</p>
+                </div>
+
                 <div className="technology_classifier_div_value_style_container">
                   <div
                     className="technology_classifier_div_value_style"
@@ -328,9 +384,10 @@ export default function Render_Main_Page() {
               </div>
 
               <div className="value_unit_style">
-                <p className="technology_classifier_value_style">
-                  InteliJ
-                </p>
+                <div className="technology_classifier_value_style_tech_div">
+                  <p className="technology_classifier_value_style">InteliJ</p>
+                </div>
+
                 <div className="technology_classifier_div_value_style_container">
                   <div
                     className="technology_classifier_div_value_style"
@@ -342,9 +399,10 @@ export default function Render_Main_Page() {
               </div>
 
               <div className="value_unit_style">
-                <p className="technology_classifier_value_style">
-                  Eclipse
-                </p>
+                <div className="technology_classifier_value_style_tech_div">
+                  <p className="technology_classifier_value_style">Eclipse</p>
+                </div>
+
                 <div className="technology_classifier_div_value_style_container">
                   <div
                     className="technology_classifier_div_value_style"
@@ -356,9 +414,10 @@ export default function Render_Main_Page() {
               </div>
 
               <div className="value_unit_style">
-                <p className="technology_classifier_value_style">
-                  Cisco Networking
-                </p>
+                <div className="technology_classifier_value_style_tech_div">
+                  <p className="technology_classifier_value_style">Cisco Networking</p>
+                </div>
+
                 <div className="technology_classifier_div_value_style_container">
                   <div
                     className="technology_classifier_div_value_style"
@@ -369,6 +428,8 @@ export default function Render_Main_Page() {
                 </div>
               </div>
             </div>
+            <br />
+            <br />
           </div>
         </Terminal>
 
@@ -377,5 +438,3 @@ export default function Render_Main_Page() {
   );
 }
 
-Terminal_Startup("main window");
-Name_Animation();

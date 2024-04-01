@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Workbench&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&display=swap');
 
 body.main_body_style {
     margin: 0px;
@@ -12,7 +12,7 @@ body.main_body_style {
 div.background_image {
     position: absolute;
     z-index: 0;
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/11a0cc95-aa8d-48be-bc47-e55baa6ecacc/dfxj5rq-4c410554-f9f4-4590-8072-d182a37569fe.png/v1/fill/w_1194,h_669,q_70,strp/tiny_cubes_by_mholtsmeier_dfxj5rq-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvMTFhMGNjOTUtYWE4ZC00OGJlLWJjNDctZTU1YmFhNmVjYWNjXC9kZnhqNXJxLTRjNDEwNTU0LWY5ZjQtNDU5MC04MDcyLWQxODJhMzc1NjlmZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Fj39QAmXoP5xPanoY2ZEc175HuYD1uYOS3DNss8ATkE");
+    background-image: url("../Images/background.webp");
     opacity: 0.4;
     background-size: cover;
     width: 100vw;
@@ -22,11 +22,11 @@ div.background_image {
 div.terminal-element {
     display: flex;
     flex-direction: column;
-    width: 85vw;
-    min-width: 430px;
+    width: 100%;
     height: 70vh;
     align-self: center;
-    background: linear-gradient(to right, black, rgb(24, 24, 24));
+    background-color:  rgba(24, 24, 24, 0.8);
+    opacity: 0.9;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -64,10 +64,17 @@ div.terminal-handle {
     height: 38px;
 }
 
-div.terminal {
+div.terminal-skeleton {
     margin-top: 100px;
     width: 85vw;
-    min-width: 430px;
+    min-width: 435px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div.terminal {
+    min-width: 435px;
     align-self: center;
 }
 
@@ -205,16 +212,18 @@ article.article_style
     max-width:95%;
     align-self: center;
     justify-self:flex-start;
-    font-size: 3vmin;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vmin + 15px);
+    font-family: "Pixelify Sans", sans-serif;
     color: transparent;
-    text-shadow: 0 0 1px rgba(255, 136, 0, 1); 
+    text-shadow: 0 0 0.5px rgba(255, 136, 0, 1); 
 }
 
 font.font_init
 {
+    font-size: calc(1vmin + 15px);
+    font-family: "Pixelify Sans", sans-serif;
     color: transparent;
-    text-shadow: 0 0 1px rgb(255, 196, 0); 
+    text-shadow: 0 0 0.3px rgb(255, 196, 0); 
 }
 
 a.link_style
@@ -238,20 +247,6 @@ h1.page_title_style
     font-weight: 200;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
-}
-
-p.menu_label_style
-{
-    align-self: center;
-    justify-self: center;
-    width: 0vmin;
-    visibility: hidden;
-    color: transparent;
-    font-family: 'Courier New', Courier, monospace;
-    text-shadow: 0 0 1px rgba(255, 136, 0, 1);
-    margin: 0px;
-    padding: 0px;
-    font-size: 5vmin;
 }
 
 .navbar-element

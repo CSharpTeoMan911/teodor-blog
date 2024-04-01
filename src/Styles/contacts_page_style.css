@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
 div.personal_contacts_div_style
 {
     margin-top: 10vmin;
@@ -32,38 +34,41 @@ div.contact_unit_style
     display: flex;
     text-align: start;
     flex-direction: row;
-    justify-content: flex-start;
-    justify-items: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    margin-top: 5vmin;
+    margin-top: calc(1vmin + 35px);
     width: 100%;
 }
 
 div.contact_classifier_div_style_container
 {
-    width: 20%;
-    height: 8vmin;
+    width: 15%;
     display: flex;
     align-self: center;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    margin-left: 10vmin;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+div.contact_classifier_value_div_style
+{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    width: 85%;
 }
 
 div.contact_classifier_div_style
 {
-    width: 8vmin;
-    height: 8vmin;
+    width: calc(1vmin + 50px);
+    height: calc(1vmin + 50px);
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    font-size: 4vmin;
     color: transparent;
     text-shadow: 0 0 1px rgb(0, 0, 0);
-    border-radius: 2vmin;
+    border-radius: calc(1vmin + 1px);
     align-self: flex-end;
     justify-self: flex-end;
     align-content: center;
@@ -77,19 +82,19 @@ div.contact_classifier_div_style
 
 img.contacts_img_style
 {
-    width: 6.5vmin;
-    height: 6.5vmin;
+    width: calc(1vmin + 40px);
+    height: calc(1vmin + 40px);
     align-self: center;
 }
 
 p.contact_classifier_value_style
 {
-    margin-left: 5vmin;
-    width: 80%;
+    margin: 0px 0px 0px 30px;
+    word-break: break-all;
     align-self: center;
     justify-self: center;
-    font-size: 3vmin;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vmin + 15px);
+    font-family: "Pixelify Sans", sans-serif;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }

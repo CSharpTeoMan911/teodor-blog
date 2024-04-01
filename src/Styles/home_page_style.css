@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&display=swap');
 
 img.profile_image_style
 {
     align-self: center;
-    border-radius: 30vmin;
-    height: 23vmin;
-    width: 23vmin;
+    border-radius: 2vmin;
+    height: calc(1vmin + 180px);
+    width: calc(1vmin + 180px);
 }
 
 
 div.profile_div_style
 {
-    left: 50%;
     display: flex;
     flex-direction: column;
     align-content: center;
-    transform: translate(-50%);
     position: relative;
     width: 100%;
 }
@@ -26,22 +24,21 @@ div.profile_picture_div_style {
     justify-self: center;
     align-content: center;
     background-image: linear-gradient(to right, #171717, #000000);
-    border-radius: 30vmin;
-    height: 23vmin;
-    width: 23vmin;
+    border-radius: 2vmin;
+    height: calc(1vmin + 180px);
+    width: calc(1vmin + 180px);
 }
 
 div.profile_picture_frame_style {
-    margin-top: 13vmin;
     display: flex;
     align-self: center;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     background-image: linear-gradient(to right, #D97400, #D97400);
-    border-radius: 32vmin;
-    height: 24vmin;
-    width: 24vmin;
+    border-radius: 2vmin;
+    height: calc(1vmin + 190px);
+    width: calc(1vmin + 190px);
 }
 
 div.name_div_style
@@ -90,17 +87,20 @@ div.value_unit_style
     align-items: flex-start;
     align-content: flex-start;
     width: 100%;
+    margin-top: 30px;
 }
 
 
 div.technology_classifier_div_value_style
 {
+    align-self: center;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    font-size: 3vmin;
+    font-size: calc(1vmin + 20px);
     color: transparent;
+    font-family: "Pixelify Sans", sans-serif;
     text-shadow: 0 0 1px rgb(0, 0, 0);
-    height: 3vmin;
+    height: calc(1vmin + 30px);
     border-radius: 5vmin;
     align-self: flex-start;
     justify-self: flex-start;
@@ -111,31 +111,50 @@ div.technology_classifier_div_value_style
 div.technology_classifier_div_value_style_container
 {
     width: 100%;
-    height: 4vmin;
     display: flex;
     align-self: center;
+    justify-self: center;
     flex-direction: column;
     justify-content: flex-start;
     justify-items: flex-start;
+}
+
+div.technology_classifier_value_style_tech_div {
+    display: flex;
+    align-self: center;
+    width: 40%;
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+div.profile {
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 p.name_style
 {
     align-self: center;
     justify-self: center;
-    font-size: 6vmin;
-    font-family: "Handjet", sans-serif;
+    font-size: calc(1vmin + 35px);
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 700;
     color: transparent;
-    text-shadow: 0 0 1px rgba(255, 136, 0, 1);
+    text-shadow: 0 0 1px rgba(255, 136, 0, 0.9);
 }
 
 p.technology_classifier_value_style
 {
-    width: 40%;
+    margin: 0px;
+    margin-right: 30px;
     align-self: center;
     justify-self: center;
-    font-size: 3vmin;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vmin + 20px);
+    font-family: "Pixelify Sans", sans-serif;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }
@@ -145,8 +164,8 @@ p.technology_subtitle_style
     margin-top: 10vmin;
     align-self: center;
     justify-self: center;
-    font-size: 4vmin;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vmin + 25px);
+    font-family: "Pixelify Sans", sans-serif;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }
