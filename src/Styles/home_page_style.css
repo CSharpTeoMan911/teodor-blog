@@ -88,6 +88,7 @@ div.value_unit_style
     align-content: flex-start;
     width: 100%;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -110,7 +111,7 @@ div.technology_classifier_div_value_style
 
 div.technology_classifier_div_value_style_container
 {
-    width: 100%;
+    width: 60%;
     display: flex;
     align-self: center;
     justify-self: center;

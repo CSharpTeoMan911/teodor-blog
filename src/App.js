@@ -15,16 +15,11 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 import Render_Python_Student_Records_System_Page from "./Personal_Projects_Modules/Python_Student_Records_System";
-import Render_C_Sharp_Student_Records_System from "./Personal_Projects_Modules/C_Sharp_Student_Records_System";
 import Render_C_Sharp_Secure_Student_Records_System from "./Personal_Projects_Modules/C_Sharp_Secure_Student_Records_System";
 import Render_Cisco_Large_Network_DHCP_VOIP_TELNET from "./Personal_Projects_Modules/Cisco_Large_Network_DHCP_VOIP_TELNET";
-import Render_Cisco_Netwrok_DHCP_Voip from "./Personal_Projects_Modules/Cisco_Netwrok_DHCP_Voip";
-import Render_E_ChatGPT from "./Personal_Projects_Modules/E-ChatGPT";
 import Render_Smart_Event_Organiser from "./Personal_Projects_Modules/Smart_Event_Organiser";
 import Render_TeodorMihailBlog from "./Personal_Projects_Modules/TeodorMihailBlog";
-import Render_Transcryptor from "./Personal_Projects_Modules/Transcryptor";
 import Render_Y2F from "./Personal_Projects_Modules/Y2F";
-import Render_YouTube_2_File from "./Personal_Projects_Modules/YouTube_2_File";
 import Render_EVA_AI_Page from "./Personal_Projects_Modules/Eva_AI";
 
 
@@ -78,33 +73,20 @@ function App() {
           />
           <Route
             exact
-            path="/CSharp_Student_Records_System"
-            Component={Render_C_Sharp_Student_Records_System}
-          />
-          <Route
-            exact
             path="/CSharp_Secure_Student_Records_System"
             Component={Render_C_Sharp_Secure_Student_Records_System}
           />
-          <Route exact path="/YouTube2File" Component={Render_YouTube_2_File} />
           <Route
             exact
             path="/SmartEventOrganiser"
             Component={Render_Smart_Event_Organiser}
           />
           <Route exact path="/Y2F" Component={Render_Y2F} />
-          <Route exact path="/TransCryptor" Component={Render_Transcryptor} />
-          <Route
-            exact
-            path="/Cisco_Network_VOIP_DHCP"
-            Component={Render_Cisco_Netwrok_DHCP_Voip}
-          />
           <Route
             exact
             path="/Large_Cisco_Network_VOIP_DHCP_TELNET"
             Component={Render_Cisco_Large_Network_DHCP_VOIP_TELNET}
           />
-          <Route exact path="/E_ChatGPT" Component={Render_E_ChatGPT} />
           <Route
             exact
             path="/TeodorMihailBlog"

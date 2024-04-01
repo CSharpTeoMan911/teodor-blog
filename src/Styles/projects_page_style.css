@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
 div.personal_projects_div_style
 {
     margin-top: 10vmin;
@@ -16,14 +18,23 @@ div.personal_projects_div_style
     background-image: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
 }
 
+div.projects_selection
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+}
+
 button.projects_unit_style
 {
     text-align: start;
     display: flex;
+    align-self: center;
     flex-direction: column;
     align-content: center;
     margin-top: 5vmin;
-    border-radius: 5vmin;
+    border-radius: 10px;
     background-image: linear-gradient(to right, orange, orange);
     background-image: -o-linear-gradient(to right, orange, orange);
     background-image: -moz-linear-gradient(to right, orange, orange);
@@ -56,8 +67,8 @@ h1.project_classifier_title_value_style
     word-wrap: break-word;
     align-self: center;
     margin: 0px;
-    font-size: 3.5vmin;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vmin + 35px);
+    font-family: "Pixelify Sans", sans-serif;
     color: transparent;
     text-shadow: 0 0 1px rgb(0, 0, 0);
 }
@@ -69,8 +80,9 @@ p.project_classifier_value_style
     width: 90%;
     align-self: flex-start;
     justify-self: flex-start;
-    font-size: 3vmin;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vmin + 20px);
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
     color: transparent;
-    text-shadow: 0 0 1px rgb(0, 0, 0);
+    text-shadow: 0 0 1px rgb(34, 33, 33);
 }

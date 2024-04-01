@@ -1,8 +1,8 @@
 import "./Styles/home_page_style.css";
 import "./Styles/main_style.css";
 import teodor from "./Images/teodor.webp";
-import { Terminal_Startup, Name_Animation } from "./GUI_Animations";
 import Terminal from "./Terminal";
+import TechElement from "./TechElement";
 
 
 export default function Render_Main_Page() {
@@ -12,8 +12,6 @@ export default function Render_Main_Page() {
 
 
       <div className="profile_div_style">
-        {/*  */}
-
         <Terminal>
           <article className="article_style">
             <font className="font_init">
@@ -58,379 +56,57 @@ export default function Render_Main_Page() {
           <div className="technologies_div_style">
             <p className="technology_subtitle_style">Languages</p>
 
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">C#</p>
-              </div>
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "90%" }}
-                >
-                  90%
-                </div>
-              </div>
-            </div>
 
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">Java</p>
-              </div>
+            <TechElement tech="C#" percent="90%" />
+            <TechElement tech="Java" percent="60%" />
+            <TechElement tech="JS" percent="70%" />
+            <TechElement tech="MySQL" percent="70%" />
+            <TechElement tech="Python" percent="85%" />
+            <TechElement tech="HTML" percent="75%" />
+            <TechElement tech="CSS" percent="90%" />
+            <TechElement tech="C#" percent="90%" />
+            <TechElement tech="C#" percent="90%" />
+            <TechElement tech="C#" percent="90%" />
 
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "60%" }}
-                >
-                  60%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">JS</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "70%" }}
-                >
-                  70%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">MySQL</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "70%" }}
-                >
-                  70%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">Python</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "85%" }}
-                >
-                  85%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">HTML</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "75%" }}
-                >
-                  75%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">CSS</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "75%" }}
-                >
-                  75%
-                </div>
-              </div>
-            </div>
           </div>
+
+
 
           <div className="technologies_div_style">
             <p className="technology_subtitle_style">Frameworks</p>
 
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">.NET Framework</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "90%" }}
-                >
-                  90%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">.NET Core</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "90%" }}
-                >
-                  90%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">WPF</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "80%" }}
-                >
-                  80%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">UWP</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "70%" }}
-                >
-                  70%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">WinForms</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "80%" }}
-                >
-                  80%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">Avalonia</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "80%" }}
-                >
-                  80%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">React</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "75%" }}
-                >
-                  75%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">NodeJS</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "75%" }}
-                >
-                  75%
-                </div>
-              </div>
-            </div>
-
-            <div className="value_unit_style">
-              <div className="technology_classifier_value_style_tech_div">
-                <p className="technology_classifier_value_style">JForms</p>
-              </div>
-
-              <div className="technology_classifier_div_value_style_container">
-                <div
-                  className="technology_classifier_div_value_style"
-                  style={{ width: "60%" }}
-                >
-                  60%
-                </div>
-              </div>
-            </div>
-
-            <div className="technologies_div_style">
-              <p className="technology_subtitle_style">
-                Development environments and technologies
-              </p>
-
-              <div className="value_unit_style">
-                <div className="technology_classifier_value_style_tech_div">
-                  <p className="technology_classifier_value_style">Visual Studio</p>
-                </div>
-
-                <div className="technology_classifier_div_value_style_container">
-                  <div
-                    className="technology_classifier_div_value_style"
-                    style={{ width: "90%" }}
-                  >
-                    90%
-                  </div>
-                </div>
-              </div>
-
-              <div className="value_unit_style">
-                <div className="technology_classifier_value_style_tech_div">
-                  <p className="technology_classifier_value_style">                  Visual Studio
-                    <br />
-                    Code</p>
-                </div>
-
-                <div className="technology_classifier_div_value_style_container">
-                  <div
-                    className="technology_classifier_div_value_style"
-                    style={{ width: "80%" }}
-                  >
-                    80%
-                  </div>
-                </div>
-              </div>
-
-              <div className="value_unit_style">
-                <div className="technology_classifier_value_style_tech_div">
-                  <p className="technology_classifier_value_style">Vim</p>
-                </div>
-
-                <div className="technology_classifier_div_value_style_container">
-                  <div
-                    className="technology_classifier_div_value_style"
-                    style={{ width: "30%" }}
-                  >
-                    30%
-                  </div>
-                </div>
-              </div>
-
-              <div className="value_unit_style">
-                <div className="technology_classifier_value_style_tech_div">
-                  <p className="technology_classifier_value_style">Nano</p>
-                </div>
-
-                <div className="technology_classifier_div_value_style_container">
-                  <div
-                    className="technology_classifier_div_value_style"
-                    style={{ width: "40%" }}
-                  >
-                    40%
-                  </div>
-                </div>
-              </div>
-
-              <div className="value_unit_style">
-                <div className="technology_classifier_value_style_tech_div">
-                  <p className="technology_classifier_value_style">Pycharm</p>
-                </div>
-
-                <div className="technology_classifier_div_value_style_container">
-                  <div
-                    className="technology_classifier_div_value_style"
-                    style={{ width: "80%" }}
-                  >
-                    80%
-                  </div>
-                </div>
-              </div>
-
-              <div className="value_unit_style">
-                <div className="technology_classifier_value_style_tech_div">
-                  <p className="technology_classifier_value_style">InteliJ</p>
-                </div>
-
-                <div className="technology_classifier_div_value_style_container">
-                  <div
-                    className="technology_classifier_div_value_style"
-                    style={{ width: "70%" }}
-                  >
-                    70%
-                  </div>
-                </div>
-              </div>
-
-              <div className="value_unit_style">
-                <div className="technology_classifier_value_style_tech_div">
-                  <p className="technology_classifier_value_style">Eclipse</p>
-                </div>
-
-                <div className="technology_classifier_div_value_style_container">
-                  <div
-                    className="technology_classifier_div_value_style"
-                    style={{ width: "50%" }}
-                  >
-                    50%
-                  </div>
-                </div>
-              </div>
-
-              <div className="value_unit_style">
-                <div className="technology_classifier_value_style_tech_div">
-                  <p className="technology_classifier_value_style">Cisco Networking</p>
-                </div>
-
-                <div className="technology_classifier_div_value_style_container">
-                  <div
-                    className="technology_classifier_div_value_style"
-                    style={{ width: "70%" }}
-                  >
-                    70%
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br />
-            <br />
+            <TechElement tech="NET Framework" percent="90%" />
+            <TechElement tech=".NET Core" percent="90%" />
+            <TechElement tech="Blazor" percent="75%" />
+            <TechElement tech="WPF" percent="80%" />
+            <TechElement tech="UWP" percent="60%" />
+            <TechElement tech="WinForms" percent="80%" />
+            <TechElement tech="Avalonia" percent="80%" />
+            <TechElement tech="NodeJS" percent="75%" />
+            <TechElement tech="JForms" percent="30%" />
+            <TechElement tech="React" percent="75%" />
           </div>
+
+
+
+          <div className="technologies_div_style">
+            <p className="technology_subtitle_style">
+              Development environments and technologies
+            </p>
+
+            <TechElement tech="Visual Studio" percent="90%" />
+            <TechElement tech="Visual Studio Code" percent="80%" />
+            <TechElement tech="Vim" percent="30%" />
+            <TechElement tech="Nano" percent="40%" />
+            <TechElement tech="Pycharm" percent="80%" />
+            <TechElement tech="InteliJ" percent="70%" />
+            <TechElement tech="Eclipse" percent="50%" />
+            <TechElement tech="Cisco Networking" percent="70%" />
+
+          </div>
+          <br />
+          <br />
+
         </Terminal>
 
       </div>
