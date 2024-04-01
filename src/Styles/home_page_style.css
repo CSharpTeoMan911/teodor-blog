@@ -1,11 +1,4 @@
-img.matrix_img_style {
-    position: fixed;
-    max-width: 100%;
-    height: 100vmax;
-    content: url("https://i.imgur.com/zUCpdaV.gif");
-    opacity: 2%;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Workbench&display=swap');
 
 img.profile_image_style
 {
@@ -130,8 +123,8 @@ p.name_style
 {
     align-self: center;
     justify-self: center;
-    font-size: 4vmin;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 6vmin;
+    font-family: "Handjet", sans-serif;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }

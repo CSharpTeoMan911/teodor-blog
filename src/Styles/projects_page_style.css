@@ -11,6 +11,9 @@ div.personal_projects_div_style
     width: 90%;
     height: 90vh;
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+    background-image: -o-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+    background-image: -moz-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+    background-image: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
 }
 
 button.projects_unit_style
@@ -22,6 +25,9 @@ button.projects_unit_style
     margin-top: 5vmin;
     border-radius: 5vmin;
     background-image: linear-gradient(to right, orange, orange);
+    background-image: -o-linear-gradient(to right, orange, orange);
+    background-image: -moz-linear-gradient(to right, orange, orange);
+    background-image: -webkit-linear-gradient(to right, orange, orange);
     box-shadow: 0px 5px 10px 0px rgba(207, 16, 16, 0.5);
     border-color: rgb(144, 143, 143);
     border-width: 1.5px;

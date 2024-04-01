@@ -16,15 +16,15 @@ import down from "./Images/down.png";
 //
 // [ BEGIN ]
 
-var label_width = 0;
+let label_width = 0;
 
-var menu_height = 0;
+let menu_height = 0;
 
-var expand_main_menu_label = undefined;
+let expand_main_menu_label = undefined;
 
-var expand_main_menu = undefined;
+let expand_main_menu = undefined;
 
-var expanded_or_contracted = 0;
+let expanded_or_contracted = 0;
 
 // [ END ]
 
@@ -32,16 +32,16 @@ var expanded_or_contracted = 0;
 //
 // [ BEGIN ]
 
-var terminal_startup = undefined;
-var width = 0;
+let terminal_startup = undefined;
+let width = 0;
 
 // [ END ]
 
 // NAME ANIMATION VARIABLES
 //
 // [ BEGIN ]
-var name_animation = undefined;
-var name_elements = [
+let name_animation = undefined;
+let name_elements = [
   "T",
   "e",
   "o",
@@ -56,13 +56,33 @@ var name_elements = [
   "i",
   "l",
 ];
-var name_elements_index = 0;
-var name_value = "";
+let name_elements_index = 0;
+let name_value = "";
 // [ END ]
+
+let background_resize = undefined
+
+
+
 
 // MAIN MENU ANIMATION FUNCTIONS
 //
 // [ BEGIN ]
+
+
+async function AutoSizeBackgroundImage() {
+  let backgroundImage = document.getElementById("background-image");
+  let appNavbar = document.getElementById("app-navbar");
+  if(backgroundImage != null){
+    if(appNavbar != null){
+      backgroundImage.style.height = (window.innerHeight + appNavbar.offsetHeight) + "px";
+    }
+  }
+}
+
+export async function SetAutoSizeBackgroundImage() {
+  background_resize = await setInterval(await (async()=>{await AutoSizeBackgroundImage()}), 10);
+}
 
 async function Expand_Main_Menu_Label_Animation() {
   if (expanded_or_contracted === 0 || expanded_or_contracted === 2) {

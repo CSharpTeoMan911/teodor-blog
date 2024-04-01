@@ -3,12 +3,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import right from "./Images/right.png";
 import { useState, useEffect } from "react";
+import { SetAutoSizeBackgroundImage } from "./GUI_Animations"
 
 import Render_Main_Page from "./Main_Page";
 import Render_Projects_Page from "./Projects";
 import Render_Contacts_Page from "./Contacts";
 
-import { Expand_Or_Contract_Main_Menu, Expand_Main_Menu_Label, Contract_Main_Menu_Label } from "./GUI_Animations";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+
 import Render_Python_Student_Records_System_Page from "./Personal_Projects_Modules/Python_Student_Records_System";
 import Render_C_Sharp_Student_Records_System from "./Personal_Projects_Modules/C_Sharp_Student_Records_System";
 import Render_C_Sharp_Secure_Student_Records_System from "./Personal_Projects_Modules/C_Sharp_Secure_Student_Records_System";
@@ -43,73 +48,21 @@ function App() {
   });
   return (
     <div>
-      {/*// MAIN MENU STRUCTURE
-           //
-           // [ BEGIN ] */}
+      <div id="background-image" className="background_image" alt="matrix animation background"/>
+      <Navbar id="app-navbar" expand="lg" className="navbar-dark bg-dark">
+        <Container style={{width:"100%", minWidth:"95%"}}>
+          <Navbar.Brand href="/" style={{  fontFamily:"JetBrains Mono, monospace", fontSize:"25px", marginRight:"30px", fontWeight:"700", color:"rgb(244,113,10)"}}>Blog</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link className="navbar-element" href="/">Home</Nav.Link>
+              <Nav.Link className="navbar-element" href="/projects">Projects</Nav.Link>
+              <Nav.Link className="navbar-element" href="/contacts">Contacts</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
-      <div className="navigation_bar_style">
-        <div className="main_menu_div_style">
-          <div className="main_menu_controls_div_style">
-            <button className="main_menu_button_style">
-              <img
-                id="main_menu_button_img"
-                alt="menu button"
-                className="main_menu_button_img_style"
-                src={right}
-                onMouseEnter={async() => {
-                  await Expand_Main_Menu_Label();
-                }}
-                onMouseLeave={async() => {
-                  await Contract_Main_Menu_Label();
-                }}
-                onClick={async() => {
-                  await Expand_Or_Contract_Main_Menu();
-                }}
-              />
-            </button>
-            <div
-              id="menu_label_container"
-              className="menu_label_container_style"
-            >
-              <p id="menu_label" className="menu_label_style">
-                Menu
-              </p>
-            </div>
-          </div>
-
-          <h1 className="page_title_style">{current_title_value}</h1>
-        </div>
-      </div>
-
-      <div id="main_menu" className="main_menu_div_items_style">
-        <div id="items_container" className="items_container_style">
-          <button
-            className="menu_item_style"
-            onClick={() => {
-              Navigate_To_Page("");
-            }}
-          >
-            Details
-          </button>
-          <button
-            className="menu_item_style"
-            onClick={() => {
-              Navigate_To_Page("projects");
-            }}
-          >
-            Projects
-          </button>
-          <button
-            className="menu_item_style"
-            onClick={() => {
-              Navigate_To_Page("contacts");
-            }}
-          >
-            Contacts
-          </button>
-        </div>
-      </div>
-      {/* // END */}
 
       <BrowserRouter>
         <Routes>
@@ -163,5 +116,5 @@ function App() {
   );
 }
 
-
+SetAutoSizeBackgroundImage();
 export default App;

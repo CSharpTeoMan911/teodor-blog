@@ -1,7 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Workbench&display=swap");
+
 body.main_body_style {
     margin: 0px;
     padding: 0px;
-    background-image: linear-gradient(to right, #1d1006,black);
+    background-image: linear-gradient(to right, #020202,rgb(56, 56, 56));
+    background-image: -o-linear-gradient(to right, #020202,rgb(56, 56, 56));
+    background-image: -moz-linear-gradient(to right, #020202,rgb(56, 56, 56));
+    background-image: -webkit-linear-gradient(to right, #020202,rgb(56, 56, 56));
+}
+
+div.background_image {
+    position: absolute;
+    z-index: 0;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/11a0cc95-aa8d-48be-bc47-e55baa6ecacc/dfxj5rq-4c410554-f9f4-4590-8072-d182a37569fe.png/v1/fill/w_1194,h_669,q_70,strp/tiny_cubes_by_mholtsmeier_dfxj5rq-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvMTFhMGNjOTUtYWE4ZC00OGJlLWJjNDctZTU1YmFhNmVjYWNjXC9kZnhqNXJxLTRjNDEwNTU0LWY5ZjQtNDU5MC04MDcyLWQxODJhMzc1NjlmZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Fj39QAmXoP5xPanoY2ZEc175HuYD1uYOS3DNss8ATkE");
+    opacity: 0.4;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.terminal-element {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    min-width: 430px;
+    height: 70vh;
+    align-self: center;
+    background: linear-gradient(to right, black, rgb(24, 24, 24));
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+  /* width */
+  div.terminal-element::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  div.terminal-element::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10000px rgb(46, 46, 46); 
+    border-radius: 0px;
+  }
+   
+  /* Handle */
+  div.terminal-element::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  div.terminal-element::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+
+div.terminal-handle {
+    display: grid;
+    background-color: rgb(46, 46, 46);
+    grid-template-columns: repeat(3, 1fr);
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 38px;
+}
+
+div.terminal {
+    margin-top: 100px;
+    width: 85vw;
+    min-width: 430px;
+    align-self: center;
 }
 
 div.main_page_div_style
@@ -10,52 +77,12 @@ div.main_page_div_style
     height: 99vh;
 }
 
-div.navigation_bar_style {
+div.page_content_style
+{
     width: 100%;
-    background-image: linear-gradient(to right, #301400, rgb(57, 22, 1));
-    z-index: 3;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-}
-
-
-div.main_menu_div_style
-{
-    z-index: 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-}
-
-div.main_menu_controls_div_style
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    position: relative;
-}
-
-div.main_menu_div_items_style
-{
-    z-index: 2;
-    border-radius: 2vmin;
-    margin-top: calc(1px + 7vmin);
-    margin-left: 1.5vmin;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    background-image: linear-gradient(to right, rgb(31, 12, 2), rgb(0, 0, 0));
-    width: calc(1px + 5vmin + 22vmin);
-    height: 0vmin;
-    visibility: hidden;
-    position: fixed;
+    align-content: center;
 }
 
 div.items_container_style
@@ -94,21 +121,11 @@ div.personal_details_div_style
     width: 95%;
     height: 93vh;
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+    background-image: -o-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+    background-image: -moz-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+    background-image: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
 }
 
-button.main_menu_button_style
-{
-    z-index: 5;
-    display: flex;
-    align-self: flex-start;
-    justify-content: center;
-    width: calc(1px + 9vmin);
-    height: calc(1px + 9vmin);
-    background-image: linear-gradient(to right, rgb(95, 34, 1), rgb(0, 0, 0));
-    border-width: 0px;
-    border-radius: 1.5vmin;
-    border-color: transparent;
-}
 
 button.menu_item_style
 {
@@ -116,6 +133,9 @@ button.menu_item_style
     margin-top: 1.2vmin;
     margin-bottom: 2vmin;
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(66, 24, 1));
+    background-image: -o-linear-gradient(to right, rgb(0, 0, 0), rgb(66, 24, 1));
+    background-image: -moz-linear-gradient(to right, rgb(0, 0, 0), rgb(66, 24, 1));
+    background-image: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(66, 24, 1));
     border-radius: 1.5vmin;
     border-width: 0px;
     border-color: rgb(108, 108, 108);
@@ -135,19 +155,6 @@ button.menu_item_style:hover
     border-color: rgb(247, 153, 1);
 }
 
-img.main_menu_button_img_style
-{
-    margin: 0px;
-    padding: 0px;
-    align-self: center;
-    border-width: 1px;
-    border-color: black;
-    border-radius: calc(1px + 7vmin);
-    width: calc(1px + 6vmin);
-    height: calc(1px + 6vmin);
-    background-color: rgb(207, 135, 1);
-}
-
 
 div.crt_div_screen_style
 {
@@ -158,6 +165,9 @@ div.crt_div_screen_style
     width: 98%;
     height: 91vh;
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
+    background-image: -o-linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
+    background-image: -moz-linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
+    background-image: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
 }
 
 
@@ -242,4 +252,11 @@ p.menu_label_style
     margin: 0px;
     padding: 0px;
     font-size: 5vmin;
+}
+
+.navbar-element
+{
+    color: #fd8631;
+    font-size: "22px";
+    font-family: "JetBrains Mono", monospace;
 }

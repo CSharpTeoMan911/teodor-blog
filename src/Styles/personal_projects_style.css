@@ -22,6 +22,9 @@ div.small_non_adjustable_image_container_style
     width: 40%;
     border-radius: 3vmin;
     background-image: linear-gradient(to right, rgb(149, 77, 6), rgb(82, 41, 3));
+    background-image: -o-linear-gradient(to right, rgb(149, 77, 6), rgb(82, 41, 3));
+    background-image: -moz-linear-gradient(to right, rgb(149, 77, 6), rgb(82, 41, 3));
+    background-image: -webkit-linear-gradient(to right, rgb(149, 77, 6), rgb(82, 41, 3));
 }
 
 div.project_name_container_style
