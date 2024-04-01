@@ -23,12 +23,11 @@ div.terminal-element {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 70vh;
     align-self: center;
     background-color:  rgba(24, 24, 24, 0.8);
     opacity: 0.9;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 
@@ -65,8 +64,6 @@ div.terminal-handle {
 }
 
 div.terminal-skeleton {
-    margin-top: 100px;
-    width: 85vw;
     min-width: 435px;
     align-self: center;
     display: flex;

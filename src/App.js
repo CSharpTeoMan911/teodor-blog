@@ -1,8 +1,6 @@
 import "./Styles/main_style.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import right from "./Images/right.png";
-import { useState, useEffect } from "react";
 import { SetAutoSizeBackgroundImage } from "./GUI_Animations"
 
 import Render_Main_Page from "./Main_Page";
@@ -23,24 +21,8 @@ import Render_Y2F from "./Personal_Projects_Modules/Y2F";
 import Render_EVA_AI_Page from "./Personal_Projects_Modules/Eva_AI";
 
 
-function Navigate_To_Page(page) {
-  window.location.pathname = "/" + page;
-}
 
 function App() {
-  const [current_title_value, set_title_value] = useState("");
-  var body = document.getElementById("main_body");
-  body.classList.add("main_body_style");
-
-  useEffect(() => {
-    if (window.location.pathname === "/") {
-      set_title_value("Personal Details");
-    } else if (window.location.pathname === "/contacts") {
-      set_title_value("Contacts");
-    } else {
-      set_title_value("Projects");
-    }
-  });
   return (
     <div>
       <div id="background-image" className="background_image" alt="matrix animation background"/>

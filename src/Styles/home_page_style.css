@@ -70,6 +70,7 @@ div.personal_bio_div_style
 
 div.technologies_div_style
 {
+    text-align: center;
     margin-top: 5vmin;
     display: flex;
     flex-direction: column;
@@ -150,6 +151,7 @@ p.name_style
 
 p.technology_classifier_value_style
 {
+    word-wrap: break-word;
     margin: 0px;
     margin-right: 30px;
     align-self: center;
@@ -160,12 +162,12 @@ p.technology_classifier_value_style
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }
 
-p.technology_subtitle_style
+h2.technology_subtitle_style
 {
     margin-top: 10vmin;
     align-self: center;
     justify-self: center;
-    font-size: calc(1vmin + 25px);
+    font-size: calc(1vmin + 30px);
     font-family: "Pixelify Sans", sans-serif;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);

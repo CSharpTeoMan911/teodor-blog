@@ -74,12 +74,13 @@ div.code_snippet_div_style
     overflow-y: auto;
 }
 
-img.description_image
+img.small_adjustable_image
 {
     margin-top: 2vmin;
     margin-bottom: 2vmin;
-    border-radius: 2vmin;
-    width: 40%;
+    border-radius: calc(1vmin + 10px);
+    width: calc(1vmin + 500px);
+    max-width: 95%;
     align-self: center;
     justify-self: center;
     box-shadow: 0px 5px 10px 0px rgba(207, 16, 16, 0.5);
@@ -89,9 +90,10 @@ img.large_adjustable_image
 {
     margin-top: 3vmin;
     margin-bottom: 3vmin;
-    border-radius: 2vmin;
+    border-radius: calc(1vmin + 10px);
     align-self: center;
-    width: calc(30px + 80%);
+    width: calc(1vmin + 1200px);
+    max-width: 95%;
     box-shadow: 0px 5px 10px 0px rgba(207, 16, 16, 0.5);
 }
 
@@ -116,8 +118,8 @@ h2.project_sub_title_style
     margin-top: 5vmin;
     align-self: center;
     justify-self:flex-start;
-    font-size: calc(5px + 3.5vmin);
-    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vmin + 30px);
+    font-family: "JetBrains Mono", monospace;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1);
 }
@@ -134,8 +136,8 @@ article.project_article_style
     max-width:90%;
     align-self: center;
     justify-self:flex-start;
-    font-size: calc(5px + 2.5vmin);
-    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vmin + 18px);
+    font-family: "JetBrains Mono", monospace;
     color: transparent;
     text-shadow: 0 0 1px rgba(255, 136, 0, 1); 
 }
@@ -146,8 +148,8 @@ font.bold_project_article_section_style
     align-self: center;
     justify-self:flex-start;
     font-weight: bold;
-    font-size: calc(5px + 3vmin);
-    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vmin + 18px);
+    font-family: "JetBrains Mono", monospace;
     color: transparent;
     text-shadow: 0 0 1px rgb(255, 153, 0); 
 }

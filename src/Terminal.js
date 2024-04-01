@@ -4,12 +4,27 @@ import { useEffect } from "react";
 import { Terminal_Startup, Name_Animation } from "./GUI_Animations";
 
 export default function Terminal(prop) {
+  let width = undefined;
+  let height = undefined;
+  let marginTop = undefined
+
+  if(prop.size === "normal") {
+    width = "85vw";
+    height = "70vh";
+    marginTop = "100px";
+  }
+  else if(prop.size === "large") {
+    width = "95vw";
+    height = "80vh";
+    marginTop = "50px";
+  }
+
   useEffect(()=>{
     Terminal_Startup();
     Name_Animation();
   },[])
   return (
-    <div className="terminal-skeleton">
+    <div className="terminal-skeleton" style={{width:width, marginTop:marginTop}}>
       <div id="terminal" className="terminal">
         <div className="terminal-handle">
 
@@ -24,7 +39,7 @@ export default function Terminal(prop) {
           </div>
 
         </div>
-        <div className="terminal-element">
+        <div className="terminal-element" style={{height:height}}>
           <div style={{ width: "98%", display: "flex", alignSelf: "center", flexDirection: "column" }}>
             {prop.children}
           </div>

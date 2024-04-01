@@ -3,6 +3,7 @@ import "./Styles/main_style.css";
 import teodor from "./Images/teodor.webp";
 import Terminal from "./Terminal";
 import TechElement from "./TechElement";
+import TerminalInitialLine from "./TerminalInitialLine";
 
 
 export default function Render_Main_Page() {
@@ -12,11 +13,9 @@ export default function Render_Main_Page() {
 
 
       <div className="profile_div_style">
-        <Terminal>
+        <Terminal size={"normal"}>
           <article className="article_style">
-            <font className="font_init">
-              teodor@teodor-IdeaPad-3-14ITL05:/bin$&nbsp;&nbsp;&nbsp;
-            </font>
+            <TerminalInitialLine/>
             ./init-profile
 
             <div className="profile">
@@ -30,9 +29,7 @@ export default function Render_Main_Page() {
                 <p id="name" className="name_style"></p>
               </div>
             </div>
-            <font className="font_init">
-              teodor@teodor-IdeaPad-3-14ITL05:/bin$&nbsp;&nbsp;&nbsp;
-            </font>
+            <TerminalInitialLine/>
 
             My name is Teodor Mihail. I'm a software engineer that has
             experice with multiple languages, frameworks, and development
@@ -54,7 +51,7 @@ export default function Render_Main_Page() {
           </article>
 
           <div className="technologies_div_style">
-            <p className="technology_subtitle_style">Languages</p>
+            <h2 className="technology_subtitle_style">Languages</h2>
 
 
             <TechElement tech="C#" percent="90%" />
@@ -73,7 +70,7 @@ export default function Render_Main_Page() {
 
 
           <div className="technologies_div_style">
-            <p className="technology_subtitle_style">Frameworks</p>
+            <h2 className="technology_subtitle_style">Frameworks</h2>
 
             <TechElement tech="NET Framework" percent="90%" />
             <TechElement tech=".NET Core" percent="90%" />
@@ -90,9 +87,9 @@ export default function Render_Main_Page() {
 
 
           <div className="technologies_div_style">
-            <p className="technology_subtitle_style">
+            <h2 className="technology_subtitle_style">
               Development environments and technologies
-            </p>
+            </h2>
 
             <TechElement tech="Visual Studio" percent="90%" />
             <TechElement tech="Visual Studio Code" percent="80%" />

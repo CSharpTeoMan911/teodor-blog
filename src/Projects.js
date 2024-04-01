@@ -1,22 +1,16 @@
 import "./Styles/projects_page_style.css";
 import "./Styles/main_style.css";
-import { Terminal_Startup } from "./GUI_Animations";
 import Terminal from "./Terminal";
 import ProjectElement from "./ProjectElement";
-
-function Project_Path_Selection(path) {
-  window.location.pathname = "/" + path;
-}
+import TerminalInitialLine from "./TerminalInitialLine";
 
 export default function Render_Projects_Page() {
   return (
     <div className="main_page_div_style">
       <div className="contacts_div_style">
-        <Terminal>
+        <Terminal size={"normal"}>
           <article className="article_style" style={{ width: "100%" }}>
-            <font className="font_init">
-              teodor@teodor-IdeaPad-3-14ITL05:/bin$&nbsp;&nbsp;&nbsp;&nbsp;
-            </font>
+            <TerminalInitialLine/>
             ./init -projects
             <br />
             <br />
