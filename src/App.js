@@ -1,7 +1,7 @@
 import "./Styles/main_style.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { SetAutoSizeBackgroundImage } from "./GUI_Animations"
+import { SetAutoSizeElements } from "./GUI_Animations"
 
 import Render_Main_Page from "./Main_Page";
 import Render_Projects_Page from "./Projects";
@@ -19,10 +19,14 @@ import Render_Smart_Event_Organiser from "./Personal_Projects_Modules/Smart_Even
 import Render_TeodorMihailBlog from "./Personal_Projects_Modules/TeodorMihailBlog";
 import Render_Y2F from "./Personal_Projects_Modules/Y2F";
 import Render_EVA_AI_Page from "./Personal_Projects_Modules/Eva_AI";
+import { useEffect } from "react";
 
 
 
 function App() {
+  useEffect(()=>{
+    
+  }, []);
   return (
     <div>
       <div id="background-image" className="background_image" alt="matrix animation background"/>
@@ -79,6 +83,4 @@ function App() {
     </div>
   );
 }
-
-SetAutoSizeBackgroundImage();
 export default App;

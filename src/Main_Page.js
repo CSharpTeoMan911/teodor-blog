@@ -4,16 +4,20 @@ import teodor from "./Images/teodor.webp";
 import Terminal from "./Terminal";
 import TechElement from "./TechElement";
 import TerminalInitialLine from "./TerminalInitialLine";
-
+import { useEffect } from "react";
+import { Name_Animation } from "./GUI_Animations";
 
 export default function Render_Main_Page() {
   const element = <div style={{ color: "white" }}>Hello</div>
+  useEffect(()=>{
+    Name_Animation();
+  }, []);
   return (
     <div className="main_page_div_style">
 
 
       <div className="profile_div_style">
-        <Terminal size={"normal"}>
+        <Terminal size={"normal"} animation={true}>
           <article className="article_style">
             <TerminalInitialLine/>
             ./init-profile
@@ -53,17 +57,14 @@ export default function Render_Main_Page() {
           <div className="technologies_div_style">
             <h2 className="technology_subtitle_style">Languages</h2>
 
-
             <TechElement tech="C#" percent="90%" />
-            <TechElement tech="Java" percent="60%" />
-            <TechElement tech="JS" percent="70%" />
-            <TechElement tech="MySQL" percent="70%" />
+            <TechElement tech="CSS" percent="90%" />
             <TechElement tech="Python" percent="85%" />
             <TechElement tech="HTML" percent="75%" />
-            <TechElement tech="CSS" percent="90%" />
-            <TechElement tech="C#" percent="90%" />
-            <TechElement tech="C#" percent="90%" />
-            <TechElement tech="C#" percent="90%" />
+            <TechElement tech="XAML" percent="75%" />
+            <TechElement tech="JS" percent="70%" />
+            <TechElement tech="MySQL" percent="70%" />
+            <TechElement tech="Java" percent="60%" />
 
           </div>
 
@@ -74,14 +75,15 @@ export default function Render_Main_Page() {
 
             <TechElement tech="NET Framework" percent="90%" />
             <TechElement tech=".NET Core" percent="90%" />
-            <TechElement tech="Blazor" percent="75%" />
             <TechElement tech="WPF" percent="80%" />
-            <TechElement tech="UWP" percent="60%" />
             <TechElement tech="WinForms" percent="80%" />
             <TechElement tech="Avalonia" percent="80%" />
+            <TechElement tech="Blazor" percent="75%" />
             <TechElement tech="NodeJS" percent="75%" />
-            <TechElement tech="JForms" percent="30%" />
             <TechElement tech="React" percent="75%" />
+            <TechElement tech="UWP" percent="60%" />
+            <TechElement tech="JForms" percent="30%" />
+
           </div>
 
 
@@ -93,12 +95,12 @@ export default function Render_Main_Page() {
 
             <TechElement tech="Visual Studio" percent="90%" />
             <TechElement tech="Visual Studio Code" percent="80%" />
-            <TechElement tech="Vim" percent="30%" />
-            <TechElement tech="Nano" percent="40%" />
             <TechElement tech="Pycharm" percent="80%" />
             <TechElement tech="InteliJ" percent="70%" />
-            <TechElement tech="Eclipse" percent="50%" />
             <TechElement tech="Cisco Networking" percent="70%" />
+            <TechElement tech="Eclipse" percent="50%" />
+            <TechElement tech="Nano" percent="40%" />          
+            <TechElement tech="Vim" percent="30%" />  
 
           </div>
           <br />

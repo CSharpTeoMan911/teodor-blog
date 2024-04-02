@@ -64,14 +64,14 @@ div.terminal-handle {
 }
 
 div.terminal-skeleton {
-    min-width: 435px;
+    min-width: 200px;
     align-self: center;
     display: flex;
     flex-direction: column;
 }
 
 div.terminal {
-    min-width: 435px;
+    width: 100%;
     align-self: center;
 }
 
@@ -88,119 +88,6 @@ div.page_content_style
     flex-direction: column;
     align-content: center;
 }
-
-div.items_container_style
-{
-    width: 100%;
-    margin-top: 3vmin;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-div.menu_label_container_style
-{
-    transform: translate(-3vmin);
-    z-index: 4;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    background-color:rgb(0, 0, 0);
-    border-radius: 1.5vmin;
-    height:calc(1px + 9vmin);
-}
-
-div.personal_details_div_style
-{
-    margin-top: 8vmin;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-self: center;
-    width: 95%;
-    height: 93vh;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
-    background-image: -o-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
-    background-image: -moz-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
-    background-image: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
-}
-
-
-button.menu_item_style
-{
-    align-self: center;
-    margin-top: 1.2vmin;
-    margin-bottom: 2vmin;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(66, 24, 1));
-    background-image: -o-linear-gradient(to right, rgb(0, 0, 0), rgb(66, 24, 1));
-    background-image: -moz-linear-gradient(to right, rgb(0, 0, 0), rgb(66, 24, 1));
-    background-image: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(66, 24, 1));
-    border-radius: 1.5vmin;
-    border-width: 0px;
-    border-color: rgb(108, 108, 108);
-    color: rgb(167, 78, 0);
-    width: calc(1px + 3vmin + 20vmin);
-    height: 0vmin;
-    visibility: hidden;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 4vmin;
-}
-
-
-
-button.menu_item_style:hover
-{
-    color: rgb(247, 153, 1);
-    border-color: rgb(247, 153, 1);
-}
-
-
-div.crt_div_screen_style
-{
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    align-content: center;
-    width: 98%;
-    height: 91vh;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
-    background-image: -o-linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
-    background-image: -moz-linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
-    background-image: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
-}
-
-
-div.crt_div_style
-{
-    align-self: center;
-    justify-self: center;
-    width: 98%;
-    height:98%;
-    background-image: url("https://i.gifer.com/7LOt.gif");
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-
-div.crt_content_div_style
-{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    overflow-y: auto;
-    overflow-x: auto;
-    width: 100%;
-    height:100%;
-    background-image: url(../Images/screen_filter.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-
 
 article.article_style
 {

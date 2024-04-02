@@ -27,7 +27,7 @@ import Terminal from "../Terminal";
 export default function Render_EVA_AI_Page() {
   return (
     <ProjectBody>
-      <Terminal size={"large"}>
+      <Terminal size={"large"} animation={false}>
         <ProjectTitle>
           Eva the A.I assistant
         </ProjectTitle>

@@ -1,26 +1,4 @@
-// window.addEventListener("message", async (e) => {
-//     console.log("OK");
-//   switch (e.data) {
-//     case "personal projects window terminal startup":
-//       terminal_startup = await setInterval(async() => {
-//         await Terminal_Startup(e.data);
-//       }, 10);
-//       break;
-//   }
-// });
-
-
-// MAIN MENU ANIMATION VARIABLES
-//
-// [ BEGIN ]
-
-
-let expand_main_menu_label = undefined;
-
-let expand_main_menu = undefined;
-
-
-// [ END ]
+import { isMobile } from "react-device-detect";
 
 // TERMINAL STARTUP ANIMATION VARIABLES
 //
@@ -55,6 +33,8 @@ let name_value = "";
 // [ END ]
 
 let background_resize = undefined
+let elements_resize = undefined
+
 
 
 
@@ -63,19 +43,84 @@ let background_resize = undefined
 //
 // [ BEGIN ]
 
+async function AutoSizeTerminal(size) {
+  let terminal_skeleton = document.getElementById("terminal-skeleton");
+  let terminal = document.getElementById("terminal");
+  let terminal_handle = document.getElementById("terminal-handle");
+  let terminal_control = document.getElementById("terminal-control");
+  let terminal_logo = document.getElementById("terminal-logo");
+  let terminal_element = document.getElementById("terminal-element");
 
-async function AutoSizeBackgroundImage() {
+  if (terminal_skeleton != null) {
+    if (terminal != null) {
+      if (terminal_handle != null) {
+        if (terminal_control != null) {
+          if (terminal_logo != null) {
+            if (terminal_element != null) {
+              if (isMobile === false) {
+                if (window.innerWidth > 700) {
+                  if (size === "normal") {
+                    terminal_skeleton.style.width = "85vw";
+                    terminal_skeleton.style.marginTop = "100px";
+                    terminal_element.style.height = "70vh"
+                  }
+                  else if (size === "large") {
+                    terminal_skeleton.style.width = "95vw";
+                    terminal_skeleton.style.marginTop = "50px";
+                    terminal_element.style.height = "80vh"
+                  }
+
+                  terminal_handle.style.height = "38px";
+                  terminal_logo.style.height = "38px";
+                  terminal_control.style.height = "38px";
+                }
+                else {
+                  terminal_skeleton.style.width = "100vw";
+                  terminal_skeleton.style.marginTop = "0px";
+                  terminal_handle.style.height = "0px";
+                  terminal_logo.style.height = "0px";
+                  terminal_control.style.height = "0px";
+                  terminal_element.style.height = "100vh"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+async function AutoSizeBackgroundImage(size) {
   let backgroundImage = document.getElementById("background-image");
   let appNavbar = document.getElementById("app-navbar");
-  if(backgroundImage != null){
-    if(appNavbar != null){
+  if (backgroundImage != null) {
+    if(isMobile === false) {
+      if (appNavbar != null) {
+        if (size == "normal") {
+          backgroundImage.style.height = (window.innerHeight + appNavbar.offsetHeight + 50) + "px";
+        }
+        else {
+          backgroundImage.style.height = (window.innerHeight + appNavbar.offsetHeight + 100) + "px";
+        }
+      }
+    }
+    else {
       backgroundImage.style.height = (window.innerHeight + appNavbar.offsetHeight) + "px";
     }
   }
 }
 
-export async function SetAutoSizeBackgroundImage() {
-  background_resize = await setInterval(await (async()=>{await AutoSizeBackgroundImage()}), 10);
+async function AutoSizeElements(size) {
+  await AutoSizeBackgroundImage(size);
+  if (isMobile === false) {
+    await AutoSizeTerminal(size);
+  }
+}
+
+export async function SetAutoSizeElements(size) {
+  elements_resize = await setInterval(async () => { await AutoSizeElements(size) }, 10);
 }
 
 // TERMINAL STARTUP ANIMATION
@@ -88,14 +133,13 @@ async function Terminal_Startup_Animation() {
   try {
     if (div !== null || div !== undefined) {
       if (width < 100) {
-        width +=2.5;
+        width += 2;
         div.style.width = width + "%";
       } else {
         await clearInterval(terminal_startup);
       }
     }
-    else
-    {
+    else {
       await clearInterval(terminal_startup);
     }
   } catch {
@@ -104,13 +148,9 @@ async function Terminal_Startup_Animation() {
 }
 
 export async function Terminal_Startup() {
-  var div = document.getElementById("terminal");
-  if (div !== null && div !== undefined) {
-    div.style.width = "435px";
-    terminal_startup = await setInterval(async () => {
-      await Terminal_Startup_Animation();
-    }, 20);
-  }
+  terminal_startup = await setInterval(async () => {
+    await Terminal_Startup_Animation();
+  }, 20);
 }
 
 // [ END ]
@@ -136,7 +176,7 @@ async function Name_Animation_Function() {
 
       name.innerHTML = name_value;
     }
-    else{
+    else {
       await clearInterval(name_animation);
     }
   } catch {
@@ -154,20 +194,20 @@ export async function Name_Animation() {
 
 window.addEventListener("beforeunload", async (event) => {
   try {
-    await clearInterval(expand_main_menu);
-    await clearInterval(expand_main_menu_label);
+    await clearInterval(name_animation);
+    await clearInterval(elements_resize);
     await clearInterval(terminal_startup);
-  } catch {}
+  } catch { }
 
-  width = 0;
+  width = 60;
 });
 
 window.addEventListener("beforeload", async (event) => {
   try {
-    await clearInterval(expand_main_menu);
-    await clearInterval(expand_main_menu_label);
+    await clearInterval(name_animation);
+    await clearInterval(elements_resize);
     await clearInterval(terminal_startup);
-  } catch {}
+  } catch { }
 
-  width = 0;
+  width = 60;
 });

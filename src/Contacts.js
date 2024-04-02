@@ -14,7 +14,7 @@ export default function Render_Contacts_Page() {
   return (
     <div className="main_page_div_style">
       <div className="contacts_div_style">
-        <Terminal size={"normal"}>
+        <Terminal size={"normal"} animation={true}>
           <article className="article_style" style={{ width: "100%" }}>
             <TerminalInitialLine />
             ./init -contacts
