@@ -61,7 +61,6 @@ export default function Render_Main_Page() {
             <TechElement tech="JavaScript" percent="75%" />
             <TechElement tech="HTML" percent="75%" />
             <TechElement tech="XAML" percent="75%" />
-            <TechElement tech="JS" percent="70%" />
             <TechElement tech="MySQL" percent="70%" />
             <TechElement tech="Java" percent="60%" />
 
