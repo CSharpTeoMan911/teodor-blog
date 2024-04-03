@@ -58,6 +58,7 @@ export default function Render_Main_Page() {
             <TechElement tech="C#" percent="90%" />
             <TechElement tech="CSS" percent="90%" />
             <TechElement tech="Python" percent="85%" />
+            <TechElement tech="JavaScript" percent="75%" />
             <TechElement tech="HTML" percent="75%" />
             <TechElement tech="XAML" percent="75%" />
             <TechElement tech="JS" percent="70%" />
