@@ -14,8 +14,6 @@ export default function Render_Main_Page() {
   }, []);
   return (
     <div className="main_page_div_style">
-
-
       <div className="profile_div_style">
         <Terminal size={"normal"} animation={true}>
           <article className="article_style">

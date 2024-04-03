@@ -24,12 +24,8 @@ import { useEffect } from "react";
 
 
 function App() {
-  useEffect(()=>{
-    
-  }, []);
   return (
     <div>
-      <div id="background-image" className="background_image" alt="matrix animation background"/>
       <Navbar id="app-navbar" expand="lg" className="navbar-dark bg-dark">
         <Container style={{width:"100%", minWidth:"95%"}}>
           <Navbar.Brand href="/" style={{  fontFamily:"JetBrains Mono, monospace", fontSize:"25px", marginRight:"30px", fontWeight:"700", color:"rgb(244,113,10)"}}>Blog</Navbar.Brand>

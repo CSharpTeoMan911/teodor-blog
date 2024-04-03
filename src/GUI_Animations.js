@@ -32,8 +32,7 @@ let name_elements_index = 0;
 let name_value = "";
 // [ END ]
 
-let background_resize = undefined
-let elements_resize = undefined
+let terminal_resize = undefined
 
 
 
@@ -89,38 +88,11 @@ async function AutoSizeTerminal(size) {
       }
     }
   }
-
 }
 
-async function AutoSizeBackgroundImage(size) {
-  let backgroundImage = document.getElementById("background-image");
-  let appNavbar = document.getElementById("app-navbar");
-  if (backgroundImage != null) {
-    if(isMobile === false) {
-      if (appNavbar != null) {
-        if (size == "normal") {
-          backgroundImage.style.height = (window.innerHeight + appNavbar.offsetHeight + 50) + "px";
-        }
-        else {
-          backgroundImage.style.height = (window.innerHeight + appNavbar.offsetHeight + 100) + "px";
-        }
-      }
-    }
-    else {
-      backgroundImage.style.height = (window.innerHeight + appNavbar.offsetHeight) + "px";
-    }
-  }
-}
 
-async function AutoSizeElements(size) {
-  await AutoSizeBackgroundImage(size);
-  if (isMobile === false) {
-    await AutoSizeTerminal(size);
-  }
-}
-
-export async function SetAutoSizeElements(size) {
-  elements_resize = await setInterval(async () => { await AutoSizeElements(size) }, 10);
+export async function SetAutoSizeTerminal(size) {
+  terminal_resize = await setInterval(async () => { await AutoSizeTerminal(size) }, 10);
 }
 
 // TERMINAL STARTUP ANIMATION
@@ -195,7 +167,7 @@ export async function Name_Animation() {
 window.addEventListener("beforeunload", async (event) => {
   try {
     await clearInterval(name_animation);
-    await clearInterval(elements_resize);
+    await clearInterval(terminal_resize);
     await clearInterval(terminal_startup);
   } catch { }
 
@@ -205,7 +177,7 @@ window.addEventListener("beforeunload", async (event) => {
 window.addEventListener("beforeload", async (event) => {
   try {
     await clearInterval(name_animation);
-    await clearInterval(elements_resize);
+    await clearInterval(terminal_resize);
     await clearInterval(terminal_startup);
   } catch { }
 

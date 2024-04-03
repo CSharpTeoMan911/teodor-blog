@@ -1,7 +1,7 @@
 import terminal_logo from "./Images/terminal-logo.png"
 import terminal_controls from "./Images/terminal controls.png"
 import { useEffect } from "react";
-import { Terminal_Startup, SetAutoSizeElements } from "./GUI_Animations";
+import { Terminal_Startup, SetAutoSizeTerminal } from "./GUI_Animations";
 import { MobileView, BrowserView, isMobile } from "react-device-detect";
 
 export default function Terminal(prop) {
@@ -26,7 +26,7 @@ export default function Terminal(prop) {
         Terminal_Startup();
       }
     }
-    SetAutoSizeElements(prop.size);
+    SetAutoSizeTerminal(prop.size);
   }, []);
   
   return (
