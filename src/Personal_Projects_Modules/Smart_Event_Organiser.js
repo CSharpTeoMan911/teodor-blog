@@ -9,12 +9,9 @@ import Terminal from "../Terminal";
 export default function Render_C_Sharp_Secure_Student_Records_System() {
   return (
     <ProjectBody>
-      <Terminal size={"large"}>
-        <ProjectTitle>
+      <Terminal size={"large"} animation={false}>
         <PageUnderDevelopment />
-        </ProjectTitle>
       </Terminal>
     </ProjectBody>
-
   );
 }

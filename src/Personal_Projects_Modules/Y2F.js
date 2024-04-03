@@ -11,18 +11,16 @@ import Y2F_main_entry_point from "../Y2F_Code_Snippets/Y2F_main_entry_point.txt"
 import Y2F_YouTube_operations from "../Y2F_Code_Snippets/Y2F_YouTube_operations.txt";
 import Y2F_setup from "../Y2F_Code_Snippets/Y2F_setup.txt";
 
-import { ProjectBody, ProjectTitle } from "../Components";
+import { ProjectBody, ProjectTitle, ProjectSubTitle } from "../Components";
 import Terminal from "../Terminal";
 
 export default function Render_Y2F() {
   return (
     <ProjectBody>
-      <Terminal size={"large"}>
-        <ProjectTitle>
+      <Terminal size={"large"} animation={false}>
         <PageUnderDevelopment />
-        </ProjectTitle>
       </Terminal>
     </ProjectBody>
-
   );
 }
+
