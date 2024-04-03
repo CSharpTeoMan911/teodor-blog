@@ -102,17 +102,26 @@ export async function SetAutoSizeTerminal(size) {
 async function Terminal_Startup_Animation() {
   var div = document.getElementById("terminal");
   let terminal_control = document.getElementById("terminal-control");
+  let terminal_logo = document.getElementById("terminal-logo");
 
   try {
-    if (div !== null ) {
-      if(terminal_control != null) {
-        if (width < 100) {
-          width += 2;
-          div.style.width = width + "%";
-          terminal_control.style.width = "0%";
-        } else {
-          terminal_control.style.width = "auto";
-          await clearInterval(terminal_startup);
+    if (div !== null) {
+      if (terminal_control != null) {
+        if (terminal_logo != null) {
+          if (width < 100) {
+            if (width < 50) {
+              terminal_control.style.width = "0%";
+              terminal_logo.style.width = "0%";
+            }
+            else {
+              terminal_control.style.width = "auto";
+              terminal_logo.style.width = "auto";
+            }
+            width += 2;
+            div.style.width = width + "%";
+          } else {
+            await clearInterval(terminal_startup);
+          }
         }
       }
     }
