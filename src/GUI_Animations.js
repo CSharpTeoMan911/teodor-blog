@@ -101,14 +101,19 @@ export async function SetAutoSizeTerminal(size) {
 
 async function Terminal_Startup_Animation() {
   var div = document.getElementById("terminal");
+  let terminal_control = document.getElementById("terminal-control");
 
   try {
-    if (div !== null || div !== undefined) {
-      if (width < 100) {
-        width += 2;
-        div.style.width = width + "%";
-      } else {
-        await clearInterval(terminal_startup);
+    if (div !== null ) {
+      if(terminal_control != null) {
+        if (width < 100) {
+          width += 2;
+          div.style.width = width + "%";
+          terminal_control.style.width = "0%";
+        } else {
+          terminal_control.style.width = "auto";
+          await clearInterval(terminal_startup);
+        }
       }
     }
     else {
