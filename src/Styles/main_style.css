@@ -15,7 +15,7 @@ div.terminal-element {
     width: 100%;
     align-self: center;
     background-color:  rgba(24, 24, 24, 0.9);
-    opacity: 0.9;
+    opacity: 1;
     overflow-y: auto;
     overflow-x: auto;
 }
@@ -63,6 +63,7 @@ div.terminal-skeleton {
 div.terminal {
     width: 100%;
     align-self: center;
+    border: solid 1px black;
 }
 
 div.main_page_div_style
@@ -127,7 +128,17 @@ h1.page_title_style
 
 .navbar-element
 {
-    color: #fd8631;
-    font-size: "22px";
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Pixelify Sans", sans-serif;
+    color: transparent;
+    text-shadow: 0 0 0.5px rgba(255, 136, 0, 1); 
+    font-size: 25px;
+}
+
+.navbar-brand-style{
+    font-family: "Pixelify Sans", sans-serif;
+    color: transparent;
+    text-shadow: 0 0 0.5px rgba(255, 136, 0, 1); 
+    font-size:27px;
+    margin-right:30px;
+    font-weight:700; 
 }

@@ -28,7 +28,7 @@ function App() {
     <div>
       <Navbar id="app-navbar" expand="lg" className="navbar-dark bg-dark">
         <Container style={{width:"100%", minWidth:"95%"}}>
-          <Navbar.Brand href="/" style={{  fontFamily:"JetBrains Mono, monospace", fontSize:"25px", marginRight:"30px", fontWeight:"700", color:"rgb(244,113,10)"}}>Blog</Navbar.Brand>
+          <Navbar.Brand className="navbar-brand-style" href="/">Blog</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

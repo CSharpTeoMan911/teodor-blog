@@ -33,17 +33,17 @@ export default function Terminal(prop) {
     <div style={{ alignSelf: "center" }}>
       <BrowserView>
         <div id="terminal-skeleton" className="terminal-skeleton" style={{ width: width, marginTop: marginTop }}>
-          <div id="terminal" className="terminal">
+          <div id="terminal" className="terminal" style={{boxShadow: "0px 5px 30px 10px rgb(0, 0, 0)" }}>
             <div id="terminal-handle" className="terminal-handle">
 
               <div>
-                <img id="terminal-logo" style={{ marginLeft: "20px", height: "100%" }} src={terminal_logo} />
+                <img id="terminal-logo" alt="terminal logo" style={{ marginLeft: "20px", height: "100%" }} src={terminal_logo} />
               </div>
 
               <div></div>
 
               <div style={{ display: "flex", flexDirection: "row-reverse" }}>
-                <img id="terminal-control" style={{ marginRight: "20px", height: "100%" }} src={terminal_controls} />
+                <img id="terminal-control" alt="terminal control" style={{ marginRight: "20px", height: "100%" }} src={terminal_controls} />
               </div>
 
             </div>

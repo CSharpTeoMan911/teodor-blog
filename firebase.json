@@ -3,12 +3,8 @@
     "public": "build",
     "rewrites": [
       {
-        "source": "/sitemap.xml",
+        "source": "/sitemap",
         "destination": "/sitemap.xml"
-      },
-      {
-        "source": "/website_sitemap.xml",
-        "destination": "/website_sitemap.xml"
       },
       {
         "source": "**",

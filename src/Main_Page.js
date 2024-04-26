@@ -1,6 +1,6 @@
 import "./Styles/home_page_style.css";
 import "./Styles/main_style.css";
-import teodor from "./Images/teodor.webp";
+import teodor from "./Images/_teodor.webp";
 import Terminal from "./Terminal";
 import TechElement from "./TechElement";
 import TerminalInitialLine from "./TerminalInitialLine";
@@ -61,7 +61,7 @@ export default function Render_Main_Page() {
             <TechElement tech="JavaScript" percent="75%" />
             <TechElement tech="HTML" percent="75%" />
             <TechElement tech="XAML" percent="75%" />
-            <TechElement tech="MySQL" percent="70%" />
+            <TechElement tech="SQL" percent="70%" />
             <TechElement tech="Java" percent="60%" />
 
           </div>
@@ -79,23 +79,25 @@ export default function Render_Main_Page() {
             <TechElement tech="Blazor" percent="75%" />
             <TechElement tech="NodeJS" percent="75%" />
             <TechElement tech="React" percent="75%" />
+            <TechElement tech="MySQL" percent="70%" />
+            <TechElement tech="Bootstrap" percent="70%" />
+            <TechElement tech="Radzen" percent="70%" />
             <TechElement tech="UWP" percent="60%" />
             <TechElement tech="JForms" percent="30%" />
-
           </div>
 
 
 
           <div className="technologies_div_style">
             <h2 className="technology_subtitle_style">
-              Development environments and technologies
+              Technologies
             </h2>
 
             <TechElement tech="Visual Studio" percent="90%" />
-            <TechElement tech="Visual Studio Code" percent="80%" />
+            <TechElement tech="VS Code" percent="80%" />
             <TechElement tech="Pycharm" percent="80%" />
             <TechElement tech="InteliJ" percent="70%" />
-            <TechElement tech="Cisco Networking" percent="70%" />
+            <TechElement tech="Cisco" percent="70%" />
             <TechElement tech="Eclipse" percent="50%" />
             <TechElement tech="Nano" percent="40%" />          
             <TechElement tech="Vim" percent="30%" />  

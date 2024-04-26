@@ -9,6 +9,7 @@ import linkedin from "./Images/linkedin.png";
 import facebook from "./Images/facebook.png";
 import gmail from "./Images/gmail.png";
 import stackoverflow from "./Images/stackoverflow.png";
+import github from "./Images/github.png"
 
 export default function Render_Contacts_Page() {
   return (
@@ -23,11 +24,13 @@ export default function Render_Contacts_Page() {
           </article>
 
           <ContactsElement img={stackoverflow} alt="StackOverflow Logo" link="https://stackoverflow.com/users/16587692/teodor-mihail" link_enabled={true} />
-          <ContactsElement img={linkedin} alt="StackOverflow Logo" link=" https://www.linkedin.com/in/teodor-mihail-moldoveanu-59014a235" link_enabled={true} />
-          <ContactsElement img={facebook} alt="StackOverflow Logo" link=" https://www.facebook.com/profile.php?id=61550971446851" link_enabled={true} />
-          <ContactsElement img={youtube} alt="StackOverflow Logo" link="https://www.youtube.com/@TyTy-gm8yb/about" link_enabled={true} />
-          <ContactsElement img={gmail} alt="StackOverflow Logo" link="teodormihail07@gmail.com" link_enabled={false} />
+          <ContactsElement img={github} alt="Github Logo" link="https://github.com/CSharpTeoMan911" link_enabled={true} />
+          <ContactsElement img={linkedin} alt="Linkedin Logo" link=" https://www.linkedin.com/in/teodor-mihail-moldoveanu-59014a235" link_enabled={true} />
+          <ContactsElement img={youtube} alt="Youtube Logo" link="https://www.youtube.com/@TyTy-gm8yb/about" link_enabled={true} />
+          <ContactsElement img={gmail} alt="Gmail Logo" link="teodormihail07@gmail.com" link_enabled={false} />
 
+          <br/>
+          <br/>
         </Terminal>
       </div>
     </div>
