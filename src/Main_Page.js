@@ -35,10 +35,8 @@ export default function Render_Main_Page() {
 
             My name is Teodor Mihail. I'm a software engineer that has
             experice with multiple languages, frameworks, and development
-            environments. I am originally from Romania, Bucharest,
-            currently living in United Kingdom, London, and studying
-            software engineering at the University of Bolton. I've done
-            multiple personal projects in which I used different
+            environments and I am currently living in London, United Kingdom. 
+            I've done multiple personal projects in which I used different
             technologies and techniques through which I achieved my goals.
             The level of proficiency in multiple languages, technologies
             and frameworks from 0% to 100% is displayed below. The source
