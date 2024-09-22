@@ -1,6 +1,6 @@
 import "./Styles/home_page_style.css";
 import "./Styles/main_style.css";
-import teodor from "./Images/_teodor.webp";
+import teodor from "./Images/teodor.webp";
 import Terminal from "./Terminal";
 import TechElement from "./TechElement";
 import TerminalInitialLine from "./TerminalInitialLine";
